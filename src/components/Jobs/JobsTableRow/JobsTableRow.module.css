@@ -1,0 +1,89 @@
+.TableRowParent {
+  padding: 24px;
+  width: 100%;
+  flex-shrink: 0;
+  border-bottom: 0.5px solid #c4c4c4;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.RowFirstLine {
+  display: flex;
+  width: 45%;
+  padding: 10px;
+  align-items: center;
+  gap: 20px;
+  flex-shrink: 0;
+}
+.ImageContainer {
+  width: 106px;
+  height: 106px;
+  flex-shrink: 0;
+  background: #d9d9d9;
+}
+.TextContainer {
+  height: 106px;
+}
+.JobHeading {
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 21px;
+}
+.JobDeatils {
+  display: flex;
+  line-height: 26px;
+  letter-spacing: -0.28px;
+  font-size: 14px;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+}
+
+.RowMiddleLine {
+  display: flex;
+  width: 21%;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+.RowLastLine {
+  display: flex;
+  width: 17%;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+
+.status {
+  display: inline-flex;
+  padding: 12px;
+  align-items: flex-start;
+  border-radius: 6px;
+  background: var(--light-green-bg);
+  color: var(--green-bg);
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 26px;
+  gap: 12px;
+}
+
+.BtnCustomPrimary {
+  display: flex;
+  width: 145px;
+  padding: 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  background-color: var(--btn-bg-color-1);
+  border-radius: 6px;
+  border: 1px solid var(--secondary-color);
+  font-weight: 500;
+  line-height: normal;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-black);
+}

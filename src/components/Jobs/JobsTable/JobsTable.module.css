@@ -1,0 +1,102 @@
+.BtnCustomPrimary {
+  display: flex;
+  width: 124px;
+  padding: 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  background-color: var(--btn-bg-color-1);
+  border-radius: 6px;
+  border: 1px solid var(--secondary-color);
+  font-weight: 500;
+  line-height: normal;
+}
+
+.BtnCustomSecondary {
+  display: flex;
+  width: 124px;
+  padding: 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  background-color: #f8f8f8;
+  border-radius: 6px;
+  border: 1px solid #c4c4c4;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.BtnWrapper {
+  gap: 20px;
+}
+
+.SelectDropdown {
+  display: flex;
+  width: 203px;
+  height: 43px;
+  padding: 12px;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0 !important;
+  background-color: var(--white-color);
+  border-radius: 6px;
+  border: 1px solid var(--input-border-color);
+  font-weight: 500;
+  line-height: normal;
+}
+.TableContainer {
+  padding-top: 28px;
+}
+
+.TableHeading {
+  color: var(--text-black);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 32px;
+  margin-bottom: 21px;
+}
+
+.TableHeader {
+  padding: 24px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 6px;
+  background: #ececfd;
+}
+
+.FirstHeading {
+  display: flex;
+  width: 45%;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  color: var(--secondary-color);
+  font-weight: 500;
+  line-height: 28px; /* 175% */
+}
+
+.SecondHeading {
+  display: flex;
+  width: 21%;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  color: var(--secondary-color);
+  font-weight: 500;
+  line-height: 28px; /* 175% */
+}
+
+.LastHeading {
+  display: flex;
+  width: 17%;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  color: var(--secondary-color);
+  font-weight: 500;
+  line-height: 28px; /* 175% */
+}

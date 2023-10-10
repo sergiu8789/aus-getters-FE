@@ -1,7 +1,12 @@
+'use client';
+import JobsTable from '@/components/Jobs/JobsTable/JobsTable';
+
 const AppliedJobsPage = () => {
-    return (
-      <div>Applied Jobs Page</div>
-    )
-  }
-  
-  export default AppliedJobsPage;
+  return (
+    <div>
+      <JobsTable type={'applied'} />
+    </div>
+  );
+};
+
+export default AppliedJobsPage;
