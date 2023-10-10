@@ -6,3 +6,11 @@
     height: 65px;
     width: auto;
 }
+.loginName{
+    color: var(--default-color);
+    font-size: 32px;
+}
+.signLink{
+    text-decoration: underline;
+    font-size: 32px;
+}
