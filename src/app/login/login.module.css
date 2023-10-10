@@ -29,6 +29,9 @@
     border-radius: 6px;
     transition: .5s;
     border: 1px solid var(--border-color);
+    background: transparent;
+    position: relative;
+    z-index: 2;
 }
 .passwordEye{
     right: 10px;
@@ -51,9 +54,18 @@
     font-size: 15px;
     transition: .2s;
 }
+.required{
+    color: var(--red-bg);
+    font-size: 10px;
+    margin-right: 5px;
+    font-weight: 500;
+}
 .formInput:not(:placeholder-shown)+.formLabel, .formInput:focus+.formLabel{
-    transform: scale(0.8) translateY(-26px) translateX(-20px);
-    -webkit-transform: scale(0.8) translateY(-26px) translateX(-20px);
+    transform: translateY(-20px) translateX(0px);
+    -webkit-transform: translateY(-20px) translateX(0px);
+    font-size: 10px;
+    color: var(--secondary-color);
+    z-index: 3;
 }
 .fromError{
     font-size: 12px;
@@ -92,5 +104,5 @@
     line-height: 26px;
     letter-spacing: -0.28px;
     font-size: 14px;
-    font-weight: 500;
+    font-weight: 600;
 }

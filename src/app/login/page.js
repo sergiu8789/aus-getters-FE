@@ -6,10 +6,12 @@ import Link from 'next/link';
 import Logo from '../../../public/assets/images/Logo.png';
 import LoginBg from '../../../public/assets/images/login_background.png';
 import passwordEye from '../../../public/assets/images/password.svg';
+import passwordClose from '../../../public/assets/images/password-close.svg';
 import { Formik } from 'formik';
 
 export default function page() {
   const [passwordText, setPasswordText] = useState('password');
+
   const showPassword = () => {
     if (passwordText === 'password') {
       setPasswordText('text');
@@ -17,10 +19,11 @@ export default function page() {
       setPasswordText('password');
     }
   };
+
   return (
     <React.Fragment>
       <div
-        className={`${styles.loginContainer} position-fixed col-12 d-inline-flex align-items-stretch start-0 top-0 end-0 bottom-0`}
+        className={`position-fixed col-12 d-inline-flex align-items-stretch start-0 top-0 end-0 bottom-0`}
       >
         <div className={`${styles.LogoBox} position-absolute d-inline-block`}>
           <Image src={Logo} className="object-fit-contain" alt="Logo"></Image>
@@ -89,8 +92,10 @@ export default function page() {
                     autoComplete="off"
                     className={`${styles.formInput} d-inline-block col-12`}
                   />
-                  <label className={`${styles.formLabel} position-absolute`}>
-                    * Email Address
+                  <label
+                    className={`${styles.formLabel} position-absolute d-inline-flex align-items-center`}
+                  >
+                    <span className={styles.required}>*</span> Email Address
                   </label>
                   {errors.email && touched.email && errors.email && (
                     <span className={`${styles.fromError} d-inline-block`}>
@@ -111,16 +116,29 @@ export default function page() {
                     autoComplete="off"
                     className={`${styles.formInput} d-inline-block col-12`}
                   />
-                  <label className={`${styles.formLabel} position-absolute`}>
-                    * Password
+                  <label
+                    className={`${styles.formLabel} position-absolute d-inline-flex align-items-center`}
+                  >
+                    <span className={styles.required}>*</span> Password
                   </label>
-                  <Image
-                    src={passwordEye}
-                    role="button"
-                    alt="Eye"
-                    onClick={() => showPassword()}
-                    className={`${styles.passwordEye} position-absolute`}
-                  />
+                  {passwordText === 'password' && (
+                    <Image
+                      src={passwordEye}
+                      role="button"
+                      alt="Eye"
+                      onClick={() => showPassword()}
+                      className={`${styles.passwordEye} position-absolute`}
+                    />
+                  )}
+                  {passwordText === 'text' && (
+                    <Image
+                      src={passwordClose}
+                      role="button"
+                      alt="Eye"
+                      onClick={() => showPassword()}
+                      className={`${styles.passwordEye} position-absolute`}
+                    />
+                  )}
                   {errors.password && touched.password && errors.password && (
                     <span className={`${styles.fromError} d-inline-block`}>
                       {errors.password}

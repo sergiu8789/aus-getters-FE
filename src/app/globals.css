@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap');
 :root{
-    --main-gradient-color: linear-gradient(45deg, #F178B6 0%, #605FEE 41.92%, #5D5FEF 41.93%, #6260ED 41.94%, #F178B6 100%);
+    --main-gradient-color: linear-gradient(62deg, #F178B6 0%, #605FEE 41.92%, #5D5FEF 41.93%, #6260ED 41.94%, #F178B6 100%);
     --default-color: #EF5DA8;
     --secondary-color: #5D5FEF;
     --input-border-color: #8182F3;
+    --step-line-bg: #ECECFD;
     --progress-line-bg: #A4A6F6;
     --btn-bg-color-1: #DADAFB;
     --btn-bg-border-1: #6F71F1;
