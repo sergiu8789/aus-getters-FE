@@ -8,11 +8,7 @@ const JobsTableRow = (props) => {
     <div className={styles.TableRowParent}>
       <div className={styles.RowFirstLine}>
         <div className={styles.ImageContainer}>
-          <img
-            src="your-image-url.jpg"
-            alt="Profile"
-            className={styles.Image}
-          />
+          <img src="Our-image-url.jpg" alt="Profile" className={styles.Image} />
         </div>
         <div className={styles.TextContainer}>
           <div className={styles.JobHeading}>Job Name</div>

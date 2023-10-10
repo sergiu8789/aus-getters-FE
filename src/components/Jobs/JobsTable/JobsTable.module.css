@@ -10,6 +10,8 @@
   border: 1px solid var(--secondary-color);
   font-weight: 500;
   line-height: normal;
+  text-decoration: none;
+  color: var(--text-black);
 }
 
 .BtnCustomSecondary {
@@ -24,6 +26,8 @@
   border: 1px solid #c4c4c4;
   font-weight: 500;
   line-height: normal;
+  text-decoration: none;
+  color: var(--dark-greys-4-a-5568, #4a5568);
 }
 
 .BtnWrapper {
@@ -33,7 +37,6 @@
 .SelectDropdown {
   display: flex;
   width: 203px;
-  height: 43px;
   padding: 12px;
   justify-content: space-between;
   align-items: center;
@@ -99,4 +102,9 @@
   color: var(--secondary-color);
   font-weight: 500;
   line-height: 28px; /* 175% */
+}
+
+.ArrowUpIcon {
+  padding-top: 63px;
+  padding-bottom: 72px;
 }
