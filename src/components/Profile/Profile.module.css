@@ -1,0 +1,17 @@
+.profile_buttons {
+    min-height: 120px;
+    background: var(--gradient-l-ight-gradient);
+}
+.profile_buttons button{
+    background: var(--btn-bg-color-2);
+    border:  1px solid var(--default-color);
+    border-radius: 6px;
+    font-family: Work Sans;
+    line-height: 100%;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: -0.32px;
+    min-height: 40px;
+    padding: 8px 12px;
+    color: var(--profile-btn-text-color);
+}
