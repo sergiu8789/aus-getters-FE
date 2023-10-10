@@ -15,3 +15,7 @@
     --profile-btn-text-color: #2B2B2B;
     --gradient-l-ight-gradient: radial-gradient(870.51% 158.13% at 103.75% -5.81%, #FBDAEB 0%, #DADAFB 45.05%, #FBDAEB 100%);    
 }
+    
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap');
+
+*{font-family: 'Work Sans';}
