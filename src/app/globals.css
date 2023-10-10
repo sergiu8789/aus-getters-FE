@@ -6,10 +6,12 @@
     --progress-line-bg: #A4A6F6;
     --btn-bg-color-1: #DADAFB;
     --btn-bg-border-1: #6F71F1;
+    --btn-bg-color-2: #FAC8E2;
     --green-bg: #389437;
     --light-green-bg: #E7FAE7;
     --red-bg: #B71F3A;
     --light-red-bg: #FFE3E8;
     --pink-border: #F178B6;
-    
+    --profile-btn-text-color: #2B2B2B;
+    --gradient-l-ight-gradient: radial-gradient(870.51% 158.13% at 103.75% -5.81%, #FBDAEB 0%, #DADAFB 45.05%, #FBDAEB 100%);    
 }
