@@ -1,0 +1,21 @@
+.jobsCountBoard {
+  color: var(--text-black);
+}
+
+.selectWrap {
+  width: 180px;
+}
+
+.select {
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  width: 100%;
+  color: var(--text-black);
+  font-weight: 500;
+  border: 1px solid var(--input-border-color);
+}
+
+.mb32 {
+  margin-bottom: 32px;
+}

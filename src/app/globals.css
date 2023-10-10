@@ -1,18 +1,51 @@
-:root{
-    --main-gradient-color: radial-gradient(870.51% 158.13% at 103.75% -5.81%, #F178B6 0%, #605FEE 41.92%, #5D5FEF 41.93%, #6260ED 41.94%, #F178B6 100%);
-    --default-color: #EF5DA8;
-    --secondary-color: #5D5FEF;
-    --input-border-color: #8182F3;
-    --progress-line-bg: #A4A6F6;
-    --btn-bg-color-1: #DADAFB;
-    --btn-bg-border-1: #6F71F1;
-    --green-bg: #389437;
-    --light-green-bg: #E7FAE7;
-    --red-bg: #B71F3A;
-    --light-red-bg: #FFE3E8;
-    --pink-border: #F178B6;
-    
-}
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap');
 
-*{font-family: 'Work Sans';}
+:root {
+  --main-gradient-color: radial-gradient(
+    870.51% 158.13% at 103.75% -5.81%,
+    #f178b6 0%,
+    #605fee 41.92%,
+    #5d5fef 41.93%,
+    #6260ed 41.94%,
+    #f178b6 100%
+  );
+  --default-color: #ef5da8;
+  --secondary-color: #5d5fef;
+  --input-border-color: #8182f3;
+  --progress-line-bg: #a4a6f6;
+  --btn-bg-color-1: #dadafb;
+  --btn-bg-border-1: #6f71f1;
+  --green-bg: #389437;
+  --light-green-bg: #e7fae7;
+  --red-bg: #b71f3a;
+  --light-red-bg: #ffe3e8;
+  --pink-border: #f178b6;
+
+  --light-grey-100: #f6f6f6;
+  --light-grey-200: #c4c4c4;
+  --light-grey-300: #d4d4d4;
+  --dark-grey-400: #888;
+  --white: #fff;
+
+  --text-black: #2b2b2b;
+  --text-grey-light: #989899;
+  --text-grey-dark: #595959;
+
+  --bg-light: #fafafa;
+}
+
+* {
+  font-family: 'Work Sans';
+}
+
+.text-black {
+  color: var(--text-black);
+}
+
+.text-grey-dark {
+  color: var(--text-grey-dark);
+}
+
+.text-grey-light {
+  color: var(--text-grey-light);
+}
