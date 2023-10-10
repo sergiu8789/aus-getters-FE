@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./login.module.css";
 import Image from "next/image";
+import Link from "next/link";
 import Logo from "../../../public/assets/images/Logo.png";
 import LoginBg from "../../../public/assets/images/login_background.png";
 
@@ -21,7 +22,15 @@ export default function page() {
           />
         </div>
         <div className="col-md-6 p-5">
-          
+          <h1
+            className={`${styles.loginTitle} col-12 justify-content-center d-inline-flex align-items-center`}
+          >
+            <span className={styles.loginName}>Sign In</span>
+            &nbsp;/&nbsp;
+            <Link href="/" className={styles.signLink}>
+              Sign Up
+            </Link>
+          </h1>
         </div>
       </div>
     </React.Fragment>

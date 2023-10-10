@@ -1,9 +1,9 @@
 import React from "react";
-import { Profile } from "@/components/Profile/MainProfilePage/Profile";
+import { AccountSetting } from "@/components/AccountSetting/MainAccountPage/AccountSetting";
 
 function page() {
     return <React.Fragment>
-        <Profile/>
+        <AccountSetting/>
     </React.Fragment>
   }
   
