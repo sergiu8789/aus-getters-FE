@@ -61,7 +61,7 @@ export default function page() {
               handleBlur,
               handleSubmit,
               isSubmitting
-              /* and other goodies */
+              //  and other goodies 
             }) => (
               <form
                 className={`${styles.loginFromBox} col-12 d-inline-flex flex-column`}
