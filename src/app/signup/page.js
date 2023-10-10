@@ -1,22 +1,13 @@
 'use client';
-import React, { useState } from 'react';
-import styles from './login.module.css';
+import React from 'react';
+import styles from './signup.module.css';
 import Image from 'next/image';
 import Link from 'next/link';
 import Logo from '../../../public/assets/images/Logo.png';
 import LoginBg from '../../../public/assets/images/login_background.png';
-import passwordEye from '../../../public/assets/images/password.svg';
 import { Formik } from 'formik';
 
 export default function page() {
-  const [passwordText, setPasswordText] = useState('password');
-  const showPassword = () => {
-    if (passwordText === 'password') {
-      setPasswordText('text');
-    } else if (passwordText === 'text') {
-      setPasswordText('password');
-    }
-  };
   return (
     <React.Fragment>
       <div
@@ -36,10 +27,10 @@ export default function page() {
           <h1
             className={`mb-5 col-12 justify-content-center d-inline-flex align-items-center`}
           >
-            <span className={styles.loginName}>Sign In</span>
+            <span className={styles.loginName}>Sign Up</span>
             &nbsp;/&nbsp;
-            <Link href="/signup" className={`text-black ${styles.signLink}`}>
-              Sign Up
+            <Link href="/login" className={`text-black ${styles.signLink}`}>
+              Sign In
             </Link>
           </h1>
           <Formik
@@ -102,7 +93,7 @@ export default function page() {
                   className={`${styles.loginFormFloating} col-12 position-relative d-inline-block`}
                 >
                   <input
-                    type={passwordText}
+                    type="password"
                     name="password"
                     onChange={handleChange}
                     onBlur={handleBlur}
@@ -114,13 +105,6 @@ export default function page() {
                   <label className={`${styles.formLabel} position-absolute`}>
                     * Password
                   </label>
-                  <Image
-                    src={passwordEye}
-                    role="button"
-                    alt="Eye"
-                    onClick={() => showPassword()}
-                    className={`${styles.passwordEye} position-absolute`}
-                  />
                   {errors.password && touched.password && errors.password && (
                     <span className={`${styles.fromError} d-inline-block`}>
                       {errors.password}

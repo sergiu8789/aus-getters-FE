@@ -25,16 +25,10 @@
 }
 .formInput{
     height: 50px;
-    padding: 12px 40px 12px 12px;
+    padding: 12px;
     border-radius: 6px;
     transition: .5s;
     border: 1px solid var(--border-color);
-}
-.passwordEye{
-    right: 10px;
-    top: 15px;
-    z-index: 5;
-    height: 20px;
 }
 .formInput:focus,.formInput:focus-visible, .formInput:not(:placeholder-shown){
     border: 1px solid var(--input-border-color);
