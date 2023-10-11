@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import styles from './SignupSteps.module.css';
 import Image from 'next/image';
 import { Formik } from 'formik';
@@ -737,7 +737,7 @@ const Step4 = ({ setRegisterStep }) => {
                         role="button"
                       />
                       <label
-                        for="still_working"
+                        htmlFor="still_working"
                         className={styles.purse}
                         role="button"
                       >
@@ -781,7 +781,12 @@ const Step4 = ({ setRegisterStep }) => {
   );
 };
 
-const Step5 = ({ setRegisterStep, changeProfile, highlightProfile }) => {
+const Step5 = ({
+  setRegisterStep,
+  changeProfile,
+  highlightProfile,
+  postRegisterDetail
+}) => {
   return (
     <React.Fragment>
       <div
@@ -823,7 +828,7 @@ const Step5 = ({ setRegisterStep, changeProfile, highlightProfile }) => {
                 role="button"
               >
                 <input
-                  id="settingOdds"
+                  id="changeProfile"
                   className={`${styles.btntoggle} position-absolute`}
                   type="checkbox"
                   checked={highlightProfile}
@@ -832,7 +837,7 @@ const Step5 = ({ setRegisterStep, changeProfile, highlightProfile }) => {
                 />
                 <label
                   className={styles.btntoggleLabel}
-                  htmlFor="settingOdds"
+                  htmlFor="changeProfile"
                   role="button"
                 ></label>
               </div>
@@ -922,8 +927,8 @@ const Step5 = ({ setRegisterStep, changeProfile, highlightProfile }) => {
   );
 };
 
-const SignupSteps = () => {
-  const [registerStep, setRegisterStep] = useState('1');
+const SignupSteps = ({ registerStepPop, setRegisterStepPop }) => {
+  const [registerStep, setRegisterStep] = useState('0');
   const [highlightProfile, setHighlightProfile] = useState(true);
 
   const changeProfile = () => {
@@ -936,7 +941,14 @@ const SignupSteps = () => {
 
   const postRegisterDetail = () => {
     setRegisterStep('0');
+    setRegisterStepPop(false);
   };
+
+  useEffect(() => {
+    if (registerStepPop === true) {
+      setRegisterStep('1');
+    }
+  }, [registerStepPop]);
 
   return (
     <React.Fragment>
