@@ -1,13 +1,19 @@
 'use client';
-import React from 'react';
+import React, { useState } from 'react';
 import styles from './forget.module.css';
 import Image from 'next/image';
 import Link from 'next/link';
-import Logo from '../../../public/assets/images/Logo.png';
+import Logo from '../../../public/assets/images/logo-employer.png';
 import LoginBg from '../../../public/assets/images/login_background.png';
 import { Formik } from 'formik';
 
 export default function Page() {
+  const [emailSent, setEmailSent] = useState(false);
+
+  const handleChangeEmail = () => {
+    setEmailSent(false);
+  };
+
   return (
     <React.Fragment>
       <div
@@ -50,7 +56,7 @@ export default function Page() {
             }}
             onSubmit={(values, { setSubmitting }) => {
               setTimeout(() => {
-                alert(JSON.stringify(values, null, 2));
+                setEmailSent(true);
                 setSubmitting(false);
               }, 400);
             }}
@@ -93,13 +99,23 @@ export default function Page() {
                     </span>
                   )}
                 </div>
-                <button
-                  type="submit"
-                  className={`${styles.fromSubmitBtn} col-12 d-inline-block`}
-                  disabled={isSubmitting}
-                >
-                  Submit
-                </button>
+                {emailSent === true ? (
+                  <div
+                    className={`col-12 d-inline-block ${styles.passwordMailSent}`}
+                  >
+                    Thank you. If the email you provided is associated with a
+                    valid account, you will be sent instructions on resetting
+                    your password.
+                  </div>
+                ) : (
+                  <button
+                    type="submit"
+                    className={`${styles.fromSubmitBtn} col-12 d-inline-block`}
+                    disabled={isSubmitting}
+                  >
+                    Submit
+                  </button>
+                )}
               </form>
             )}
           </Formik>

@@ -3,7 +3,7 @@
     left: 30px;
 }
 .LogoBox img{
-    height: 65px;
+    height: 40px;
     width: auto;
 }
 .forgetDesc{
@@ -103,4 +103,14 @@
     letter-spacing: -0.28px;
     font-size: 14px;
     font-weight: 600;
+}
+.passwordMailSent{
+    color: var(--email-sent-color);
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: -0.24px;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid var(--pink-border);
+    background: var(--btn-bg-color-1);
 }
