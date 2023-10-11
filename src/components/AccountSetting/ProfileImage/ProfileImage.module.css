@@ -3,19 +3,10 @@
     border: 0.5px solid var(--greys-d-4-d-4-d-4);
     background: var(--greys-fafafa);
 }
-.image_main_box h6 {
-    color: var(--profile-btn-text-color);
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 28px;
-    letter-spacing: -0.32px;
-}
 .image_main_box .dp_img {
-    width: 280px;
-    height: 280px;    
-}
-.profile_edit_btn {
-    width: calc(100% - 280px);
+    width: 100%;   
+    aspect-ratio: 1 / 1;
+    height: auto;
 }
 .image_main_box .profile_edit_btn p {
     color: var(--red-bg);
@@ -28,6 +19,11 @@
     background: var(--light-red-bg);
     min-width: 124px;
     min-height: 34px;
+
+}
+.image_main_box .profile_edit_btn .upload_pic_btn{
+    background: var(--iris-tints-tint-8);
+    color: var(--input-border-color);
 }
 .image_main_box .profile_edit_btn p:nth-child(2) {
     color: var(--input-border-color);

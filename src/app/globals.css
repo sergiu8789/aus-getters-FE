@@ -3,6 +3,7 @@
 :root{
     --main-gradient-color: radial-gradient(870.51% 158.13% at 103.75% -5.81%, #F178B6 0%, #605FEE 41.92%, #5D5FEF 41.93%, #6260ED 41.94%, #F178B6 100%);
     --default-color: #EF5DA8;
+    --fuschia-tints-tint-7: #FBDAEB;
     --secondary-color: #5D5FEF;
     --input-border-color: #8182F3;
     --progress-line-bg: #A4A6F6;
@@ -27,6 +28,8 @@
     --dark-greys-747474: #747474;
     --greys-d-4-d-4-d-: #D4D4D4;
     --greys-fafafa: #FAFAFA;
+    --iris-tints-tint-6: #C8C9FA;
+
 }
 
 *{font-family: 'Work Sans';}
