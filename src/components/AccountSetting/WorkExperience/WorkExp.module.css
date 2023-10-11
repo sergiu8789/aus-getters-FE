@@ -21,3 +21,15 @@
     display: inline-flex;
     padding: 4px 12px;
 }
+.add_skill_btn{
+    border-radius: 6px;
+    border: 1px solid var(--secondary-color);
+    background: var(--btn-bg-color-1);
+    color: var(--profile-btn-text-color);
+    width: 124px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: -0.32px;
+    min-height: 50px;
+}

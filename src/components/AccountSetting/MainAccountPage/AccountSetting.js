@@ -7,6 +7,8 @@ import VisibleEye from "../../../../public/assets/images/visible_eye.svg";
 import { SkillsAdd } from "../SkillsAdd/Skillsadd";
 import { SocialLinks } from "../SocialLinks/SocialLinks";
 import { EduTraining } from "../EduTraining/EduTraining";
+import { Workprefer } from "../WorkPreference/WorkPrefer";
+import { WorkExp } from "../WorkExperience/WorkExp";
 
 export const AccountSetting = () => {
     return (
@@ -65,6 +67,20 @@ export const AccountSetting = () => {
                 </div>
                 <div className={`${styles.user_basic_detail} row p-4 m-0 border-bottom`}>
                     <EduTraining/>
+                </div>
+                <div className={`${styles.user_basic_detail} row p-4 m-0 border-bottom`}>
+                    <Workprefer/>
+                </div>
+                <div className={`${styles.user_basic_detail} row p-4 m-0 border-bottom`}>
+                    <WorkExp/>
+                </div>
+                <div className={`${styles.user_basic_detail} row p-4 m-0 border-bottom`}>
+                    <div className="col-md-6">
+
+                    </div>
+                    <div className="col-md-6">
+                        
+                    </div>
                 </div>
             </div>
         </React.Fragment>
