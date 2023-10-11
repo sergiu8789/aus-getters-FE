@@ -71,6 +71,8 @@
 .registerModel{
     background: var(--white-color);
     padding: 80px;
+    height: 90vh;
+    max-height: 90vh;
 }
 .backStep{
     margin-bottom: 28px;
@@ -89,7 +91,7 @@
 .loginFormFloating{
     margin-bottom: 32px;
 }
-.formInput, .formTextarea{
+.formInput, .formTextarea, .formSelect{
     height: 50px;
     padding: 12px;
     border-radius: 6px;
@@ -103,7 +105,7 @@
     height: 135px;
     resize: none;
 }
-.formInput:focus,.formInput:focus-visible, .formInput:not(:placeholder-shown), .formTextarea:focus,.formTextarea:focus-visible, .formTextarea:not(:placeholder-shown){
+.formInput:focus, .formInput:focus-visible, .formInput:not(:placeholder-shown), .formTextarea:focus,.formTextarea:focus-visible, .formTextarea:not(:placeholder-shown), .formSelect:focus, .formSelect:focus-visible{
     border: 1px solid var(--input-border-color);
     outline: none;
 }
@@ -136,4 +138,12 @@
     border: 1px solid var(--input-border-color);
     border-radius: 6px;
     height: 132px;
+}
+.formSelect{
+    -webkit-appearance: none;
+    background-image: url(../../../public/assets/images/downArrow.svg);
+    background-repeat: no-repeat;
+    background-size: 24px;
+    background-position: right;
+    padding: 0 20px;
 }
