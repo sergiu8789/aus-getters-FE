@@ -1,6 +1,6 @@
 .edu_training_box {
     border-radius: 6px;
-    border: 0.5px solid var(--greys-d-4-d-4-d-4);
+    border: 0.5px solid var(--grey-d4d4d4);
     background: var(--greys-fafafa);
 }
 .edu_training_box .location_icon_text p {
