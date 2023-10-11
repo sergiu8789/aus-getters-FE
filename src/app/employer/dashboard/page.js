@@ -18,6 +18,7 @@ const EmployerDashboardPage = () => {
   return (
     <EmployerLayout>
       <div className={`${styles.dashboard_conatainer}`}>
+        {/* page title */}
         <Container className={`${styles.page_top}`}>
           <Row>
             <Col>
@@ -35,78 +36,85 @@ const EmployerDashboardPage = () => {
             </Col>
           </Row>
         </Container>
-
-        {/* Dashboard Card section */}
-        <Container>
-          <Row className="gx-3 gy-3">
-            {/* Job Posted Card */}
-            <Col>
-              <div className={`${styles.cards} d-flex`}>
-                <Image
-                  src={JobsCardImg}
-                  className={`${styles.card_img} d-inline-block`}
-                  alt="Job posted"
-                ></Image>
-                <div className="d-inline-block">
-                  <div className={`${styles.card_value} `}>20</div>
-                  <div className={`${styles.card_title} `}>Job Posted</div>
-                </div>
-              </div>
-            </Col>
-            {/* Applicants Card */}
-            <Col>
-              <div className={`${styles.cards} d-flex`}>
-                <Image
-                  src={CandidatesCardImg}
-                  className={`${styles.card_img} d-inline-block`}
-                  alt="Applicants"
-                ></Image>
-                <div className="d-inline-block">
-                  <div className={`${styles.card_value} `}>235</div>
-                  <div className={`${styles.card_title} `}>Applicants</div>
-                </div>
-              </div>
-            </Col>
-            {/* Shortlisted Applicants Card */}
-            <Col>
-              <div className={`${styles.cards} d-flex`}>
-                <Image
-                  src={ShortlistedApplicantsImg}
-                  className={`${styles.card_img} d-inline-block`}
-                  alt="Shortlisted Applicants"
-                ></Image>
-                <div className="d-inline-block">
-                  <div className={`${styles.card_value} `}>134</div>
-                  <div className={`${styles.card_title} `}>
-                    Shortlisted Applicants
+        <div className={`${styles.page_content}`}>
+          {/* Dashboard Card section */}
+          <Container >
+            <Row className="gx-3 gy-3">
+              {/* Job Posted Card */}
+              <Col>
+                <div className={`${styles.cards} d-flex`}>
+                  <Image
+                    src={JobsCardImg}
+                    className={`${styles.card_img} d-inline-block`}
+                    alt="Job posted"
+                  ></Image>
+                  <div className="d-inline-block">
+                    <div className={`${styles.card_value} `}>20</div>
+                    <div className={`${styles.card_title} `}>Job Posted</div>
                   </div>
                 </div>
-              </div>
-            </Col>
-          </Row>
-        </Container>
-        {/* Dashboard Graph and Notification section */}
-        <Container className={`${styles.section2}`}>
-        <Row className="gx-3 gy-3">
-            <Col sm={7}>
-              <CandidateTraficGraphComponent/>
-            </Col>
-            <Col sm={5}>
-              <NotificationComponent/>
-            </Col>
-          </Row>          
-        </Container>
-        {/* Dashboard Recent Jobs and Recent Applicants section */}
-        <Container className={`${styles.section3}`}>
-        <Row className="gx-3 gy-3">
-            <Col sm={6}>
-              <RecentJobsComponents/>
-            </Col>
-            <Col sm={6}>
-              <RecentApplicationsComponents/>
-            </Col>
-          </Row>          
-        </Container>
+              </Col>
+              {/* Applicants Card */}
+              <Col>
+                <div className={`${styles.cards} d-flex`}>
+                  <Image
+                    src={CandidatesCardImg}
+                    className={`${styles.card_img} d-inline-block`}
+                    alt="Applicants"
+                  ></Image>
+                  <div className="d-inline-block">
+                    <div className={`${styles.card_value} `}>235</div>
+                    <div className={`${styles.card_title} `}>Applicants</div>
+                  </div>
+                </div>
+              </Col>
+              {/* Shortlisted Applicants Card */}
+              <Col>
+                <div className={`${styles.cards} d-flex`}>
+                  <Image
+                    src={ShortlistedApplicantsImg}
+                    className={`${styles.card_img} d-inline-block`}
+                    alt="Shortlisted Applicants"
+                  ></Image>
+                  <div className="d-inline-block">
+                    <div className={`${styles.card_value} `}>134</div>
+                    <div className={`${styles.card_title} `}>
+                      Shortlisted Applicants
+                    </div>
+                  </div>
+                </div>
+              </Col>
+            </Row>
+          </Container>
+          {/* Dashboard Graph and Notification section */}
+          <Container className={`${styles.section2}`}>
+            <Row className="gx-3 gy-3">
+              <Col md={7}>
+                <CandidateTraficGraphComponent />
+              </Col>
+              <Col
+                md={5}
+                className=""
+                style={{
+                  textAlign: 'left'
+                }}
+              >
+                <NotificationComponent />
+              </Col>
+            </Row>
+          </Container>
+          {/* Dashboard Recent Jobs and Recent Applicants section */}
+          <Container className={`${styles.section3}`}>
+            <Row className="gx-3 gy-3">
+              <Col md={6}>
+                <RecentJobsComponents />
+              </Col>
+              <Col md={6}>
+                <RecentApplicationsComponents />
+              </Col>
+            </Row>
+          </Container>
+        </div>
       </div>
     </EmployerLayout>
   );

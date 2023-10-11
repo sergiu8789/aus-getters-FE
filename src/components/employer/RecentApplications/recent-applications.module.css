@@ -1,0 +1,47 @@
+.page_container {
+    /* width: 507px; */
+    /* height: 412px; */
+    flex-shrink: 0;
+    border-radius: 12px;
+    background: var(--greys-fafafa);
+    padding: 20px;
+    text-align: left;
+  }
+  
+  .title {
+    color: var(--dark-greys-4-a-5568);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px; /* 175% */
+    letter-spacing: -0.32px;
+    margin-bottom: 8px;
+  }
+  .recent_job_box {
+  }
+  .recent_job_item {
+    display: inline-flex;
+    padding: 12px 139px 21px 0px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    border-bottom: 0.5px solid var(--greys-d-4-d-4-d-4);
+  }
+  .recent_job_title {
+    color: var(--Black, #2b2b2b);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.32px;
+  }
+  .recent_job_info{
+    color: var(--dark-greys-595959);
+    font-weight: 400;
+    line-height: 26px; /* 185.714% */
+    letter-spacing: -0.28px;
+  }
+  .recent_job_icons {
+    width: var(--Icon-x16);
+    height: var(--Icon-x16);
+    padding: 1px;
+  }
+  

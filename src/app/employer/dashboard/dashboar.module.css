@@ -3,6 +3,9 @@
 
   font-style: normal;
 }
+.page_content{
+  padding-bottom: 10px;
+}
 .page_top {
   margin-top: 14px;
   height: 60px;
