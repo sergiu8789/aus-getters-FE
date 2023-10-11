@@ -1,0 +1,70 @@
+.HeaderCardMain {
+  border-radius: 18px;
+  background: #ececfd47;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.15);
+  margin-top: 19px;
+  padding: 34px;
+}
+.Innercard {
+  border-bottom: 1px solid #c4c4c4 !important;
+  padding-bottom: 28px;
+}
+.CardHeading {
+  color: var(--Black, #2b2b2b);
+  font-size: 20px;
+  font-weight: 700;
+  padding-bottom: 7px;
+}
+.Company {
+  margin-bottom: 29px;
+}
+
+.JobDetail {
+  display: flex;
+  padding: 4px 12px;
+  align-items: flex-start;
+  border-radius: 1000px;
+  border: 1px solid var(--secondary-color);
+  background: var(--btn-bg-color-1);
+  gap: 12px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 24px; /* 200% */
+}
+
+.OtherDetails {
+  display: flex;
+  line-height: 26px;
+  letter-spacing: -0.28px;
+  font-size: 14px;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+}
+
+.ImageContainer {
+  width: 146px;
+  height: 146px;
+  flex-shrink: 0;
+  border-radius: 24.792px;
+}
+
+.HeaderCardFooter {
+  margin-top: 27px;
+}
+
+.BtnCustomPrimary {
+  display: inline-flex;
+  width: 159px;
+  height: 40px;
+  padding: 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+  border-radius: var(--Radius-x6, 6px);
+  border: 1px solid var(--green-bg);
+  background: var(--light-green-bg);
+  color: var(--green-bg);
+  line-height: 28px;
+}

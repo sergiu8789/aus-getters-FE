@@ -27,3 +27,11 @@
 * {
   font-family: 'Work Sans';
 }
+
+.text-red {
+  color: var(--red-bg);
+}
+
+.text-black {
+  color: var(--text-black);
+}
