@@ -1,5 +1,5 @@
 'use client';
-import JobsTable from '@/components/Jobs/JobsTable/JobsTable';
+import JobsTable from '@/components/jobs/JobsTable/JobsTable';
 
 const AppliedJobsPage = () => {
   return (
