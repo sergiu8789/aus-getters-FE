@@ -5,7 +5,7 @@ const JobsFilters = () => {
     <div className={styles.jobsFilters}>
       <div className={styles.filtersHeader}>
         <div
-          className={`d-flex justify-content-between ${styles.filtersToggleWrap}`}
+          className={`d-flex justify-content-between align-items-center ${styles.filtersToggleWrap}`}
         >
           <span>Filters</span>
           <button>On</button>

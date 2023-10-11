@@ -22,7 +22,8 @@
   background: var(--light-grey-100);
   padding: 12px;
   border-radius: 6px;
-  border: 1px solid var(--grey);
+  border: 1px solid var(--grey, #888);
+  border: 1px solid var(--dark-greys-888888, #888);
 }
 
 .filtersToggleWrap span {

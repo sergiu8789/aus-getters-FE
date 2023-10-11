@@ -1,6 +1,6 @@
-import JobsFilters from '../JobsFilters/JobsFilters';
-import JobsListing from '../JobsListing/JobsListing';
-import JobsSearchForm from '../JobsSearchForm/JobsSearchForm';
+import JobsFilters from './JobsFilters/JobsFilters';
+import JobsListing from './JobsListing/JobsListing';
+import JobsSearchForm from './JobsSearchForm/JobsSearchForm';
 import styles from './JobsPortal.module.css';
 
 const JobsPortal = () => {

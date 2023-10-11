@@ -7,6 +7,43 @@
 .cardMain {
   display: flex;
   gap: 20px;
+  padding-bottom: 20px;
+}
+
+.cardDetails {
+  padding: 20px 0;
+}
+
+.cardDetails h4 {
+  font-size: 16px;
+}
+
+.cardDetails ul {
+  padding-left: 15px;
+}
+
+.cardDetails li + li {
+  margin-top: 12px;
+}
+
+.cardDetails p,
+.cardDetails li {
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.cardDetails h4,
+.cardDetails p,
+.cardDetails li {
+  color: var(--clr-black);
+}
+
+.cardExpandBox {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  border-top: 1px solid var(--light-grey-200);
+  padding: 12px;
 }
 
 .cardImageBox {

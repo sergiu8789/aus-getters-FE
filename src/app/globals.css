@@ -49,3 +49,23 @@
 .text-grey-light {
   color: var(--text-grey-light);
 }
+
+.btn-custom {
+  display: inline-block;
+  padding: 12px;
+  font-size: 14px;
+  border-radius: 6px;
+  line-height: 1;
+}
+
+.btn-custom--primary {
+  color: var(--text-black);
+  border: 1px solid var(--secondary-color);
+  background: var(--btn-bg-color-1);
+}
+
+.btn-custom--accent {
+  color: var(--white, #fff);
+  background: var(--main-gradient-color);
+  padding: 12px 30px;
+}
