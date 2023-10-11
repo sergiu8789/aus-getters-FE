@@ -5,6 +5,8 @@ import { ProfileImage } from "../ProfileImage/ProfileImage";
 import EditIcon from "../../../../public/assets/images/edit_icon.svg";
 import VisibleEye from "../../../../public/assets/images/visible_eye.svg";
 import { SkillsAdd } from "../SkillsAdd/Skillsadd";
+import { SocialLinks } from "../SocialLinks/SocialLinks";
+import { EduTraining } from "../EduTraining/EduTraining";
 
 export const AccountSetting = () => {
     return (
@@ -20,7 +22,7 @@ export const AccountSetting = () => {
                         <p>Visibility <Image src={VisibleEye} className={`object-fit-cover`} alt="VisibleEye"></Image></p>
                     </div>
                 </div>
-                <div className={`${styles.user_basic_detail} row px-4 m-0 border-bottom`}>
+                <div className={`${styles.user_basic_detail} row p-4 m-0 border-bottom`}>
                     <h6>Basic Details</h6>
                     <div className="col-md-6">
                         <p><span>First Name</span><br></br>Jason</p>
@@ -49,14 +51,20 @@ export const AccountSetting = () => {
                     <div className="col-12">
                         <p><span>Complete Address</span><br></br>onsectetur iaculis aliquam. Maecenas id arcu aliquam</p>                        
                     </div>
-                    <div className="col-12 pb-4">
+                    <div className="col-12">
                         <p><span>Description</span><br></br>
                             onsectetur iaculis aliquam. Maecenas id arcu aliquam, ultrices nibh eget, congue odio. Nam fringilla risus eget lacus venenatis scelerisque. Sed tempor arcu tellus, quis vehicula tortor bibendum et. Sed vestibulum odio sed ex blandit sodales. Ut id sollicitudin risus. Aliquam cursus ultricies sollicitudin. Aliquam feugiat elit feugiat leo consectetur, a sodales leo euismod. Aenean varius finibus tincidunt. Quisque non tellus et tellus feugiat venenatis sit amet a dolor. Aliquam ut dolor mollis, commodo libero quis, ullamcorper nisi.
                         </p>                        
                     </div>
                 </div>
-                <div className="row px-4 m-0">
+                <div className={`${styles.user_basic_detail} row p-4 m-0 border-bottom`}>
                     <SkillsAdd/>
+                </div>
+                <div className={`${styles.user_basic_detail} row p-4 m-0 border-bottom`}>
+                    <SocialLinks/>
+                </div>
+                <div className={`${styles.user_basic_detail} row p-4 m-0 border-bottom`}>
+                    <EduTraining/>
                 </div>
             </div>
         </React.Fragment>

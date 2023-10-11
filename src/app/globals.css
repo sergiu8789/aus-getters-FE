@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@100&family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap');
 :root{
-    --main-gradient-color: radial-gradient(870.51% 158.13% at 103.75% -5.81%, #F178B6 0%, #605FEE 41.92%, #5D5FEF 41.93%, #6260ED 41.94%, #F178B6 100%);
+    --main-gradient-color: linear-gradient(62deg, #F178B6 0%, #605FEE 41.92%, #5D5FEF 41.93%, #6260ED 41.94%, #F178B6 100%);
     --default-color: #EF5DA8;
     --fuschia-tints-tint-7: #FBDAEB;
     --secondary-color: #5D5FEF;
     --input-border-color: #8182F3;
+    --step-line-bg: #ECECFD;
     --progress-line-bg: #A4A6F6;
     --btn-bg-color-1: #DADAFB;
     --btn-bg-border-1: #6F71F1;
@@ -26,9 +27,10 @@
     --color-one: #1967D2;
     --grey-border: #C4C4C4;
     --dark-greys-747474: #747474;
-    --greys-d-4-d-4-d-: #D4D4D4;
+    --greys-d-4-d-4-d-4: #D4D4D4;
     --greys-fafafa: #FAFAFA;
     --iris-tints-tint-6: #C8C9FA;
+    --dark-greys-989899: #989899
 
 }
 
