@@ -213,6 +213,20 @@
     line-height: 26px;
     letter-spacing: -0.28px;
 }
+.profileVisible{
+    border-radius: 6px;
+    background: var(--greys-fafafa);
+    padding: 12px 32px;
+    border: 1px solid var(--grey-d4d4d4);
+}
+.visbleProfile img{
+    width: 24px;
+    height: 24px;
+}
+.visbleText{
+    font-size: 16px;
+    color: var(--dark-grey-4A5568);
+}
 .btntoggleLabel {
     background: #6f8898;
     transition: all .4s ease;
@@ -253,4 +267,10 @@
     width: 42px;
     height: 22px;
     opacity: 0;
+}
+.visibleInfo{
+    font-size: 14px;
+    color: var(--secondary-black);
+    font-weight: 400;
+    line-height: 26px;
 }

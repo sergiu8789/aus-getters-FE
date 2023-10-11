@@ -789,10 +789,22 @@ const Step5 = ({ setRegisterStep, changeProfile, highlightProfile }) => {
               <span className={styles.backLinkText}>Back</span>
             </div>
             <div
-              className={`${styles.profileVisible} col-12 d-inline-flex justify-content-between`}
+              className={`${styles.profileVisible} col-12 d-inline-flex justify-content-between align-items-center`}
             >
-              <div className={`${styles.profileBox} d-inline-flex flex-column`}>
-                
+              <div className={`d-inline-flex flex-column gap-1`}>
+                <div
+                  className={`${styles.visbleProfile} d-inline-flex align-items-center gap-3`}
+                >
+                  <Image
+                    src={profileVisble}
+                    alt=""
+                    className="object-fit-contain"
+                  />
+                  <span className={styles.visbleText}>Profile Visibility</span>
+                </div>
+                <p className={`${styles.visibleInfo} mb-0 d-inline-block`}>
+                  You can make your profile visible/non-visible
+                </p>
               </div>
               <div
                 className={`${styles.toggleSwitch} position-relative d-inline-block`}

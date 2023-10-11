@@ -16,7 +16,6 @@
     --red-bg: #B71F3A;
     --light-red-bg: #FFE3E8;
     --pink-border: #F178B6;
-    --profile-btn-text-color: #2B2B2B;
     --gradient-l-ight-gradient: radial-gradient(870.51% 158.13% at 103.75% -5.81%, #FBDAEB 0%, #DADAFB 45.05%, #FBDAEB 100%);    
     --black-color: #000;
     --white-color: #FFF;
@@ -31,10 +30,11 @@
     --color-one: #1967D2;
     --grey-border: #C4C4C4;
     --dark-greys-747474: #747474;
-    --greys-d-4-d-4-d-4: #D4D4D4;
+    --grey-d4d4d4: #D4D4D4;
     --greys-fafafa: #FAFAFA;
     --iris-tints-tint-6: #C8C9FA;
     --dark-greys-989899: #989899;
+    --dark-grey-4A5568: #4A5568;
 
 }
 
