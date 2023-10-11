@@ -1,0 +1,149 @@
+.registerLayer{
+    opacity: var(--bs-backdrop-opacity);
+}
+.registerPopup{
+    z-index: 1055;
+}
+.stepTitle{
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 44px;
+    color: var(--secondary-black);
+    margin-bottom: 32px;
+}
+.stepBlocks{
+    margin-bottom: 35px;
+}
+.stepCircle{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background: transparent;
+    border: 2px solid var(--white-color);
+    z-index: 5;
+}
+.stepCircle:before{
+    content: '';
+    height: 22px;
+    width: 22px;
+    border-radius: 50%;
+    background: var(--step-line-bg);
+    position: absolute;
+    margin: auto;
+    inset: 0;
+}
+.stepBlocks::after, .stepBlocks:before{
+    content: '';
+    height: 6px;
+    background: var(--step-line-bg);
+    left: 10px;
+    position: absolute;
+    display: inline-block;
+}
+.stepBlocks:before{
+    background: var(--progress-line-bg);
+    z-index: 2;
+}
+.stepBlocks::after{
+    right: 10px;
+}
+.activeStep1 .stepCircle1:before, .activeStep2 .stepCircle1:before, .activeStep2 .stepCircle2:before, .activeStep3 .stepCircle1:before, .activeStep3 .stepCircle2:before, .activeStep3 .stepCircle3:before, .activeStep4 .stepCircle1:before, .activeStep4 .stepCircle2:before, .activeStep4 .stepCircle3:before, .activeStep4 .stepCircle4:before, .activeStep5 .stepCircle1:before, .activeStep5 .stepCircle2:before, .activeStep5 .stepCircle3:before, .activeStep5 .stepCircle4:before, .activeStep5 .stepCircle5:before{
+    background: var(--main-gradient-color);
+}
+.activeStep1 .stepCircle1, .activeStep2 .stepCircle1, .activeStep2 .stepCircle2, .activeStep3 .stepCircle1, .activeStep3 .stepCircle2, .activeStep3 .stepCircle3, .activeStep4 .stepCircle1, .activeStep4 .stepCircle2, .activeStep4 .stepCircle3, .activeStep4 .stepCircle4, .activeStep5 .stepCircle1, .activeStep5 .stepCircle2, .activeStep5 .stepCircle3, .activeStep5 .stepCircle4, .activeStep5 .stepCircle5{
+    border: 2px solid var(--default-color);
+}
+.activeStep2:before{
+    width: 23%;
+}
+.activeStep3:before{
+    width: 48%;
+}
+.activeStep4:before{
+    width: 72%;
+}
+.activeStep5:before{
+    width: 95%;
+}
+.registerContent{
+    max-width: 760px;
+}
+.registerModel{
+    background: var(--white-color);
+    padding: 80px;
+    height: 90vh;
+    max-height: 90vh;
+}
+.backStep{
+    margin-bottom: 28px;
+}
+.backStep img{
+    height: 24px;
+    width: 24px;
+}
+.backLinkText{
+    font-size: 16px;
+    color: var(--secondary-black);
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: -0.32px;
+}
+.loginFormFloating{
+    margin-bottom: 32px;
+}
+.formInput, .formTextarea, .formSelect{
+    height: 50px;
+    padding: 12px;
+    border-radius: 6px;
+    transition: .5s;
+    border: 1px solid var(--border-color);
+    background: transparent;
+    position: relative;
+    z-index: 2;
+}
+.formTextarea{
+    height: 135px;
+    resize: none;
+}
+.formInput:focus, .formInput:focus-visible, .formInput:not(:placeholder-shown), .formTextarea:focus,.formTextarea:focus-visible, .formTextarea:not(:placeholder-shown), .formSelect:focus, .formSelect:focus-visible{
+    border: 1px solid var(--input-border-color);
+    outline: none;
+}
+.formInput::-webkit-input-placeholder, .formTextarea::-webkit-input-placeholder{
+    color: transparent;
+}
+.formLabel{
+    left: 12px;
+    top: 12px;
+    padding: 0 10px;
+    background: var(--white-color);
+    font-size: 15px;
+    transition: .2s;
+}
+.required{
+    color: var(--red-bg);
+}
+.formInput:not(:placeholder-shown)+.formLabel, .formInput:focus+.formLabel, .profileImageBox .formLabel, .formTextarea:not(:placeholder-shown)+.formLabel, .formTextarea:focus+.formLabel{
+    transform: translateY(-20px) translateX(0px);
+    -webkit-transform: translateY(-20px) translateX(0px);
+    font-size: 10px;
+    color: var(--secondary-color);
+    z-index: 3;
+}
+.fromError{
+    font-size: 12px;
+    color: var(--error-color);
+}
+.profileImageBox{
+    border: 1px solid var(--input-border-color);
+    border-radius: 6px;
+    height: 132px;
+}
+.formSelect{
+    -webkit-appearance: none;
+    background-image: url(../../../public/assets/images/downArrow.svg);
+    background-repeat: no-repeat;
+    background-size: 24px;
+    background-position: right;
+    padding: 0 20px;
+}
