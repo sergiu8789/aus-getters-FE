@@ -3,18 +3,26 @@ import styles from './SignupSteps.module.css';
 import Image from 'next/image';
 import { Formik } from 'formik';
 import backArrow from '../../../public/assets/images/backArrow.svg';
+import downArrow from '../../../public/assets/images/downArrow.svg';
 import documnet from '../../../public/assets/images/upload-documnet.png';
 import profile from '../../../public/assets/images/upload-profile.png';
 import nextArrow from '../../../public/assets/images/nextArrow.svg';
 import crossArrow from '../../../public/assets/images/redCross.svg';
 import location from '../../../public/assets/images/location.svg';
 import profileVisble from '../../../public/assets/images/sleepzzz.svg';
+import viewprofile from '../../../public/assets/images/view-profile.png';
+import visitCourse from '../../../public/assets/images/visit-course.png';
 
-const StepHeader = ({ title, step }) => {
+const StepHeader = ({ title, colorTitle, step }) => {
   return (
     <React.Fragment>
       <div className={`col-12 d-inline-flex flex-column`}>
-        <h2 className={`${styles.stepTitle} text-center`}>{title}</h2>
+        <h2 className={`${styles.stepTitle} text-center`}>
+          {title}{' '}
+          {colorTitle && (
+            <span className={styles.gradeintColor}>{colorTitle}</span>
+          )}
+        </h2>
         <div
           className={`${styles.stepBlocks} ${
             step === '1'
@@ -228,6 +236,7 @@ const Step1 = ({ setRegisterStep }) => {
               <span
                 className={`${styles.skipBtn} d-inline-flex align-items-center`}
                 role="button"
+                onClick={() => setRegisterStep('0')}
               >
                 Skip
               </span>
@@ -405,6 +414,7 @@ const Step2 = ({ setRegisterStep }) => {
               <span
                 className={`${styles.skipBtn} d-inline-flex align-items-center`}
                 role="button"
+                onClick={() => setRegisterStep('0')}
               >
                 Skip
               </span>
@@ -544,6 +554,7 @@ const Step3 = ({ setRegisterStep }) => {
               <span
                 className={`${styles.skipBtn} d-inline-flex align-items-center`}
                 role="button"
+                onClick={() => setRegisterStep('0')}
               >
                 Skip
               </span>
@@ -751,6 +762,7 @@ const Step4 = ({ setRegisterStep }) => {
               <span
                 className={`${styles.skipBtn} d-inline-flex align-items-center`}
                 role="button"
+                onClick={() => setRegisterStep('0')}
               >
                 Skip
               </span>
@@ -779,7 +791,7 @@ const Step5 = ({ setRegisterStep, changeProfile, highlightProfile }) => {
           className={`${styles.registerContent} col-12 d-flex h-100 align-items-center m-auto`}
         >
           <div className={`${styles.registerModel} overflow-y-auto col-12`}>
-            <StepHeader title="Lets Get Started" step="5" />
+            <StepHeader title="Lets Get" colorTitle="Started" step="5" />
             <div
               className={`${styles.backStep} d-inline-flex align-items-center gap-2`}
               role="button"
@@ -816,6 +828,7 @@ const Step5 = ({ setRegisterStep, changeProfile, highlightProfile }) => {
                   type="checkbox"
                   checked={highlightProfile}
                   onClick={changeProfile}
+                  role="button"
                 />
                 <label
                   className={styles.btntoggleLabel}
@@ -825,17 +838,79 @@ const Step5 = ({ setRegisterStep, changeProfile, highlightProfile }) => {
               </div>
             </div>
             <div
+              className={`${styles.profileListBox} mt-4 pt-4 col-12 d-inline-flex flex-column gap-4`}
+            >
+              <div
+                className={`${styles.viewProfileBox} ${
+                  highlightProfile === true && styles.viewProfileEnable
+                } col-12 d-inline-flex align-items-stretch flex-wrap overflow-hidden`}
+                role="button"
+              >
+                <div
+                  className={`${styles.imageBox} col-md-5 position-relative`}
+                >
+                  <Image
+                    src={viewprofile}
+                    alt="View Profile"
+                    className="object-fit-cover col-12 d-inline-block"
+                  />
+                </div>
+                <div
+                  className={`${styles.profileLinkBox} d-inline-flex flex-column col-md-7 position-relative`}
+                >
+                  <span className={styles.linkName}>View your Profile</span>
+                  <p className={`${styles.linkInfo} col-12 mb-0`}>
+                    Praesent tempor ante ac quam sollicitudin
+                  </p>
+                  <Image
+                    src={downArrow}
+                    alt="down arrow"
+                    className={`${styles.linkArrow} object-fit-contain`}
+                  />
+                </div>
+              </div>
+              <div
+                className={`${styles.viewProfileBox} col-12 d-inline-flex align-items-stretch flex-wrap overflow-hidden`}
+                role="button"
+              >
+                <div
+                  className={`${styles.imageBox} col-md-5 position-relative`}
+                >
+                  <Image
+                    src={visitCourse}
+                    alt="View Profile"
+                    className="object-fit-cover col-12 d-inline-block"
+                  />
+                </div>
+                <div
+                  className={`${styles.profileLinkBox} d-inline-flex flex-column col-md-7 position-relative`}
+                >
+                  <span className={styles.linkName}>Visit Courses</span>
+                  <p className={`${styles.linkInfo} col-12 mb-0`}>
+                    Praesent tempor ante ac quam sollicitudin
+                  </p>
+                  <Image
+                    src={downArrow}
+                    alt="down arrow"
+                    className={`${styles.linkArrow} object-fit-contain`}
+                  />
+                </div>
+              </div>
+            </div>
+            <div
               className={`${styles.skipBtnNav} col-12 d-inline-flex align-items-center justify-content-between`}
             >
               <span
                 className={`${styles.skipBtn} d-inline-flex align-items-center`}
                 role="button"
+                onClick={() => setRegisterStep('0')}
               >
                 Skip
               </span>
               <span
                 className={`${styles.nextBtn} d-inline-flex align-items-center gap-2 justify-content-center`}
                 role="button"
+                onClick={() => postRegisterDetail()}
               >
                 Register me <Image src={nextArrow} alt="nextArrow" />
               </span>
@@ -859,6 +934,10 @@ const SignupSteps = () => {
     }
   };
 
+  const postRegisterDetail = () => {
+    setRegisterStep('0');
+  };
+
   return (
     <React.Fragment>
       {registerStep > '0' && (
@@ -873,6 +952,7 @@ const SignupSteps = () => {
           setRegisterStep={setRegisterStep}
           changeProfile={changeProfile}
           highlightProfile={highlightProfile}
+          postRegisterDetail={postRegisterDetail}
         />
       )}
     </React.Fragment>
