@@ -30,7 +30,7 @@ export default function Page() {
             <span className={styles.loginName}>Forgot you password</span>
           </h1>
           <p
-            className={`${styles.forgetDesc} mb-3 col-12 justify-content-center d-inline-flex align-items-center`}
+            className={`${styles.forgetDesc} mb-3 col-12 text-left justify-content-center d-inline-flex align-items-center`}
           >
             Please enter the email address you’d like your password re-set
             message sent to
