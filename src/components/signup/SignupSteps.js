@@ -791,9 +791,9 @@ const Step5 = ({ setRegisterStep, changeProfile, highlightProfile }) => {
             <div
               className={`${styles.profileVisible} col-12 d-inline-flex justify-content-between`}
             >
-              <div className={`${styles.profileBox} d-inline-flex flex-column`}>
-                
-              </div>
+              <div
+                className={`${styles.profileBox} d-inline-flex flex-column`}
+              ></div>
               <div
                 className={`${styles.toggleSwitch} position-relative d-inline-block`}
                 role="button"

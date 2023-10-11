@@ -1,0 +1,165 @@
+.registerLayer {
+  opacity: var(--bs-backdrop-opacity);
+}
+
+.applyPopup {
+  z-index: 1055;
+}
+
+.applyContent {
+  max-width: 760px;
+}
+
+.applyModel {
+  background: var(--white-color);
+  padding: 60px 80px;
+  height: 90vh;
+  max-height: 90vh;
+}
+.applyModel::-webkit-scrollbar {
+  width: 5px;
+}
+.applyModel::-webkit-scrollbar-thumb {
+  background: var(--dark-grey);
+  border-radius: 5px;
+}
+.applyModel::-webkit-scrollbar-track {
+  background: var(--step-line-bg);
+}
+.backLinkText {
+  font-size: 16px;
+  color: var(--secondary-black);
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: -0.32px;
+}
+
+.nextBtn {
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: -0.32px;
+  border-radius: 6px;
+}
+
+.nextBtn {
+  padding: 12px 24px;
+  background: var(--btn-bg-color-1);
+  color: var(--secondary-black);
+  border: 1px solid var(--btn-bg-border-1);
+  min-width: 132px;
+}
+
+.pdfSection {
+  border: 1px solid #2b2b2b;
+  padding: 16px;
+  border-radius: 12px;
+}
+
+.customBtnPrimary {
+  display: flex;
+  width: 124px;
+  padding: 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  border-radius: var(--Radius-x6, 6px);
+  border: 1px solid var(--iris-100, #5d5fef);
+  background: var(--iris-tints-tint-7, #dadafb);
+}
+
+/* step header  */
+
+.stepTitle {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 44px;
+  color: var(--secondary-black);
+  margin-bottom: 32px;
+}
+.stepBlocks {
+  margin-bottom: 35px;
+}
+.stepBlocks::after,
+.stepBlocks:before {
+  content: '';
+  height: 6px;
+  background: var(--step-line-bg);
+  left: 10px;
+  position: absolute;
+  display: inline-block;
+}
+.stepBlocks:before {
+  background: var(--progress-line-bg);
+  z-index: 2;
+}
+.stepBlocks::after {
+  right: 10px;
+}
+
+.activeStep1 .stepCircle1:before,
+.activeStep2 .stepCircle1:before,
+.activeStep2 .stepCircle2:before,
+.activeStep3 .stepCircle1:before,
+.activeStep3 .stepCircle2:before,
+.activeStep3 .stepCircle3:before,
+.activeStep4 .stepCircle1:before,
+.activeStep4 .stepCircle2:before,
+.activeStep4 .stepCircle3:before,
+.activeStep4 .stepCircle4:before,
+.activeStep5 .stepCircle1:before,
+.activeStep5 .stepCircle2:before,
+.activeStep5 .stepCircle3:before,
+.activeStep5 .stepCircle4:before,
+.activeStep5 .stepCircle5:before {
+  background: var(--main-gradient-color);
+}
+.activeStep1 .stepCircle1,
+.activeStep2 .stepCircle1,
+.activeStep2 .stepCircle2,
+.activeStep3 .stepCircle1,
+.activeStep3 .stepCircle2,
+.activeStep3 .stepCircle3,
+.activeStep4 .stepCircle1,
+.activeStep4 .stepCircle2,
+.activeStep4 .stepCircle3,
+.activeStep4 .stepCircle4,
+.activeStep5 .stepCircle1,
+.activeStep5 .stepCircle2,
+.activeStep5 .stepCircle3,
+.activeStep5 .stepCircle4,
+.activeStep5 .stepCircle5 {
+  border: 2px solid var(--default-color);
+}
+.activeStep2:before {
+  width: 23%;
+}
+.activeStep3:before {
+  width: 48%;
+}
+.activeStep4:before {
+  width: 72%;
+}
+.activeStep5:before {
+  width: 95%;
+}
+
+.stepCircle {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background: transparent;
+  border: 2px solid var(--white-color);
+  z-index: 5;
+}
+.stepCircle:before {
+  content: '';
+  height: 22px;
+  width: 22px;
+  border-radius: 50%;
+  background: var(--step-line-bg);
+  position: absolute;
+  margin: auto;
+  inset: 0;
+}
