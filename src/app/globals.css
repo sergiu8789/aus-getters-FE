@@ -81,12 +81,10 @@
   font-family: 'Work Sans';
 }
 
+/* Utility classes */
+
 .text-black {
   color: var(--text-black);
-}
-
-.text-grey-dark {
-  color: var(--text-grey-dark);
 }
 
 .text-grey-light {

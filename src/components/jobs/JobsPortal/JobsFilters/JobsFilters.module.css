@@ -24,6 +24,6 @@
   color: var(--text-black);
 } */
 
-.filterDropdown button[aria-expanded='true'] {
-  /* background-color: #fff0a6; */
-}
+/* .filterDropdown button[aria-expanded='true'] {
+  background-color: #fff0a6;
+} */
