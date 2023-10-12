@@ -148,7 +148,7 @@ const Step1 = ({ setRegisterStep, onClose }) => {
                         <span>{file.name}</span>
                       </div>
                       {file.selected && (
-                        <span className={`${styles.pdfName} `}>
+                        <span className={`${styles.selected} `}>
                           {'Selected'}
                         </span>
                       )}
