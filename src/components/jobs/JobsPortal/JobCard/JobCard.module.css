@@ -1,100 +1,80 @@
 .card {
-  border-radius: 6px;
+  border-radius: 8px;
   border: 1px solid var(--grey-d4d4d4);
-  background: var(--greys-fafafa);
+  background: var(--white-color);
 }
-
 .cardMain {
-  display: flex;
-  gap: 20px;
   padding-bottom: 20px;
 }
-
-.salaryInfo {
-  font-weight: 600;
-}
-
-.cardDetails h4 {
-  font-size: 16px;
-}
-
-.cardDetails ul {
-  padding-left: 15px;
-}
-
-.cardDetails li + li {
-  margin-top: 12px;
-}
-
-.cardDetails p,
-.cardDetails li {
-  font-size: 14px;
-  line-height: 1.8;
-}
-
-.cardDetails h4,
-.cardDetails p,
-.cardDetails li {
-  color: var(--clr-black);
-}
-
-.cardExpandBox {
-  display: flex;
-  justify-content: center;
-  align-items: end;
-  border-top: 1px solid var(--light-grey-200);
-  padding: 12px;
-}
-
 .cardImageBox {
   background: var(--grey-d4d4d4);
   width: 106px;
   height: 106px;
 }
-
 .cardInfo {
   flex: 1;
-  display: flex;
-  justify-content: space-between;
+  padding-right: 20px;
 }
-
 .cardTitle {
   color: var(--clr-black);
   font-size: 16px;
   font-weight: 500;
   margin-bottom: 0.5rem;
 }
-
-.cardSubtitle {
-  color: var(--clr-grey-light);
+.companyLink{
+  color: var(--secondary-black);
   font-size: 14px;
   font-weight: 500;
+  transition: .2s;
 }
-
-.iconWithText span {
-  font-size: 14px;
-}
-
-.labels {
-  display: flex;
-  gap: 20px;
-}
-
-.label {
+.companyLink:after{
+  content: '';
+  background-image: url(../../../../../public/assets/images/link-new-tab.svg);
+  height: 12px;
+  width: 12px;
+  background-size: 12px;
   display: inline-block;
-  padding: 6px 12px;
-  font-size: 12px;
-  border-radius: 1000px;
-  color: var(--secondary-color);
-  background: var(--btn-bg-color-1);
-  font-weight: 500;
-  line-height: 1.5;
+  margin-right: 5px;
 }
-
-.cardInfoActions {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  justify-content: space-between;
-  align-items: end;
+.companyLink:hover{
+  color: var(--secondary-color);
+}
+.salaryInfo {
+  font-size: 14px;
+  color: var(--secondary-black);
+}
+.jobPostTime{
+  font-size: 12px;
+  color: var(--secondary-black);
+}
+.cardDetailRow img{
+  height: 16px;
+  width: 16px;
+}
+.jobStatusType{
+  bottom: 20px;
+  right: 20px;
+}
+.ActiveType, .failedType{
+  padding: 12px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 26px;
+  border-radius: 6px;
+}
+.failedType{
+  color: var(--red-bg);
+  background: var(--light-red-bg);
+}
+.ActiveType{
+  color: var(--green-bg);
+  background: var(--light-green-bg);
+}
+.jobSavedType{
+  top: 20px;
+  right: 20px;
+}
+.bookmarkJob img{
+  height: 36px;
+  width: 36px;
 }

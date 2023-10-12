@@ -32,9 +32,7 @@ const JobsListing = () => {
       <div className={styles.jobsContainer}>
         <div className={styles.jobsList}>
           {[1, 2, 3, 4, 5].map((i) => (
-            <div key={i}>
-              <JobCard />
-            </div>
+            <JobCard key={i} />
           ))}
         </div>
         <div className={styles.jobDetailsWrap}>
