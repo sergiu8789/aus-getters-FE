@@ -1,0 +1,33 @@
+.formSelect{
+    height: 50px;
+    border-radius: 6px;
+    border: 1px solid var(--grey-d4d4d4);
+    -webkit-appearance: none;
+    background-image: url(../../../../public/assets/images/downArrow.svg);
+    background-repeat: no-repeat;
+    background-size: 24px;
+    background-position: 98%;
+    padding: 0 20px 0 35px;
+    color: var(--dark-greys-989899);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: -0.28px;
+}
+.close_rmv_skill {
+    top: 50%;
+    transform: translateY(-50%);
+    left: 25px;
+}
+.add_skill_btn{
+    border-radius: 6px;
+    border: 1px solid var(--secondary-color);
+    background: var(--btn-bg-color-1);
+    color: var(--secondary-black);
+    width: 124px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: -0.32px;
+    min-height: 50px;
+}

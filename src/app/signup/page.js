@@ -13,6 +13,7 @@ import SignupSteps from '@/components/signup/SignupSteps';
 
 export default function page() {
   const [passwordText, setPasswordText] = useState('password');
+  const [registerStepPop, setRegisterStepPop] = useState(false);
 
   const showPassword = () => {
     if (passwordText === 'password') {
@@ -68,7 +69,7 @@ export default function page() {
             }}
             onSubmit={(values, { setSubmitting }) => {
               setTimeout(() => {
-                alert(JSON.stringify(values, null, 2));
+                setRegisterStepPop(true);
                 setSubmitting(false);
               }, 400);
             }}
@@ -287,7 +288,9 @@ export default function page() {
           </div>
         </div>
       </div>
-      <SignupSteps />
+      {registerStepPop === true && (
+        <SignupSteps registerStepPop={registerStepPop} setRegisterStepPop={setRegisterStepPop} />
+      )}
     </React.Fragment>
   );
 }
