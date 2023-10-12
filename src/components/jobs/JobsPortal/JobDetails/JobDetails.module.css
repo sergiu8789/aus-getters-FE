@@ -1,0 +1,80 @@
+.jobDetails {
+  padding: 0 20px 20px 20px;
+  border-radius: 6px;
+  border: 1px solid var(--light-grey-300);
+  background: var(--bg-light);
+  height: 100%;
+  overflow: auto;
+  color: var(--text-black);
+}
+
+.jobDetails .pb-12 {
+  padding-bottom: 12px;
+}
+
+.jobHeader {
+  position: sticky;
+  top: 0;
+  background-color: inherit;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.jobHeaderMain {
+  display: flex;
+  gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--bs-border-color);
+}
+
+.jobImage {
+  background: var(--light-grey-300);
+  width: 70px;
+  height: 70px;
+}
+
+.jobTitle {
+  font-size: 20px;
+}
+
+.jobSubtitle {
+  font-size: 16px;
+}
+
+.jobProperties {
+  padding: 10px 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+  border-bottom: 1px solid var(--bs-border-color);
+}
+
+.jobProperty {
+  font-size: 14px;
+}
+
+.jobDescription {
+  padding: 12px 0;
+}
+
+.jobDescription h3 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.jobDescription ul {
+  display: grid;
+  gap: 6px;
+}
+
+.jobDescription p,
+.jobDescription li {
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.jobInfo {
+}
+
+.jobFoooter {
+}

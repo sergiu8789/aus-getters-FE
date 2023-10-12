@@ -1,0 +1,100 @@
+.card {
+  border-radius: 6px;
+  border: 1px solid var(--light-grey-300);
+  background: var(--bg-light);
+}
+
+.cardMain {
+  display: flex;
+  gap: 20px;
+  padding-bottom: 20px;
+}
+
+.salaryInfo {
+  font-weight: 600;
+}
+
+.cardDetails h4 {
+  font-size: 16px;
+}
+
+.cardDetails ul {
+  padding-left: 15px;
+}
+
+.cardDetails li + li {
+  margin-top: 12px;
+}
+
+.cardDetails p,
+.cardDetails li {
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.cardDetails h4,
+.cardDetails p,
+.cardDetails li {
+  color: var(--clr-black);
+}
+
+.cardExpandBox {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  border-top: 1px solid var(--light-grey-200);
+  padding: 12px;
+}
+
+.cardImageBox {
+  background: var(--light-grey-300);
+  width: 106px;
+  height: 106px;
+}
+
+.cardInfo {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cardTitle {
+  color: var(--clr-black);
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.cardSubtitle {
+  color: var(--clr-grey-light);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.iconWithText span {
+  font-size: 14px;
+}
+
+.labels {
+  display: flex;
+  gap: 20px;
+}
+
+.label {
+  display: inline-block;
+  padding: 6px 12px;
+  font-size: 12px;
+  border-radius: 1000px;
+  color: var(--secondary-color);
+  background: var(--btn-bg-color-1);
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.cardInfoActions {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  align-items: end;
+}
