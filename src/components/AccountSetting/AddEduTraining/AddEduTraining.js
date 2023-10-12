@@ -1,28 +1,44 @@
 import React from "react";
 import { Formik } from 'formik';
-import styles from './Addworkexperience.module.css';
+import styles from './AddEduTraining.module.css'
 import Image from "next/image";
 import UploadImg from "../../../../public/assets/images/upload-documnet.png"
 import Closebtn from "../../../../public/assets/images/x_blk_close.svg"
 
-export const Addworkexperience = () => {
+export const AddEduTraining = () => {
     return (
         <React.Fragment>
             <div className={`${styles.add_work_exp} col-12 p-4`}>
                 <div className="d-flex justify-content-between">
-                    <h6>Add Work Experience</h6>
+                    <h6>Add Education & Training</h6>
                     <Image src={Closebtn} className=""/>
                 </div>
                 <Formik>
                     <from className="row">
                         <div className="col-lg-6 mb-3 pb-2">
-                            <input type="text" name="CompanyName" placeholder="Company Name" className={`${styles.formInput} w-100`}/>
+                            <select className={`${styles.formInput_arrow} w-100`} role="button">
+                                <option value="SelectEdu">Select Education or Training </option>
+                                <option value="2">2</option>
+                            </select>
+                        </div>
+                        <div className="col-lg-6 mb-3 pb-2">
+                            <input type="text" name="* NameSchoolInstitution" placeholder="Name of School/Institution" className={`${styles.formInput} w-100`}/>
                         </div>
                         <div className="col-lg-6 mb-3 pb-2">
                             <input type="text" name="Location" placeholder="Location" className={`${styles.formInput_loca} w-100`}/>
                         </div>
+                        <div className="col-lg-6 mb-3 d-sm-flex align-items-center justify-content-between gap-2 pb-2">
+                            <select className={`${styles.formInput_arrow} w-50`} role="button">
+                                <option value="Score/GPA">Score/GPA</option>
+                                <option value="2">2</option>
+                            </select>
+                            <input type="text" name="* NameSchoolInstitution" placeholder="Enter Score/GPA" className={`${styles.formInput} w-50`}/>
+                        </div>
                         <div className="col-lg-6 mb-3 pb-2">
-                            <input type="text" name="Title" placeholder="Title" className={`${styles.formInput_arrow} w-100`}/>
+                            <select className={`${styles.formInput_arrow} w-100`} role="button">
+                                <option value="Specialization">Specialization </option>
+                                <option value="2">2</option>
+                            </select>
                         </div>
                         
                         <div className="col-lg-6 mb-3 d-sm-flex align-items-center justify-content-between gap-2 pb-2">
@@ -37,7 +53,7 @@ export const Addworkexperience = () => {
                             </select>
                             <div className="d-flex align-items-center gap-2">
                                 <input type="checkbox" />
-                                <p className="m-0">Still working</p>
+                                <p className="m-0">Still pursuing</p>
                             </div>
                         </div>
                         <div className={`col-lg-6 mb-3 pb-2 h-100`}>

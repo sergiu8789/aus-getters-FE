@@ -11,7 +11,7 @@ export const Resume = () => {
         <React.Fragment>
             <div className={`${styles.resume_container} p-3 py-4`}>
                 <div className="d-flex justify-content-between pb-2">
-                    <h6>Education & Training</h6>
+                    <h6>Resume</h6>
                     <p className={`${styles.edu_edit_btn} m-0 d-flex gap-1 align-items-center`}>Edit <Image src={EditIcon} className={`object-fit-cover`} alt="EditIcon"></Image></p>                    
                 </div>
                 <div className={`${styles.single_resume_box} p-3 mb-3 d-flex justify-content-between align-items-center`}>

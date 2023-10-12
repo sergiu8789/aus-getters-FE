@@ -16,6 +16,9 @@ import { EditBasicdetails } from "../BasicDetails/EditBasicdetails";
 import { Skillspopup } from "../SkillsDropOptions/Skillspopup";
 import { Sociallinkpopup } from "../SocialLinkPopUp/Sociallinkpopup";
 import { Addworkexperience } from "../AddWorkExperience/Addworkexperience";
+import { AddEduTraining } from "../AddEduTraining/AddEduTraining";
+import { UploadResume } from "../UploadResume/UploadResume";
+import { UploadCoverLetter } from "../UploadCoverLetter/UploadCoverLetter";
 
 export const AccountSetting = () => {
     return (
@@ -45,6 +48,7 @@ export const AccountSetting = () => {
                 </div>
                 <div className={`${styles.user_basic_detail} row p-4 m-0 border-bottom`}>
                     <EduTraining/>
+                    <AddEduTraining/>
                 </div>
                 <div className={`${styles.user_basic_detail} row p-4 m-0 border-bottom`}>
                     <Workprefer/>
@@ -59,6 +63,10 @@ export const AccountSetting = () => {
                     </div>
                     <div className="col-md-6">
                         <Coverletter/>
+                    </div>
+                    <div className="col-12">
+                        <UploadResume/>
+                        <UploadCoverLetter/>
                     </div>
                 </div>
             </div>
