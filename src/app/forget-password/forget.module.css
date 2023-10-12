@@ -6,8 +6,12 @@
     left: 30px;
 }
 .LogoBox img{
-    height: 65px;
+    height: 40px;
     width: auto;
+}
+.forgetDesc{
+    font-size: 14px;
+    color: var(--secondary-black);
 }
 .loginName{
     color: var(--default-color);
@@ -35,12 +39,6 @@
     background: transparent;
     position: relative;
     z-index: 2;
-}
-.passwordEye{
-    right: 10px;
-    top: 15px;
-    z-index: 5;
-    height: 20px;
 }
 .formInput:focus,.formInput:focus-visible, .formInput:not(:placeholder-shown){
     border: 1px solid var(--input-border-color);
@@ -109,34 +107,13 @@
     font-size: 14px;
     font-weight: 600;
 }
-.thirdPartyLoginBtn{
-    height: 48px;
-    border: 1px solid var(--secondary-black);
-    color: var(--secondary-black);
+.passwordMailSent{
+    color: var(--email-sent-color);
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: -0.24px;
+    padding: 12px;
     border-radius: 6px;
-}
-.thirdPartyLoginBtn img{
-    height: 24px;
-    width: 24px;
-    object-fit: contain;
-    left: 15px;
-    top: 50%;
-    margin-top: -12px;
-}
-.orLabel span{
-    font-size: 14px;
-    color: var(--secondary-black);
-    background: var(--white-color);
-    z-index: 2;
-}
-.orLabel:before{
-    content: '';
-    position: absolute;
-    left: 0;
-    width: 100%;
-    border-top: 1px solid var(--secondary-black);
-    top: 50%;
-    margin-top: 1px;
-    display: inline-block;
-    opacity: 0.2;
+    border: 1px solid var(--pink-border);
+    background: var(--btn-bg-color-1);
 }

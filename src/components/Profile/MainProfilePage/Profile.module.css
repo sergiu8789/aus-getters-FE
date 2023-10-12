@@ -1,0 +1,113 @@
+.profile_buttons {
+    min-height: 120px;
+    background: var(--gradient-l-ight-gradient);
+}
+.profile_buttons button{
+    background: var(--btn-bg-color-2);
+    border:  1px solid var(--default-color);
+    border-radius: 6px;    
+    line-height: 100%;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: -0.32px;
+    min-height: 40px;
+    padding: 8px 12px;
+    color: var(--secondary-black);
+    min-width: 125px;
+}
+.profile_buttons .profile_edit_btn {
+    border: 1px solid var(--secondary-color);
+    background: var(--btn-bg-color-1);
+    color: var(--secondary-color);    
+}
+.user_profile_container, .user_complete_detail {
+    border-radius: 0px 0px 18px 18px;
+    background: var(--detail-box-bg);
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.15);
+}
+.user_profile_pic img{
+    max-width: 165px;
+    max-height: 165px;
+    border-radius: 50%;
+    margin-top: -72px;
+}
+.user_profile_detail h6 {    
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: -0.32px;
+    color: var(--secondary-black);
+}
+.user_profile_detail p {
+    color: var(--dark-greys-595959);    
+    font-size: 14px;
+    line-height: 26px;
+    letter-spacing: -0.28px;
+}
+.user_profile_btn p {
+    border-radius: 30px;
+    border: 1px solid var(--secondary-color);
+    background: var(--btn-bg-color-1);
+    color: var(--secondary-color);    
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.24px;
+    padding: 4px 12px;
+}
+.about_user_text h5, .user_complete_detail h5 {
+    color: var(--secondary-black);
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: -0.4px;
+}
+.about_user_text p {
+    color: var(--secondary-black);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: -0.32px;
+}
+.edu_work_exp_box{
+    border-color: var(--grey-border);
+}
+.user_education p{
+    color: var(--dark-greys-595959);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 26px;
+}
+.user_education .text_ef5da8{
+    color: var(--default-color);
+}
+.user_education .text_1967D2{
+    color: var(--color-one);
+}
+.user_education .initial_edu, .user_education .initial_work {
+    color: var(--color-five);
+    border-radius: 50%;
+    font-family: Jost;
+    font-size: 11px;
+    font-weight: 700;
+    width: 30px;
+    height: 30px;
+    background-color: rgb(217, 48, 37, 0.15);
+}
+.user_education .initial_work{
+    color: var(--color-one);
+    background-color: rgb(25, 103, 210, 0.15);
+}
+.education_descr{
+    width: calc(100% - 30px);
+}
+.user_education p span{
+    color: var(--default-color);
+    font-size: 13px;
+    border-radius: 60px;
+    background: rgb(239, 93, 168, 0.15);
+    padding: 5px 20px;
+    
+}
+.user_education .work_exp_descr p span {
+    color: var(--color-one);
+    background-color: rgb(25, 103, 210, 0.15);
+}

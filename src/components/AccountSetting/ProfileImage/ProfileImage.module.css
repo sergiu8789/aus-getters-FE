@@ -1,0 +1,31 @@
+.image_main_box {
+    border-radius: 6px;
+    border: 0.5px solid var(--grey-d4d4d4);
+    background: var(--greys-fafafa);
+}
+.image_main_box .dp_img {
+    width: 100%;   
+    aspect-ratio: 1 / 1;
+    height: auto;
+}
+.image_main_box .profile_edit_btn p {
+    color: var(--red-bg);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: -0.28px;
+    border-radius: 4px;
+    padding: 0 12px;
+    background: var(--light-red-bg);
+    min-width: 124px;
+    min-height: 34px;
+
+}
+.image_main_box .profile_edit_btn .upload_pic_btn{
+    background: var(--iris-tints-tint-8);
+    color: var(--input-border-color);
+}
+.image_main_box .profile_edit_btn p:nth-child(2) {
+    color: var(--input-border-color);
+    background: var(--iris-tints-tint-8);
+}
