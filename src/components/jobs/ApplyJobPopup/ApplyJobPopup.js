@@ -40,7 +40,7 @@ const StepHeader = ({ title, step }) => {
   );
 };
 
-const Step1 = ({ setRegisterStep }) => {
+const Step1 = ({ setRegisterStep, onClose }) => {
   const [pdfFiles, setPdfFiles] = useState([
     { name: 'product Design Resume.pdf', selected: false },
     { name: 'Visual Design Resume.pdf', selected: false },
@@ -91,7 +91,9 @@ const Step1 = ({ setRegisterStep }) => {
             <div
               className={`${styles.backStep} d-inline-flex align-items-center gap-2`}
               role="button"
-              onClick={() => setRegisterStep('0')}
+              onClick={() => {
+                onClose();
+              }}
             >
               <Image src={backArrow} alt="Back" />
               <span className={styles.backLinkText}>Back</span>
@@ -311,7 +313,7 @@ const Step2 = ({ setRegisterStep }) => {
   );
 };
 
-const Step3 = ({ setRegisterStep }) => {
+const Step3 = ({ setRegisterStep, onClose }) => {
   return (
     <div
       className={`${styles.applyPopup} position-fixed h-100 col-12 d-inline-block start-0 top-0`}
@@ -444,6 +446,10 @@ const Step3 = ({ setRegisterStep }) => {
             <button
               type="submit"
               className={`${styles.nextBtn} d-inline-flex align-items-center gap-2 justify-content-center`}
+              onClick={() => {
+                onClose();
+                setRegisterStep('1');
+              }}
             >
               Submit <Image src={nextArrow} alt="nextArrow" />
             </button>
@@ -454,17 +460,27 @@ const Step3 = ({ setRegisterStep }) => {
   );
 };
 
-const ApplyJobPopup = () => {
+const ApplyJobPopup = (props) => {
+  const { show, onClose } = props;
   const [registerStep, setRegisterStep] = useState('1');
   return (
-    <div>
-      {registerStep > '0' && (
-        <div className={`${styles.registerLayer} modal-backdrop`}></div>
+    <>
+      {show && (
+        <div>
+          {registerStep > '0' && (
+            <div className={`${styles.registerLayer} modal-backdrop`}></div>
+          )}
+
+          {registerStep === '1' && (
+            <Step1 setRegisterStep={setRegisterStep} onClose={onClose} />
+          )}
+          {registerStep === '2' && <Step2 setRegisterStep={setRegisterStep} />}
+          {registerStep === '3' && (
+            <Step3 setRegisterStep={setRegisterStep} onClose={onClose} />
+          )}
+        </div>
       )}
-      {registerStep === '1' && <Step1 setRegisterStep={setRegisterStep} />}
-      {registerStep === '2' && <Step2 setRegisterStep={setRegisterStep} />}
-      {registerStep === '3' && <Step3 setRegisterStep={setRegisterStep} />}
-    </div>
+    </>
   );
 };
 

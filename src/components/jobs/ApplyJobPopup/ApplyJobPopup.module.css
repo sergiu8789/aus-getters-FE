@@ -65,7 +65,7 @@
 }
 
 .pdfSection {
-  border: 1px solid #2b2b2b;
+  border: 1px solid var(--grey-d4d4d4);
   padding: 16px;
   border-radius: 12px;
 }
@@ -94,11 +94,11 @@
 }
 
 .pdfItem {
-  border-bottom: 1px solid #000; /* Adjust the border style as needed */
+  border-bottom: 1px solid var(--grey-d4d4d4);
 }
 
 .pdfItem:last-child {
-  border-bottom: none; /* Remove the border from the last item */
+  border-bottom: none;
 }
 
 .customBtnPrimary {
