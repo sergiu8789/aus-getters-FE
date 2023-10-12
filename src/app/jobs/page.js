@@ -1,7 +1,7 @@
-import React from 'react';
+import JobsPortal from '@/components/jobs/JobsPortal/JobsPortal';
 
 const JobsPage = () => {
-  return <React.Fragment>JobsPage</React.Fragment>;
+  return <JobsPortal />;
 };
 
 export default JobsPage;

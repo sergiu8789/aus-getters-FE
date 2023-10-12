@@ -1,0 +1,39 @@
+/* .jobListing {
+  max-width: 1200px;
+  margin: 0 auto;
+} */
+
+.selectWrap {
+  width: 180px;
+}
+
+.select {
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  width: 100%;
+  color: var(--text-black);
+  font-weight: 500;
+  border: 1px solid var(--input-border-color);
+}
+
+.jobsList {
+  display: grid;
+  gap: 15px;
+  flex: 0 0 410px;
+}
+
+.jobDetailsWrap {
+  flex: 1;
+  position: sticky;
+  max-height: 95vh;
+  top: 15px;
+}
+
+.jobsContainer {
+  display: grid;
+  grid-template-columns: 500px 1fr;
+  gap: 15px;
+  display: flex;
+  align-items: stretch;
+}

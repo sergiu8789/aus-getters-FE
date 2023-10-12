@@ -1,9 +1,9 @@
-import JobsDetails from '@/components/jobs/JobsDetails/JobsDetails';
+import JobDetails from '@/components/jobs/JobsPortal/JobDetails/JobDetails';
 
 const JobPage = () => {
   return (
-    <div>
-      <JobsDetails />
+    <div className="container">
+      <JobDetails />
     </div>
   );
 };
