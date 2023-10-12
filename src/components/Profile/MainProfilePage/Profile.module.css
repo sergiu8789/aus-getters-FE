@@ -12,7 +12,7 @@
     letter-spacing: -0.32px;
     min-height: 40px;
     padding: 8px 12px;
-    color: var(--profile-btn-text-color);
+    color: var(--secondary-black);
     min-width: 125px;
 }
 .profile_buttons .profile_edit_btn {
@@ -35,7 +35,7 @@
     font-size: 16px;
     font-weight: 500;
     letter-spacing: -0.32px;
-    color: var(--profile-btn-text-color);
+    color: var(--secondary-black);
 }
 .user_profile_detail p {
     color: var(--dark-greys-595959);    
@@ -55,13 +55,13 @@
     padding: 4px 12px;
 }
 .about_user_text h5, .user_complete_detail h5 {
-    color: var(--profile-btn-text-color);
+    color: var(--secondary-black);
     font-size: 20px;
     font-weight: 700;
     letter-spacing: -0.4px;
 }
 .about_user_text p {
-    color: var(--profile-btn-text-color);
+    color: var(--secondary-black);
     font-size: 16px;
     font-weight: 500;
     line-height: 28px;

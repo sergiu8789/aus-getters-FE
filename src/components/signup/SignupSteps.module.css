@@ -178,7 +178,7 @@
     width: 14px;
 }
 .loginFromBox{
-    min-height: 500px;
+    min-height: 400px;
 }
 .skipBtnNav{
     margin-top: 50px;
@@ -212,6 +212,20 @@
     font-weight: 500;
     line-height: 26px;
     letter-spacing: -0.28px;
+}
+.profileVisible{
+    border-radius: 6px;
+    background: var(--greys-fafafa);
+    padding: 25px 32px;
+    border: 1px solid var(--grey-d4d4d4);
+}
+.visbleProfile img{
+    width: 24px;
+    height: 24px;
+}
+.visbleText{
+    font-size: 16px;
+    color: var(--dark-grey-4A5568);
 }
 .btntoggleLabel {
     background: #6f8898;
@@ -253,4 +267,67 @@
     width: 42px;
     height: 22px;
     opacity: 0;
+}
+.visibleInfo{
+    font-size: 14px;
+    color: var(--secondary-black);
+    font-weight: 400;
+    line-height: 26px;
+}
+.profileListBox{
+    border-top: 1px solid var(--grey-border);
+}
+.viewProfileBox{
+    border-radius: 12px;
+}
+.imageBox:after{
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    display: inline-block;
+    background: var(--image-overlay-gradient);
+    transition: .2s;
+}
+.profileLinkBox{
+    background: var(--greys-fafafa);
+    padding: 30px;
+    transition: .2s;
+}
+.linkName{
+    color: var(--secondary-black);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 28px;
+}
+.linkInfo{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    color: var(--dark-grey-4A5568);
+}
+.linkArrow{
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    position: absolute;
+    height: 24px;
+    width: 24px;
+    right: 10px;
+    top: 50%;
+    margin-top: -12px;
+}
+.viewProfileEnable .profileLinkBox{
+    background: var(--gradient-l-ight-gradient);
+}
+.viewProfileEnable .imageBox:after{
+    background: var(--image-overlay-purple-gradient);
+}
+.viewProfileEnable .profileLinkBox .linkName{
+    color: var(--secondary-color)
+}
+.gradeintColor{
+    background: var(--title-gradient-bg);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
