@@ -22,15 +22,17 @@ function Footer() {
               Subscribe to our Newsletter
             </h5>
             <Formik
-              initialValues={{ email: '' }}
+              initialValues={{ newsemail: '' }}
               validate={(values) => {
                 const errors = {};
-                if (!values.email) {
-                  errors.email = 'Required';
+                if (!values.newsemail) {
+                  errors.newsemail = 'Required';
                 } else if (
-                  !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)
+                  !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(
+                    values.newsemail
+                  )
                 ) {
-                  errors.email = 'Invalid email address';
+                  errors.newsemail = 'Invalid email address';
                 }
                 return errors;
               }}
@@ -52,24 +54,32 @@ function Footer() {
                 /* and other goodies */
               }) => (
                 <form
-                  className={`${styles.loginFromBox} col-12 flex-shrink-1 d-inline-flex flex-wrap align-items-stretch overflow-hidden justify-content-end`}
+                  className={`${styles.loginFromBox} col-12 flex-shrink-1 d-inline-flex flex-wrap align-items-stretch justify-content-end`}
                   onSubmit={handleSubmit}
                 >
-                  <input
-                    type="email"
-                    name="newsemail"
-                    onChange={handleChange}
-                    onBlur={handleBlur}
-                    value={values.email}
-                    placeholder="Email"
-                    autoComplete="off"
-                    className={`${styles.emailInput} d-inline-block`}
-                  />
-                  {errors.email && touched.email && errors.email && (
-                    <span className={`${styles.fromError} d-inline-block`}>
-                      {errors.email}
-                    </span>
-                  )}
+                  <div
+                    className={`${styles.emailInputBox} position-relative align-items-stretch`}
+                  >
+                    <input
+                      type="email"
+                      name="newsemail"
+                      onChange={handleChange}
+                      onBlur={handleBlur}
+                      value={values.newsemail}
+                      placeholder="Email"
+                      autoComplete="off"
+                      className={`${styles.emailInput} d-inline-block`}
+                    />
+                    {errors.newsemail &&
+                      touched.newsemail &&
+                      errors.newsemail && (
+                        <span
+                          className={`${styles.fromError} position-absolute start-0 d-inline-block`}
+                        >
+                          {errors.newsemail}
+                        </span>
+                      )}
+                  </div>
                   <button
                     type="submit"
                     className={`${styles.newsSubmitBtn} d-inline-block`}

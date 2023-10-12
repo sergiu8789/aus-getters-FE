@@ -6,6 +6,7 @@ import Link from 'next/link';
 import Logo from '../../../public/assets/images/logo-employer.png';
 import LoginBg from '../../../public/assets/images/login_background.png';
 import { Formik } from 'formik';
+import Footer from '@/components/global/Footer/Footer';
 
 export default function Page() {
   const [emailSent, setEmailSent] = useState(false);
@@ -17,7 +18,7 @@ export default function Page() {
   return (
     <React.Fragment>
       <div
-        className={`position-fixed col-12 d-inline-flex align-items-stretch start-0 top-0 end-0 bottom-0`}
+        className={`${styles.LoginContainer} col-12 d-inline-flex align-items-stretch`}
       >
         <div className={`${styles.LogoBox} position-absolute d-inline-block`}>
           <Image src={Logo} className="object-fit-contain" alt="Logo"></Image>
@@ -131,6 +132,7 @@ export default function Page() {
           </div>
         </div>
       </div>
+      <Footer />
     </React.Fragment>
   );
 }
