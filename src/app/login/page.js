@@ -7,7 +7,11 @@ import Logo from '../../../public/assets/images/Logo.png';
 import LoginBg from '../../../public/assets/images/login_background.png';
 import passwordEye from '../../../public/assets/images/password.svg';
 import passwordClose from '../../../public/assets/images/password-close.svg';
+import facebook from '../../../public/assets/images/facebook-color.svg';
+import google from '../../../public/assets/images/google.svg';
+import apple from '../../../public/assets/images/apple.svg';
 import { Formik } from 'formik';
+import Footer from '@/components/global/Footer/Footer';
 
 export default function page() {
   const [passwordText, setPasswordText] = useState('password');
@@ -23,7 +27,7 @@ export default function page() {
   return (
     <React.Fragment>
       <div
-        className={`position-fixed col-12 d-inline-flex align-items-stretch start-0 top-0 end-0 bottom-0`}
+        className={`${styles.LoginContainer} col-12 d-inline-flex align-items-stretch`}
       >
         <div className={`${styles.LogoBox} position-absolute d-inline-block`}>
           <Image src={Logo} className="object-fit-contain" alt="Logo"></Image>
@@ -165,8 +169,58 @@ export default function page() {
               Sign Up
             </Link>
           </div>
+          <div className={`col-12 mt-4 d-inline-block`}>
+            <label
+              className={`${styles.orLabel} col-12 d-inline-block position-relative text-center mb-4`}
+            >
+              <span className="d-inline-block px-3 position-relative">or</span>
+            </label>
+            <div
+              className={`${styles.thirdPartyLoginBtn} position-relative d-inline-flex align-items-center justify-content-center mb-4 col-12`}
+              role="button"
+            >
+              <Image
+                src={google}
+                alt="google"
+                className="position-absolute"
+                role="button"
+              />
+              <label className={styles.loginText} role="button">
+                Continue with Google
+              </label>
+            </div>
+            <div
+              className={`${styles.thirdPartyLoginBtn} position-relative d-inline-flex align-items-center justify-content-center mb-4 col-12`}
+              role="button"
+            >
+              <Image
+                src={facebook}
+                alt="facebook"
+                className="position-absolute"
+                role="button"
+              />
+              <label className={styles.loginText} role="button">
+                Continue with Facebook
+              </label>
+            </div>
+            <div
+              className={`${styles.thirdPartyLoginBtn} position-relative d-inline-flex align-items-center justify-content-center mb-4 col-12`}
+              role="button"
+            >
+              <Image
+                src={apple}
+                alt="apple"
+                className="position-absolute"
+                role="button"
+              />
+              <label className={styles.loginText} role="button">
+                Continue with Apple
+              </label>
+            </div>
+          </div>
         </div>
       </div>
+      <Footer />
     </React.Fragment>
   );
 }

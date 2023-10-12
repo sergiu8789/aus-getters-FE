@@ -1,7 +1,12 @@
+import JobsTable from '@/components/jobs/JobsTable/JobsTable';
+
 const BookmarkedJobsPage = () => {
-    return (
-      <div>Bookmarked Jobs Page</div>
-    )
-  }
-  
-  export default BookmarkedJobsPage;
+  return (
+    <div>
+      {' '}
+      <JobsTable type={'bookmark'} />
+    </div>
+  );
+};
+
+export default BookmarkedJobsPage;
