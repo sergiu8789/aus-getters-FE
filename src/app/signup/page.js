@@ -10,9 +10,11 @@ import passwordClose from '../../../public/assets/images/password-close.svg';
 import location from '../../../public/assets/images/location.svg';
 import { Formik } from 'formik';
 import SignupSteps from '@/components/signup/SignupSteps';
+import Footer from '@/components/global/Footer/Footer';
 
 export default function page() {
   const [passwordText, setPasswordText] = useState('password');
+  const [registerStepPop, setRegisterStepPop] = useState(false);
 
   const showPassword = () => {
     if (passwordText === 'password') {
@@ -24,7 +26,7 @@ export default function page() {
   return (
     <React.Fragment>
       <div
-        className={`position-fixed col-12 d-inline-flex align-items-stretch start-0 top-0 end-0 bottom-0`}
+        className={`${styles.LoginContainer} col-12 d-inline-flex align-items-stretch`}
       >
         <div className={`${styles.LogoBox} position-absolute d-inline-block`}>
           <Image src={Logo} className="object-fit-contain" alt="Logo"></Image>
@@ -68,7 +70,7 @@ export default function page() {
             }}
             onSubmit={(values, { setSubmitting }) => {
               setTimeout(() => {
-                alert(JSON.stringify(values, null, 2));
+                setRegisterStepPop(true);
                 setSubmitting(false);
               }, 400);
             }}
@@ -265,6 +267,30 @@ export default function page() {
                     </span>
                   )}
                 </div>
+                <div
+                  className={`${styles.agreeterms} mb-4 col-12 d-inline-flex align-items-center position-relative`}
+                >
+                  <input
+                    type="checkbox"
+                    id="agreeterms"
+                    name="agreeterms"
+                    className="position-absolute opacity-0"
+                  />
+                  <label
+                    htmlFor="agreeterms"
+                    role="button"
+                    className={`${styles.agreetermLink} position-relative d-inline-block`}
+                  >
+                    By registering you agree to{' '}
+                    <Link href="/" target="_blank" className={styles.termsLink}>
+                      Terms of Use
+                    </Link>{' '}
+                    and{' '}
+                    <Link href="/" target="_blank" className={styles.termsLink}>
+                      Privacy Policy
+                    </Link>
+                  </label>
+                </div>
                 <button
                   type="submit"
                   className={`${styles.fromSubmitBtn} col-12 d-inline-block`}
@@ -287,7 +313,13 @@ export default function page() {
           </div>
         </div>
       </div>
-      <SignupSteps />
+      {registerStepPop === true && (
+        <SignupSteps
+          registerStepPop={registerStepPop}
+          setRegisterStepPop={setRegisterStepPop}
+        />
+      )}
+      <Footer />
     </React.Fragment>
   );
 }

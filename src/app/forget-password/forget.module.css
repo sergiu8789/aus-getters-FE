@@ -1,0 +1,119 @@
+.LoginContainer{
+    height: 100vh;
+}
+.LogoBox{
+    top: 30px;
+    left: 30px;
+}
+.LogoBox img{
+    height: 40px;
+    width: auto;
+}
+.forgetDesc{
+    font-size: 14px;
+    color: var(--secondary-black);
+}
+.loginName{
+    color: var(--default-color);
+    font-size: 32px;
+}
+.loginFromContainer{
+    padding: 100px 80px;
+}
+.signLink{
+    text-decoration: underline;
+    font-size: 32px;
+}
+.signLink:hover, .signLink:focus{
+    outline: none;
+}
+.loginFormFloating{
+    margin-bottom: 32px;
+}
+.formInput{
+    height: 50px;
+    padding: 12px 40px 12px 12px;
+    border-radius: 6px;
+    transition: .5s;
+    border: 1px solid var(--border-color);
+    background: transparent;
+    position: relative;
+    z-index: 2;
+}
+.formInput:focus,.formInput:focus-visible, .formInput:not(:placeholder-shown){
+    border: 1px solid var(--input-border-color);
+    outline: none;
+}
+.formInput::-webkit-input-placeholder{
+    color: transparent;
+}
+.formLabel{
+    left: 12px;
+    top: 12px;
+    padding: 0 10px;
+    background: var(--white-color);
+    font-size: 15px;
+    transition: .2s;
+}
+.required{
+    color: var(--red-bg);
+    font-size: 10px;
+    margin-right: 5px;
+    font-weight: 500;
+}
+.formInput:not(:placeholder-shown)+.formLabel, .formInput:focus+.formLabel{
+    transform: translateY(-20px) translateX(0px);
+    -webkit-transform: translateY(-20px) translateX(0px);
+    font-size: 10px;
+    color: var(--secondary-color);
+    z-index: 3;
+}
+.fromError{
+    font-size: 12px;
+    color: var(--error-color);
+}
+.fromSubmitBtn{
+    font-size: 14px;
+    line-height: 26px;
+    letter-spacing: -0.28px;
+    height: 54px;
+    background: var(--main-gradient-color);
+    color: var(--white-color);
+    border: none;
+    box-shadow: none;
+    border-radius: 6px;
+}
+.fromSubmitBtn:focus{
+    outline: none;
+}
+.createAccount{
+    margin-top: 24px;
+}
+.accountSignup{
+    color: var(--secondary-black);
+    line-height: 26px;
+    letter-spacing: -0.28px;
+    font-size: 14px;
+    font-weight: 500;
+    margin-right: 5px;
+}
+.createAccount .signLink{
+    background: var(--main-gradient-color);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 26px;
+    letter-spacing: -0.28px;
+    font-size: 14px;
+    font-weight: 600;
+}
+.passwordMailSent{
+    color: var(--email-sent-color);
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: -0.24px;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid var(--pink-border);
+    background: var(--btn-bg-color-1);
+}

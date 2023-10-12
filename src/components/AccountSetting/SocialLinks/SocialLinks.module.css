@@ -1,7 +1,7 @@
 .formSelect{
     height: 50px;
     border-radius: 6px;
-    border: 1px solid var(--greys-d-4-d-4-d-4);
+    border: 1px solid var(--grey-d4d4d4);
     -webkit-appearance: none;
     background-image: url(../../../../public/assets/images/downArrow.svg);
     background-repeat: no-repeat;
@@ -23,7 +23,7 @@
     border-radius: 6px;
     border: 1px solid var(--secondary-color);
     background: var(--btn-bg-color-1);
-    color: var(--profile-btn-text-color);
+    color: var(--secondary-black);
     width: 124px;
     font-size: 16px;
     font-weight: 500;

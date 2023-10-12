@@ -1,8 +1,7 @@
-import JobPortal from '@/components/jobs/JobPortal';
+import JobsPortal from '@/components/jobs/JobsPortal/JobsPortal';
 
 const JobsPage = () => {
-  const x = 3;
-  return <JobPortal />;
+  return <JobsPortal />;
 };
 
 export default JobsPage;

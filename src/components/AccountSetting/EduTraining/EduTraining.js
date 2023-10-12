@@ -10,24 +10,89 @@ export const EduTraining = () => {
     return (
         <React.Fragment>
             <h6>Education & Training</h6>
-            <div className={`${styles.edu_training_box} p-3 col-lg-6`}>
-                <div className="row">
-                    <div className="col-lg-6">
-                        <p className="m-0 mb-2">School name<br></br><span>Specialization</span></p>  
-                        <div className="d-flex gap-3">
-                            <p className="gap-1 align-items-center m-0 d-flex me-2">
-                                <Image src={LocationLine} className="" alt location></Image>
-                                Location
-                            </p>
-                            <p className="gap-1 align-items-center m-0 d-flex me-2">
-                                <Image src={SuitCase} className="" alt location></Image>                                
-                                GPA: 3.8
-                            </p>
-                        </div>                      
+            <div className="row mt-3">
+                <div className="col-lg-6 pb-4">
+                    <div className={`${styles.edu_training_box} row m-0 p-3`}>
+                        <div className="col-lg-6">
+                            <p className="m-0 mb-2">School name<br></br><span>Specialization</span></p>  
+                            <div className={`${styles.location_icon_text} d-flex gap-3`}>
+                                <p className="gap-1 align-items-center m-0 d-flex me-2">
+                                    <Image src={LocationLine} className="" alt location></Image>
+                                    Location
+                                </p>
+                                <p className="gap-1 align-items-center m-0 d-flex me-2">
+                                    <Image src={SuitCase} className="" alt location></Image>                                
+                                    GPA: 3.8
+                                </p>
+                            </div>                      
+                        </div>
+                        <div className={`${styles.edu_edit_btn} col-lg-6 text-end flex-wrap d-flex flex-column align-items-end justify-content-between`}>
+                            <Image src={Cross} className="" alt location></Image> 
+                            <p className="m-0 d-flex gap-1 align-items-center">Edit <Image src={EditIcon} className={`object-fit-cover`} alt="EditIcon"></Image></p>
+                        </div>
                     </div>
-                    <div className={`${styles.edu_edit_btn} col-lg-6 text-end flex-wrap d-flex flex-column align-items-end justify-content-between`}>
-                        <Image src={Cross} className="" alt location></Image> 
-                        <p className="m-0">Edit <Image src={EditIcon} className={`object-fit-cover`} alt="EditIcon"></Image></p>
+                </div>
+                <div className="col-lg-6 pb-4">
+                    <div className={`${styles.edu_training_box} row m-0 p-3`}>
+                        <div className="col-lg-6">
+                            <p className="m-0 mb-2">College name<br></br><span>Specialization</span></p>  
+                            <div className={`${styles.location_icon_text} d-flex gap-3`}>
+                                <p className="gap-1 align-items-center m-0 d-flex me-2">
+                                    <Image src={LocationLine} className="" alt location></Image>
+                                    Location
+                                </p>
+                                <p className="gap-1 align-items-center m-0 d-flex me-2">
+                                    <Image src={SuitCase} className="" alt location></Image>                                
+                                    GPA: 3.8
+                                </p>
+                            </div>                      
+                        </div>
+                        <div className={`${styles.edu_edit_btn} col-lg-6 text-end flex-wrap d-flex flex-column align-items-end justify-content-between`}>
+                            <Image src={Cross} className="" alt location></Image> 
+                            <p className="m-0 d-flex gap-1 align-items-center">Edit <Image src={EditIcon} className={`object-fit-cover`} alt="EditIcon"></Image></p>
+                        </div>
+                    </div>
+                </div>
+                <div className="col-lg-6 pb-4">
+                    <div className={`${styles.edu_training_box} row m-0 p-3`}>
+                        <div className="col-lg-6">
+                            <p className="m-0 mb-2">School name<br></br><span>Specialization</span></p>  
+                            <div className={`${styles.location_icon_text} d-flex gap-3`}>
+                                <p className="gap-1 align-items-center m-0 d-flex me-2">
+                                    <Image src={LocationLine} className="" alt location></Image>
+                                    Location
+                                </p>
+                                <p className="gap-1 align-items-center m-0 d-flex me-2">
+                                    <Image src={SuitCase} className="" alt location></Image>                                
+                                    GPA: 3.8
+                                </p>
+                            </div>                      
+                        </div>
+                        <div className={`${styles.edu_edit_btn} col-lg-6 text-end flex-wrap d-flex flex-column align-items-end justify-content-between`}>
+                            <Image src={Cross} className="" alt location></Image> 
+                            <p className="m-0 d-flex gap-1 align-items-center">Edit <Image src={EditIcon} className={`object-fit-cover`} alt="EditIcon"></Image></p>
+                        </div>
+                    </div>
+                </div>
+                <div className="col-lg-6 pb-4">
+                    <div className={`${styles.edu_training_box} row m-0 p-3`}>
+                        <div className="col-lg-6">
+                            <p className="m-0 mb-2">College name<br></br><span>Specialization</span></p>  
+                            <div className={`${styles.location_icon_text} d-flex gap-3`}>
+                                <p className="gap-1 align-items-center m-0 d-flex me-2">
+                                    <Image src={LocationLine} className="" alt location></Image>
+                                    Location
+                                </p>
+                                <p className="gap-1 align-items-center m-0 d-flex me-2">
+                                    <Image src={SuitCase} className="" alt location></Image>                                
+                                    GPA: 3.8
+                                </p>
+                            </div>                      
+                        </div>
+                        <div className={`${styles.edu_edit_btn} col-lg-6 text-end flex-wrap d-flex flex-column align-items-end justify-content-between`}>
+                            <Image src={Cross} className="" alt location></Image> 
+                            <p className="m-0 d-flex gap-1 align-items-center">Edit <Image src={EditIcon} className={`object-fit-cover`} alt="EditIcon"></Image></p>
+                        </div>
                     </div>
                 </div>
             </div>
