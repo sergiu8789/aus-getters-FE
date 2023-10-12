@@ -36,6 +36,7 @@
 }
 
 .resumeHeading {
+  font-size: 16px;
   font-weight: 600;
 }
 .backLinkText {
@@ -56,7 +57,7 @@
 }
 
 .nextBtn {
-  padding: 6px 24px;
+  padding: 12px 24px;
   background: var(--btn-bg-color-1);
   color: var(--secondary-black);
   border: 1px solid var(--btn-bg-border-1);
@@ -103,12 +104,33 @@
 .customBtnPrimary {
   display: flex;
   width: 124px;
-  padding: 6px;
   justify-content: center;
   align-items: center;
   border-radius: var(--Radius-x6, 6px);
   border: 1px solid var(--iris-100, #5d5fef);
   background: var(--iris-tints-tint-7, #dadafb);
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  border-radius: 6px;
+  border: none;
+}
+
+.editCustomBtn {
+  color: var(--Black, #2b2b2b);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  display: flex;
+  width: 118px;
+  padding: 6px;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  border-radius: var(--Radius-x6, 6px);
+  border: 1px solid var(--input-border-color);
+  background: var(--iris-tints-tint-6);
 }
 
 .continueNav {
@@ -127,24 +149,36 @@
   color: #0054a6;
 }
 
+.mainText {
+  font-size: '14px';
+  font-weight: 400;
+}
+
 /* second pop up */
 
 .questionsHeading {
-  font-weight: 500;
+  font-size: 16px;
+  font-weight: 600;
 }
 .thirdHeading {
-  font-weight: 500;
+  font-size: 16px;
+  font-weight: 600;
   margin-bottom: 28px;
 }
 
 .questionField {
   margin: 20px 0;
+  font-size: 14px;
 }
 .inputField {
   background-color: var(--bg-light-2);
   padding: 5px;
   border-radius: 6px;
   outline: none;
+}
+
+.addSpace {
+  margin-bottom: 24px;
 }
 
 /* step header  */
@@ -181,16 +215,7 @@
 .activeStep2 .stepCircle2:before,
 .activeStep3 .stepCircle1:before,
 .activeStep3 .stepCircle2:before,
-.activeStep3 .stepCircle3:before,
-.activeStep4 .stepCircle1:before,
-.activeStep4 .stepCircle2:before,
-.activeStep4 .stepCircle3:before,
-.activeStep4 .stepCircle4:before,
-.activeStep5 .stepCircle1:before,
-.activeStep5 .stepCircle2:before,
-.activeStep5 .stepCircle3:before,
-.activeStep5 .stepCircle4:before,
-.activeStep5 .stepCircle5:before {
+.activeStep3 .stepCircle3:before {
   background: var(--main-gradient-color);
 }
 .activeStep1 .stepCircle1,
@@ -198,28 +223,13 @@
 .activeStep2 .stepCircle2,
 .activeStep3 .stepCircle1,
 .activeStep3 .stepCircle2,
-.activeStep3 .stepCircle3,
-.activeStep4 .stepCircle1,
-.activeStep4 .stepCircle2,
-.activeStep4 .stepCircle3,
-.activeStep4 .stepCircle4,
-.activeStep5 .stepCircle1,
-.activeStep5 .stepCircle2,
-.activeStep5 .stepCircle3,
-.activeStep5 .stepCircle4,
-.activeStep5 .stepCircle5 {
+.activeStep3 .stepCircle3 {
   border: 2px solid var(--default-color);
 }
 .activeStep2:before {
-  width: 23%;
+  width: 46%;
 }
 .activeStep3:before {
-  width: 48%;
-}
-.activeStep4:before {
-  width: 72%;
-}
-.activeStep5:before {
   width: 95%;
 }
 
