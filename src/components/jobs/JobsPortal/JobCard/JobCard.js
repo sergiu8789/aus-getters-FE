@@ -10,18 +10,16 @@ const JobCard = () => {
         <div className={styles.cardImageBox}></div>
 
         <div className={styles.cardInfo}>
-          <div>
-            <h3 className={styles.cardTitle}>Job Name</h3>
-            <h4 className={styles.cardSubtitle}>
-              <Link href="#"> Company Name</Link>
-            </h4>
-          </div>
+          <h3 className={styles.cardTitle}>Job Name</h3>
+          <h4 className={styles.cardSubtitle}>
+            <Link href="#"> Company Name</Link>
+          </h4>
         </div>
       </div>
       <div className={styles.cardDetails}>
-        <div>
+        <p className="col-12 d-inline-block mb-0">
           <strong className={styles.salaryInfo}>$80,000/yr</strong>
-        </div>
+        </p>
         <div className="d-flex gap-1">
           <span>
             <Image src={locationSvg} alt="location icon" />

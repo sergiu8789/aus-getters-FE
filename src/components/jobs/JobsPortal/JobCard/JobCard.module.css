@@ -1,7 +1,7 @@
 .card {
   border-radius: 6px;
-  border: 1px solid var(--light-grey-300);
-  background: var(--bg-light);
+  border: 1px solid var(--grey-d4d4d4);
+  background: var(--greys-fafafa);
 }
 
 .cardMain {
@@ -47,7 +47,7 @@
 }
 
 .cardImageBox {
-  background: var(--light-grey-300);
+  background: var(--grey-d4d4d4);
   width: 106px;
   height: 106px;
 }
