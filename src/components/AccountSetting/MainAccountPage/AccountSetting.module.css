@@ -38,14 +38,14 @@
 }
 .user_basic_detail p {
     color: var(--secondary-black);
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 500;
     line-height: 26px;
     letter-spacing: -0.28px;
 }
 .user_basic_detail p span {
     color: var(--secondary-color);
-    font-size: 10px;
+    font-size: 14px;
     font-weight: 500;
     line-height: 26px;
     letter-spacing: -0.2px;

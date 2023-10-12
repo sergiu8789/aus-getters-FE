@@ -1,7 +1,7 @@
 .formSelect{
     height: 50px;
     border-radius: 6px;
-    border: 1px solid var(--greys-d-4-d-4-d-4);
+    border: 1px solid var(--grey-d4d4d4);
     -webkit-appearance: none;
     background-image: url(../../../../public/assets/images/downArrow.svg);
     background-repeat: no-repeat;
@@ -17,7 +17,7 @@
 .loginFormBox input{
     height: 50px;
     border-radius: 6px;
-    border: 1px solid var(--greys-d-4-d-4-d-4);
+    border: 1px solid var(--grey-d4d4d4);
     padding: 0 20px;
     color: var(--dark-greys-989899);
     font-size: 14px;

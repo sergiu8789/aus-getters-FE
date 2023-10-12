@@ -1,6 +1,6 @@
 .edu_training_box {
     border-radius: 6px;
-    border: 0.5px solid var(--greys-d-4-d-4-d-4);
+    border: 0.5px solid var(--greys-d4d4d4);
     background: var(--greys-fafafa);
 }
 .edu_training_box .location_icon_text p {
@@ -14,7 +14,7 @@
     border-radius: 4px;
     background: var(--step-line-bg);
     color: var(--input-border-color);
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 500;
     line-height: 26px;
     letter-spacing: -0.28px;

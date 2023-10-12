@@ -10,7 +10,7 @@ import Image from "next/image";
 export const WorkExp = () => {
     return (
         <React.Fragment>
-            <h6>Education & Training</h6>
+            <h6>Work Experience</h6>
             <div className="row mt-3">
                 <div className="col-lg-6 pb-4">
                     <div className={`${styles.edu_training_box} row m-0 p-3`}>
