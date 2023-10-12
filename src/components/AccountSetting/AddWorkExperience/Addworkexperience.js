@@ -1,6 +1,8 @@
 import React from "react";
 import { Formik } from 'formik';
 import styles from './Addworkexperience.module.css';
+import Image from "next/image";
+import UploadImg from "../../../../public/assets/images/"
 
 export const Addworkexperience = () => {
     return (
@@ -32,8 +34,8 @@ export const Addworkexperience = () => {
                             <input type="checkbox" />
                             <p className="m-0">Still working</p>
                         </div>
-                        <div className="col-lg-6 mb-3 pb-2">
-                            <input type="file" id="file-input" name="ImageStyle"/>
+                        <div className="col-lg-6 mb-3 pb-2 position-relative">
+                            <input type="file" className="position-absolute start-0 top-0 h-100 opacity-0 w-100" id="file-input" name="ImageStyle"/>
                         </div>
                         <div className="col-lg-6 mb-3 pb-2">
                             <textarea name="postContent" rows={4} className={`${styles.formInput} ${styles.formTextarea} w-100`} />
