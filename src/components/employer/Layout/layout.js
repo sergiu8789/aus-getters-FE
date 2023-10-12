@@ -10,7 +10,7 @@ export default function EmployerLayout({ children }) {
         <div className="d-inline-block">
             <EmployerSidebarComponent />
         </div>
-        <div className="" style={{width:"100%",marginBottom:"62px"}}>
+        <div className="" style={{width:"100%",marginBottom:"62px",paddingRight:"60px"}}>
             <main className="">{children}</main>
         </div>
         

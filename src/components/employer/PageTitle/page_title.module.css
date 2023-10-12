@@ -1,0 +1,37 @@
+
+.page_top {
+    margin-top: 25px;
+    height: 42px;
+  }
+  
+  .page_title {
+    color: var(--dark-greys-4-a-5568);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 32px; /* 160% */
+    letter-spacing: -0.4px;
+    text-align: left;
+  }
+  .btn_pink ,.btn_pink:hover{
+      display: inline-flex;
+      padding: 8px 24px;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      border-radius: var(--Radius-x6);
+      border: 1px solid var(--fuschia-100,);
+      background: var(--fuschia-tints-tint-6);
+    
+      color: var(--Smokey-Black);
+      text-align: center;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 26px; /* 185.714% */
+      text-decoration: none;
+  }
+  .page_top_btn {
+    float: right;
+  }
+  
+   
+    
