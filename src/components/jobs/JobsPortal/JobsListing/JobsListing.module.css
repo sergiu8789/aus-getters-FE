@@ -1,6 +1,7 @@
-.jobsCountBoard {
-  color: var(--text-black);
-}
+/* .jobListing {
+  max-width: 1200px;
+  margin: 0 auto;
+} */
 
 .selectWrap {
   width: 180px;
@@ -16,6 +17,23 @@
   border: 1px solid var(--input-border-color);
 }
 
-.mb32 {
-  margin-bottom: 32px;
+.jobsList {
+  display: grid;
+  gap: 15px;
+  flex: 0 0 410px;
+}
+
+.jobDetailsWrap {
+  flex: 1;
+  position: sticky;
+  max-height: 95vh;
+  top: 15px;
+}
+
+.jobsContainer {
+  display: grid;
+  grid-template-columns: 500px 1fr;
+  gap: 15px;
+  display: flex;
+  align-items: stretch;
 }

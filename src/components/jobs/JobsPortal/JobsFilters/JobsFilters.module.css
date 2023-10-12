@@ -1,47 +1,29 @@
 .jobsFilters {
-  border-radius: 6px;
-  box-shadow: 0px 12px 32px -8px rgba(0, 0, 0, 0.08);
-}
-
-.filtersHeader {
-  padding: 20px 20px 20px 20px;
-  position: relative;
-}
-
-.filtersHeader::after {
-  content: '';
-  height: 1px;
-  background: var(--light-grey-200);
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
-
-.filtersToggleWrap {
-  background: var(--light-grey-100);
-  padding: 12px;
-  border-radius: 6px;
-  border: 1px solid var(--grey, #888);
-  border: 1px solid var(--dark-greys-888888, #888);
-}
-
-.filtersToggleWrap span {
-  color: var(--grey);
-}
-
-.filters {
   display: flex;
-  flex-direction: column;
-  gap: 20px;
-  padding: 20px;
+  gap: 12px;
+  flex-wrap: wrap;
+  padding: 20px 0;
+  border-radius: 6px;
 }
 
-.select {
-  padding: 12px;
+.filterDropdown button {
+  --bs-btn-bg: var(--bg-light-2);
+  --bs-btn-hover-bg: var(--bg-light-2);
+  --bs-btn-active-bg: var(--bg-light-2);
+  border: none;
+  color: var(--text-black) !important;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
   border-radius: 6px;
-  width: 100%;
+  font-size: 14px;
+}
+
+/* .filterDropdown button:hover {
   color: var(--text-black);
-  font-weight: 500;
-  border: 1px solid var(--input-border-color);
+} */
+
+.filterDropdown button[aria-expanded='true'] {
+  /* background-color: #fff0a6; */
 }

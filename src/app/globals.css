@@ -60,6 +60,9 @@
   --text-grey-dark: #595959;
 
   --bg-light: #fafafa;
+  --bg-light-2: #f4f4f4;
+
+  --accent-1: #fff0a6;
 }
 
 * {
@@ -78,18 +81,27 @@
   color: var(--text-grey-light);
 }
 
+.flex-1 {
+  flex: 1;
+}
+
 .btn-custom {
   display: inline-block;
   padding: 12px;
   font-size: 14px;
   border-radius: 6px;
   line-height: 1;
+  border: none;
 }
 
 .btn-custom--primary {
   color: var(--text-black);
   border: 1px solid var(--secondary-color);
   background: var(--btn-bg-color-1);
+}
+
+.btn-custom--medium {
+  min-width: 150px;
 }
 
 .btn-custom--accent {

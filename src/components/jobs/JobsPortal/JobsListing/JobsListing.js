@@ -1,16 +1,17 @@
 import JobCard from '../JobCard/JobCard';
+import JobDetails from '../JobDetails/JobDetails';
 import styles from './JobsListing.module.css';
 
 const JobsListing = () => {
   return (
-    <div>
+    <div className={styles.jobListing}>
       <div
         className={`d-flex justify-content-between align-items-center ${styles.mb32}`}
       >
-        <div class={styles.jobsCountBoard}>
-          <span>Showing all 18 jobs</span>
+        <div className="mb-4">
+          <span>Your search results</span>
         </div>
-        <div className="d-flex gap-4">
+        <div className="d-flex d-none gap-4">
           <div className={styles.selectWrap}>
             <select class={styles.select} value={0}>
               <option value={0} disabled>
@@ -28,12 +29,17 @@ const JobsListing = () => {
           </div>
         </div>
       </div>
-      <div>
-        {[1, 2, 3, 4, 5].map((i) => (
-          <div className="mb-4" key={i}>
-            <JobCard />
-          </div>
-        ))}
+      <div className={styles.jobsContainer}>
+        <div className={styles.jobsList}>
+          {[1, 2, 3, 4, 5].map((i) => (
+            <div key={i}>
+              <JobCard />
+            </div>
+          ))}
+        </div>
+        <div className={styles.jobDetailsWrap}>
+          <JobDetails />
+        </div>
       </div>
     </div>
   );

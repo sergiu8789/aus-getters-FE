@@ -1,42 +1,56 @@
 import styles from './JobsFilters.module.css';
+import Dropdown, { Menu, Toggle, Item } from 'react-bootstrap/Dropdown';
 
 const JobsFilters = () => {
   return (
     <div className={styles.jobsFilters}>
-      <div className={styles.filtersHeader}>
-        <div
-          className={`d-flex justify-content-between align-items-center ${styles.filtersToggleWrap}`}
-        >
-          <span>Filters</span>
-          <button>On</button>
-        </div>
+      <div className={styles.jobFilter}>
+        <Dropdown className={styles.filterDropdown}>
+          <Toggle variant="secondary">Employment Type</Toggle>
+          <Menu>
+            <Item href="#/action-1">Full Time</Item>
+            <Item href="#/action-2">Part Time</Item>
+            <Item href="#/action-3">Something else</Item>
+          </Menu>
+        </Dropdown>
       </div>
-      <div className={styles.filters}>
-        <div>
-          <select className={styles.select} value="Employment Type">
-            <option value="Employment Type">Employment Type</option>
-          </select>
-        </div>
-        <div>
-          <select className={styles.select} value="Employment Type">
-            <option value="Employment Type">All Categories</option>
-          </select>
-        </div>
-        <div>
-          <select className={styles.select} value="Remuneration">
-            <option value="Remuneration">Remuneration</option>
-          </select>
-        </div>
-        <div>
-          <select className={styles.select} value="Employment Type">
-            <option value="Employment Type">In Person/House</option>
-          </select>
-        </div>
-        <div>
-          <select className={styles.select} value="Employment Type">
-            <option value="Employment Type">Environment Type</option>
-          </select>
-        </div>
+      <div className={styles.jobFilter}>
+        <Dropdown className={styles.filterDropdown}>
+          <Toggle variant="secondary">All Categories</Toggle>
+          <Menu>
+            <Item href="#/action-1">Accounting</Item>
+            <Item href="#/action-2">Cuisine</Item>
+            <Item href="#/action-3">Development</Item>
+          </Menu>
+        </Dropdown>
+      </div>
+      <div className={styles.jobFilter}>
+        <Dropdown className={styles.filterDropdown}>
+          <Toggle variant="secondary">Environment</Toggle>
+          <Menu>
+            <Item href="#/action-1">Collaborative</Item>
+            <Item href="#/action-2">Independent</Item>
+            <Item href="#/action-3">Structured</Item>
+          </Menu>
+        </Dropdown>
+      </div>
+      <div className={styles.jobFilter}>
+        <Dropdown className={styles.filterDropdown}>
+          <Toggle variant="secondary">Where</Toggle>
+          <Menu>
+            <Item href="#/action-1">In Person</Item>
+            <Item href="#/action-2">At home</Item>
+          </Menu>
+        </Dropdown>
+      </div>
+      <div className={styles.jobFilter}>
+        <Dropdown variant="secondary" className={styles.filterDropdown}>
+          <Toggle variant="secondary">Completetion of course required</Toggle>
+          <Menu>
+            <Item href="#/action-1">Yes</Item>
+            <Item href="#/action-2">No</Item>
+          </Menu>
+        </Dropdown>
       </div>
     </div>
   );
