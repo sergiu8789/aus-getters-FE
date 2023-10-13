@@ -2,7 +2,7 @@
   width: 100%;
   border: 1px solid var(--bs-border-color);
   border-radius: 6px;
-  background: var(--bg-light);
+  background: var(--greys-fafafa);
   display: flex;
   align-items: center;
   padding: 15px;

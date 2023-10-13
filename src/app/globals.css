@@ -65,14 +65,9 @@
 
   --light-grey-100: #f6f6f6;
   --light-grey-200: #c4c4c4;
-  --light-grey-300: #d4d4d4;
-  --dark-grey-400: #888;
-  --white: #fff;
-
-  --text-black: #2b2b2b;
   --text-grey-light: #989899;
   --text-grey-dark: #595959;
-
+  --off-white: #f8f8f8;
   --bg-light: #fafafa;
   --bg-light-2: #f4f4f4;
 }
@@ -84,7 +79,7 @@
 /* Utility classes */
 
 .text-black {
-  color: var(--text-black);
+  color: var(--secondary-black);
 }
 
 .text-grey-light {
@@ -105,7 +100,7 @@
 }
 
 .btn-custom--primary {
-  color: var(--text-black);
+  color: var(--secondary-black);
   border: 1px solid var(--secondary-color);
   background: var(--btn-bg-color-1);
 }
@@ -115,7 +110,7 @@
 }
 
 .btn-custom--accent {
-  color: var(--white, #fff);
+  color: var(--white-color);
   background: var(--main-gradient-color);
   padding: 12px 30px;
 }
