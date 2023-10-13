@@ -1,0 +1,64 @@
+.chatbox_main{
+    border-radius: var(--Radius-x6, 6px);
+    background: var(--White, #FFF);
+    box-shadow: 0px 12px 32px -8px rgba(0, 0, 0, 0.08);
+
+}
+.user_conversation{
+    border-top: 1px solid var(--grey-d4d4d4);
+    border-bottom: 1px solid var(--grey-d4d4d4);
+    padding: 24px 24px 80px 24px;
+}
+.user_profile{
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    gap:15px;
+}
+.user_img_box{
+    width: 50px;
+    height: 50px;
+    background-color: var(--grey-border);
+    border-radius: 50%;
+}
+.user_name{
+  justify-content: space-between; 
+}
+.user_name p{
+    color: var(--dark-greys-747474); 
+    font-size: 14px;
+    line-height: 26px;
+    letter-spacing: -0.28px;
+    margin-bottom: 0px;
+}
+.user_name .right_text span{
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: -0.32px;
+}
+
+.chatbox_main  span{
+    color: var(--dark-greys-747474); 
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+.conversation_box_me{
+    margin-top: 15px;
+    border-radius: 8px;
+    background: var(--color-bg-2, #F0F5F7);
+    padding: 23px 13px 20px 29px;
+}
+.conversation_box_you{
+    margin-top: 15px; 
+    border-radius: 8px;
+    background: var(--iris-tints-tint-8, #ECECFD);
+    padding: 23px 13px 20px 29px;
+}
+.delete_text{
+    color: var(--signals-red, #B71F3A)!important;
+    text-decoration-line: underline;
+}
