@@ -8,10 +8,6 @@
   color: var(--secondary-black);
 }
 
-.jobDetails .pb-12 {
-  padding-bottom: 12px;
-}
-
 .jobHeader {
   position: sticky;
   top: 0;
@@ -73,8 +69,21 @@
   line-height: 1.7;
 }
 
-.jobInfo {
+.companyLink {
+  color: var(--secondary-black);
+  font-size: 14px;
+  font-weight: 500;
+  transition: 0.2s;
 }
-
-.jobFoooter {
+.companyLink:after {
+  content: '';
+  background-image: url(../../../../../public/assets/images/link-new-tab.svg);
+  height: 12px;
+  width: 12px;
+  background-size: 12px;
+  display: inline-block;
+  margin-right: 5px;
+}
+.companyLink:hover {
+  color: var(--secondary-color);
 }

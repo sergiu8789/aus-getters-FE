@@ -21,13 +21,17 @@
   font-weight: 500;
   margin-bottom: 0.5rem;
 }
-.companyLink{
+.cardTitle a {
+  text-decoration: none;
+  color: var(--secondary-black);
+}
+.companyLink {
   color: var(--secondary-black);
   font-size: 14px;
   font-weight: 500;
-  transition: .2s;
+  transition: 0.2s;
 }
-.companyLink:after{
+.companyLink:after {
   content: '';
   background-image: url(../../../../../public/assets/images/link-new-tab.svg);
   height: 12px;
@@ -36,45 +40,46 @@
   display: inline-block;
   margin-right: 5px;
 }
-.companyLink:hover{
+.companyLink:hover {
   color: var(--secondary-color);
 }
 .salaryInfo {
   font-size: 16px;
   color: var(--secondary-black);
 }
-.jobPostTime{
+.jobPostTime {
   font-size: 12px;
   color: var(--secondary-black);
 }
-.cardDetailRow img{
+.cardDetailRow img {
   height: 16px;
   width: 16px;
 }
-.jobStatusType{
+.jobStatusType {
   bottom: 20px;
   right: 20px;
 }
-.ActiveType, .failedType{
+.ActiveType,
+.failedType {
   padding: 12px;
   font-size: 14px;
   font-weight: 500;
   line-height: 26px;
   border-radius: 6px;
 }
-.failedType{
+.failedType {
   color: var(--red-bg);
   background: var(--light-red-bg);
 }
-.ActiveType{
+.ActiveType {
   color: var(--green-bg);
   background: var(--light-green-bg);
 }
-.jobSavedType{
+.jobSavedType {
   top: 20px;
   right: 20px;
 }
-.bookmarkJob img{
+.bookmarkJob img {
   height: 36px;
   width: 36px;
 }

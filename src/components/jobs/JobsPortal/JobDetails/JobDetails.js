@@ -7,7 +7,7 @@ import ApplyJobPopup from '../../ApplyJobPopup/ApplyJobPopup';
 import { useState } from 'react';
 
 const JobDetails = () => {
-  const [showPopUp, SetShowPopUP] = useState(false);
+  const [showPopUp, setShowPopUP] = useState(false);
   return (
     <>
       <div className={styles.jobDetails}>
@@ -17,15 +17,18 @@ const JobDetails = () => {
             <div className="d-flex gap-2 justify-content-between flex-1 align-items-center py-2">
               <div className="d-block">
                 <h2 className={styles.jobTitle}>Job Name</h2>
-                <h3 className={styles.jobSubtitle}>
-                  <Link href="#"> Company Name</Link>
-                </h3>
+                <Link
+                  className={`${styles.companyLink} text-decoration-none d-inline-flex align-items-center gap-1 position-relative`}
+                  href="#"
+                >
+                  Company Name
+                </Link>
               </div>
               <div>
                 <button
                   className="btn-custom btn-custom--primary btn-custom--medium"
                   onClick={() => {
-                    SetShowPopUP(!showPopUp);
+                    setShowPopUP(!showPopUp);
                   }}
                 >
                   Apply
@@ -93,7 +96,7 @@ const JobDetails = () => {
           </div>
         </div>
       </div>
-      <ApplyJobPopup show={showPopUp} onClose={() => SetShowPopUP(false)} />
+      <ApplyJobPopup show={showPopUp} onClose={() => setShowPopUP(false)} />
     </>
   );
 };
