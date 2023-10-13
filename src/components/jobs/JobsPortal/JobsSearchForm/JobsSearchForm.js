@@ -14,7 +14,7 @@ const JobsSearchForm = () => {
         <input type="text" name="location" placeholder="Location" />
       </div>
       <div className={styles.btnWrap}>
-        <button class="btn-custom btn-custom--accent btn-custom--medium">
+        <button className="btn-custom btn-custom--accent btn-custom--medium">
           Go Get!
         </button>
       </div>

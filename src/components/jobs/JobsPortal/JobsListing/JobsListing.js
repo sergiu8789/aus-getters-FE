@@ -13,7 +13,7 @@ const JobsListing = () => {
         </div>
         <div className="d-flex d-none gap-4">
           <div className={styles.selectWrap}>
-            <select class={styles.select} value={0}>
+            <select className={styles.select} value={0}>
               <option value={0} disabled>
                 Sort By
               </option>
@@ -21,7 +21,7 @@ const JobsListing = () => {
           </div>
 
           <div className={styles.selectWrap}>
-            <select class={styles.select} value={12}>
+            <select className={styles.select} value={12}>
               <option value={12} disabled>
                 12 per page
               </option>
