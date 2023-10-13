@@ -42,14 +42,18 @@
     background: var(--green-bg);
     display: inline-block;
 }
-.loggedUser:after{
-    content: '';
-    background-image: url(../../../../public/assets/images/downArrow.svg);
-    position: absolute;
-    right: 0px;
-    top: 50%;
-    background-size: 20px;
-    margin-top: -10px;
-    height: 20px;
-    width: 20px;
+.loggedInNavRow{
+    background: var(--light-grey-100);
+}
+.loggedInNav{
+    height: 68px;
+}
+.userLinks{
+    font-size: 16px;
+    color: var(--secondary-black);
+    margin-left: 5px;
+}
+.loggedLink img{
+    height: 15px;
+    width: 15px;
 }

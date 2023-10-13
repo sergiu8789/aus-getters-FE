@@ -5,6 +5,12 @@ import styles from './JobsHeaderNav.module.css';
 import Logo from '../../../../public/assets/images/logo-employer.png';
 import userProfile from '../../../../public/assets/images/userProfile.svg';
 import logoFuture from '../../../../public/assets/images/logo-better-future.png';
+import account from '../../../../public/assets/images/icons/accountSettings.svg';
+import dashboard from '../../../../public/assets/images/icons/dashboard.svg';
+import jobs from '../../../../public/assets/images/icons/jobs.svg';
+import learner from '../../../../public/assets/images/icons/learnerAccount.svg';
+import message from '../../../../public/assets/images/icons/messages.svg';
+import logout from '../../../../public/assets/images/icons/logout.svg';
 
 function JobsHeaderNav() {
   return (
@@ -77,7 +83,7 @@ function JobsHeaderNav() {
               >
                 <Image src={userProfile} alt="user Profile" />
                 <div
-                  className={`${styles.loggedUser} pe-4 position-relative d-inline-flex flex-column align-items-center`}
+                  className={`position-relative d-inline-flex flex-column align-items-center`}
                   role="button"
                 >
                   <span className={`${styles.profileName} d-inline-block`}>
@@ -93,11 +99,66 @@ function JobsHeaderNav() {
             </div>
           </div>
         </div>
-        <div className={`${styles.loggedInNavRow} col-12 d-inline-flex`}>
+        <div className={`${styles.loggedInNavRow} mt-2 col-12 d-inline-flex`}>
           <div className="container d-inline-flex">
             <div
-              className={`${styles.loggedInNav} col-12 d-inline-flex align-items-center`}
-            ></div>
+              className={`${styles.loggedInNav} col-12 d-inline-flex align-items-center gap-5 flex-wrap`}
+            >
+              <Link
+                href="/"
+                className={`${styles.loggedLink} d-inline-flex align-items-center text-decoration-none`}
+              >
+                <Image src={dashboard} alt="dashboard" />
+                <span className={`${styles.userLinks} d-inline-block`}>
+                  Dashboard
+                </span>
+              </Link>
+              <Link
+                href="/"
+                className={`${styles.loggedLink} d-inline-flex align-items-center text-decoration-none`}
+              >
+                <Image src={account} alt="account" />
+                <span className={`${styles.userLinks} d-inline-block`}>
+                  Account Settings
+                </span>
+              </Link>
+              <Link
+                href="/"
+                className={`${styles.loggedLink} d-inline-flex align-items-center text-decoration-none`}
+              >
+                <Image src={jobs} alt="jobs" />
+                <span className={`${styles.userLinks} d-inline-block`}>
+                  Jobs
+                </span>
+              </Link>
+              <Link
+                href="/"
+                className={`${styles.loggedLink} d-inline-flex align-items-center text-decoration-none`}
+              >
+                <Image src={message} alt="message" />
+                <span className={`${styles.userLinks} d-inline-block`}>
+                  Messages
+                </span>
+              </Link>
+              <Link
+                href="/"
+                className={`${styles.loggedLink} d-inline-flex align-items-center text-decoration-none`}
+              >
+                <Image src={learner} alt="learner" />
+                <span className={`${styles.userLinks} d-inline-block`}>
+                  Learner Account
+                </span>
+              </Link>
+              <Link
+                href="/"
+                className={`${styles.loggedLink} d-inline-flex align-items-center text-decoration-none`}
+              >
+                <Image src={logout} alt="logout" />
+                <span className={`${styles.userLinks} d-inline-block`}>
+                  Sign Out
+                </span>
+              </Link>
+            </div>
           </div>
         </div>
       </div>
