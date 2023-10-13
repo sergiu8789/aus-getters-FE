@@ -258,3 +258,21 @@
   margin: auto;
   inset: 0;
 }
+
+.radio {
+  display: none;
+}
+
+.radio + label {
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+
+.radio:checked + label {
+  padding: 8px 20px 8px 8px;
+  background-color: var(--bg-light-2);
+  border-radius: 6px;
+  border: 2px solid #0054a6;
+  font-size: 12px;
+  font-weight: 500;
+}

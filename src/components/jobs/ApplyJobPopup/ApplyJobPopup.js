@@ -48,23 +48,14 @@ const Step1 = ({ setRegisterStep, onClose }) => {
   ]);
   const fileInputRef = React.createRef();
 
-  const formik = useFormik({
+  const { handleChange, handleSubmit, values } = useFormik({
     initialValues: {
       selectedResume: '',
       managerMessage: ''
     },
-    validationSchema: Yup.object({
-      selectedResume: Yup.mixed()
-        .test(
-          'is-pdf',
-          'Please select a PDF file.',
-          (value) => value && value.type === 'application/pdf'
-        )
-        .required('Please select a PDF file.'),
-      managerMessage: Yup.string()
-    }),
     onSubmit: (values) => {
-      console.log(values);
+      console.log('finallly', values);
+      setRegisterStep('2');
     }
   });
 
@@ -79,7 +70,12 @@ const Step1 = ({ setRegisterStep, onClose }) => {
   };
 
   return (
-    <form onSubmit={formik.handleSubmit}>
+    <form
+      onSubmit={(e) => {
+        e.preventDefault();
+        handleSubmit(e);
+      }}
+    >
       <div
         className={`${styles.applyPopup} position-fixed h-100 col-12 d-inline-block start-0 top-0`}
       >
@@ -113,7 +109,7 @@ const Step1 = ({ setRegisterStep, onClose }) => {
                 <input
                   type="file"
                   ref={fileInputRef}
-                  name="selectedResume"
+                  name="resume"
                   accept=".pdf"
                   className="d-none"
                   onChange={handleFileChange}
@@ -130,7 +126,16 @@ const Step1 = ({ setRegisterStep, onClose }) => {
                     }`}
                   >
                     <div className="d-flex align-items-center gap-2">
-                      <div
+                      <input
+                        type="radio"
+                        name="selectedResume"
+                        id={'a' + index}
+                        className={styles.radio}
+                        onChange={handleChange}
+                        value={index}
+                      />
+                      <label
+                        htmlFor={'a' + index}
                         className={`inline-flex gap-1 ${
                           file.selected
                             ? styles.pdfNameHighLight
@@ -146,7 +151,7 @@ const Step1 = ({ setRegisterStep, onClose }) => {
                           />
                         </span>
                         <span>{file.name}</span>
-                      </div>
+                      </label>
                       {file.selected && (
                         <span className={`${styles.selected} `}>
                           {'Selected'}
@@ -181,9 +186,11 @@ const Step1 = ({ setRegisterStep, onClose }) => {
                   <textarea
                     className={`d-block ${styles.inputField}  w-100 `}
                     name="managerMessage"
-                    value={formik.values.managerMessage}
-                    onChange={formik.handleChange}
-                    onBlur={formik.handleBlur}
+                    value={values.managerMessage}
+                    onChange={(e) => {
+                      handleChange(e);
+                    }}
+                    // onBlur={formik.handleBlur}
                   />
                 </div>
                 <span className={styles.addAttachment} onClick={handleAddMore}>
@@ -197,7 +204,6 @@ const Step1 = ({ setRegisterStep, onClose }) => {
               <button
                 type="submit"
                 className={`${styles.nextBtn} d-inline-flex align-items-center gap-2 justify-content-center`}
-                onClick={() => setRegisterStep('2')}
               >
                 Continue <Image src={nextArrow} alt="nextArrow" />
               </button>
@@ -409,6 +415,7 @@ const Step3 = ({ setRegisterStep, onClose }) => {
                   id="compensationExpectation"
                   name="compensationExpectation"
                   value={'$80,000/yr'}
+                  onChange={() => console.log('here')}
                 />
               </div>
             </div>
@@ -421,6 +428,7 @@ const Step3 = ({ setRegisterStep, onClose }) => {
                   id="joinDate"
                   name="joinDate"
                   value={'In 2 weeks'}
+                  onChange={() => console.log('here')}
                 />
               </div>
             </div>
@@ -435,6 +443,7 @@ const Step3 = ({ setRegisterStep, onClose }) => {
                   id="portfolioLink"
                   name="portfolioLink"
                   value={'https://portfolio.com'}
+                  onChange={() => console.log('here')}
                 />
               </div>
             </div>
