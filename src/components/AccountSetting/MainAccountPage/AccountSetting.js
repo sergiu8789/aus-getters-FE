@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useState } from 'react';
 import styles from './AccountSetting.module.css';
 import Image from 'next/image';
 import { ProfileImage } from '../ProfileImage/ProfileImage';
@@ -16,27 +16,9 @@ import { Basicdetails } from '../BasicDetails/Basicdetails';
 import { EditBasicdetails } from '../BasicDetails/EditBasicdetails';
 import { Skillspopup } from '../SkillsDropOptions/Skillspopup';
 import { Sociallinkpopup } from '../SocialLinkPopUp/Sociallinkpopup';
-import { Addworkexperience } from '../AddWorkExperience/Addworkexperience';
-import { AddEduTraining } from '../AddEduTraining/AddEduTraining';
-import { UploadResume } from '../UploadResume/UploadResume';
-import { UploadCoverLetter } from '../UploadCoverLetter/UploadCoverLetter';
 
 export const AccountSetting = () => {
   const [editMode, setEditMode] = useState(false);
-  const formikRef = useRef();
-
-  const handleSubmit = (values) => {
-    // Handle form submission here
-    console.log('finally', values); // Do something with the form values
-    // You can make an API call or update the state here.
-  };
-
-  // Create a function to trigger form submission in the child component
-  const submitFormInChild = () => {
-    if (editMode) {
-      formikRef.current.submitForm(); // Trigger form submission using the ref
-    }
-  };
 
   return (
     <React.Fragment>
