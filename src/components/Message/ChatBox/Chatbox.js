@@ -1,5 +1,6 @@
 import React from "react";
-import styles from "./chatbox.module.css"
+import styles from "./chatbox.module.css";
+import Dropdown from 'react-bootstrap/Dropdown';
 
 export const Chatbox = () => {
     return (
@@ -10,12 +11,12 @@ export const Chatbox = () => {
                             {/* <Image src={UserImage} className={`${styles.user_img} pe-2`}></Image> */}
                         </div>
                         <div className={`${styles.user_name} d-flex w-100`}>
-                             <div className="">
+                             <div className="w-75">
                                <h6 className="mb-0">Arlene McCoy</h6>
                                <p>Programmer</p>
                               </div> 
-                             <div className={`${styles.right_text} d-flex align-items-center text-end`}>
-                                <span className={`${styles.delete_text}`}>Delete Conversation</span>
+                             <div className={`${styles.right_text} w-25 d-flex align-items-center text-end`}>                              
+                                   <div className={`${styles.delete_text}`}>Delete Conversation</div>
                             </div>
                         </div>
 
@@ -71,7 +72,7 @@ export const Chatbox = () => {
                         <div className={`${styles.user_img_box}`}>
                           
                         </div>
-                        <div className={`${styles.user_name} d-flex align-items-center`}>
+                        <div className={`${styles.user_name} d-flex align-items-center justify-content-space-between`}>
                              <div className="">
                                <h6 className="mb-0">Arlene McCoy</h6>
                               
@@ -88,12 +89,19 @@ export const Chatbox = () => {
                        </div>
                    
                    </div>
-
-                   <div className={`${styles.message-box}`}>
-                      <form>
-                         
-                      </form>
-                   </div>
+                  <div className={`${styles.message_box}`}>
+                    <form>
+                        <div className="w-100 d-flex">
+                            <div className="w-75">
+                                <input className="w-100" type="text" placeholder="Type a message"></input>
+                            </div>
+                            <div className="w-25 d-flex justify-content-end">
+                                <button className={`${styles.send_btn}`}>Send</button>
+                            </div>
+                        </div>
+                    </form>
+                  </div>
+                  
             </div>
             
         </React.Fragment>
