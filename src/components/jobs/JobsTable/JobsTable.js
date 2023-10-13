@@ -1,6 +1,6 @@
 'use client';
 import React, { useState } from 'react';
-import JobsTableRow from '../JobsTableRow/JobsTableRow';
+import JobCard from '../JobsPortal/JobCard/JobCard';
 import styles from './JobsTable.module.css';
 import Link from 'next/link';
 import ArrowUpIcon from '@/components/global/Icons/ArrowUpIcon';
@@ -25,56 +25,56 @@ const JobsTable = (props) => {
   };
 
   return (
-    <div className={`${styles.TableContainer} container`}>
-      <div className={styles.TableHeading}>Jobs</div>
-      <div className="d-flex justify-content-between align-items-center mb-4">
-        <div className={`${styles.BtnWrapper}  d-flex align-items-center`}>
-          <Link
-            href="/jobs/applied"
-            className={`${
-              type === 'applied'
-                ? styles.BtnCustomPrimary
-                : styles.BtnCustomSecondary
-            }`}
+    <div className="col-12 d-inline-block mt-5">
+      <div className="container">
+        <h4 className={`${styles.TableHeading} col-12 mb-4`}>Jobs</h4>
+        <div className="d-flex justify-content-between align-items-center mb-4">
+          <div className={`gap-3 d-flex align-items-center`}>
+            <Link
+              href="/jobs/applied"
+              className={`${
+                type === 'applied'
+                  ? styles.BtnCustomPrimary
+                  : styles.BtnCustomSecondary
+              } d-flex align-items-center justify-content-center text-decoration-none`}
+            >
+              Applied
+            </Link>
+            <Link
+              href="/jobs/bookmarked"
+              className={`${
+                type === 'bookmark'
+                  ? styles.BtnCustomPrimary
+                  : styles.BtnCustomSecondary
+              } d-flex align-items-center justify-content-center text-decoration-none`}
+            >
+              Bookmarked
+            </Link>
+          </div>
+          <select
+            value={selectedOption}
+            onChange={handleSelectChange}
+            className={`${styles.SelectDropdown} flex-shrink-0 d-flex justify-content-between align-items-center`}
           >
-            Applied
-          </Link>
-          <Link
-            href="/jobs/bookmarked"
-            className={`${
-              type === 'bookmark'
-                ? styles.BtnCustomPrimary
-                : styles.BtnCustomSecondary
-            }`}
-          >
-            Bookmarked
-          </Link>
+            {selectOptions.map((option) => (
+              <option key={option.value} value={option.value}>
+                {option.label}
+              </option>
+            ))}
+          </select>
         </div>
-        <select
-          value={selectedOption}
-          onChange={handleSelectChange}
-          className={styles.SelectDropdown}
-        >
-          {selectOptions.map((option) => (
-            <option key={option.value} value={option.value}>
-              {option.label}
-            </option>
+        <div className="col-12 d-inline-flex flex-wrap">
+          {Array.from(Array(5)).map((i) => (
+            <div className="col-md-4 mb-3 px-2">
+              <JobCard key={i} type={type} />
+            </div>
           ))}
-        </select>
-      </div>
-      <div className={`${styles.TableHeader}`}>
-        <div className={styles.FirstHeading}>Job Tittle</div>
-        <div className={styles.SecondHeading}>Applied date</div>
-        <div className={styles.LastHeading}>Status</div>
-        <div className={styles.LastHeading}>Action</div>
-      </div>
-      {Array.from(Array(5)).map((i) => (
-        <JobsTableRow type={type} />
-      ))}
-      <div className={styles.ArrowUpIcon}>
-        <div className=" d-flex justify-content-end" onClick={scrollToTop}>
-          {' '}
-          <ArrowUpIcon />
+        </div>
+        <div className={styles.ArrowUpIcon}>
+          <div className=" d-flex justify-content-end" onClick={scrollToTop}>
+            {' '}
+            <ArrowUpIcon />
+          </div>
         </div>
       </div>
     </div>

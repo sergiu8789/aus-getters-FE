@@ -12,14 +12,14 @@
   border-radius: 6px;
   font-size: 14px;
   width: 100%;
-  color: var(--text-black);
+  color: var(--secondary-black);
   font-weight: 500;
   border: 1px solid var(--input-border-color);
 }
 
 .jobsList {
   display: grid;
-  gap: 15px;
+  gap: 20px;
   flex: 0 0 410px;
 }
 
