@@ -56,7 +56,6 @@ select.formInput_arrow {
   border: 1px solid var(--secondary-color);
   background: var(--btn-bg-color-1);
 }
-
 .registerPopup {
   z-index: 1055;
 }
