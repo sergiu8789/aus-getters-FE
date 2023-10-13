@@ -163,7 +163,6 @@ const Step1 = ({ setRegisterStep }) => {
                     className={`${styles.loginFormFloating} col-12 position-relative d-inline-block`}
                   >
                     <textarea
-                      type="email"
                       name="email"
                       onChange={handleChange}
                       onBlur={handleBlur}

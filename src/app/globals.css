@@ -70,6 +70,9 @@
   --off-white: #f8f8f8;
   --bg-light: #fafafa;
   --bg-light-2: #f4f4f4;
+  --contact-bg: #FDECF5;
+  --contact-title-color: #202124;
+  --contactdesc-color: #696969;
 }
 
 * {
