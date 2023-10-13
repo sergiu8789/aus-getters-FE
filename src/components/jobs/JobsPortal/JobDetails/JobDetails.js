@@ -43,7 +43,7 @@ const JobDetails = () => {
               'Henry Gerard',
               'Toronto, Ontaria',
               '5 yrs of exp',
-              'Brand Name'
+              'In Person'
             ].map((x, i) => (
               <div
                 className={`d-inline-flex align-items-center gap-1 ${styles.jobProperty}`}
@@ -56,6 +56,18 @@ const JobDetails = () => {
           </div>
         </div>
         <div className={styles.jobDescription}>
+          <div className="d-flex gap-3 mb-4">
+            {[
+              'Video Marketing',
+              'Data Analytics',
+              'Content Creation',
+              'Linguistics & Communication'
+            ].map((x, i) => (
+              <span className={styles.chip} key={i}>
+                {x}
+              </span>
+            ))}
+          </div>
           <h3>Job Description</h3>
           <p>
             Suspendisse ac neque porta, maximus ipsum eu, porttitor lorem.
@@ -86,6 +98,21 @@ const JobDetails = () => {
               lputate porttitor placerat at, semper quis nunc. Quisque at
               dapibus lacus. Aliquam mollis odio massa, a euismod nunc
               sollicitudin quis.
+            </li>
+          </ul>
+          <h3>Skills & Experience</h3>
+          <ul>
+            <li>
+              Donec felis lectus, bibendum eu rhoncus vel, sodales a lacus.
+              Praes
+            </li>
+            <li>
+              Praesent ligula dui, vulputate porttitor placerat at, semper quis
+              nunc.
+            </li>
+            <li>
+              tus, in pretium tellus semper id. Sed ut pellentesque nibh. Proin
+              auctor a mauris non congue.{' '}
             </li>
           </ul>
           <p>18 min ago</p>{' '}

@@ -62,7 +62,7 @@ const JobCard = ({ type }) => {
         <span
           className={`${styles.ActiveType} d-inline-flex align-items-center`}
         >
-          Failed
+          Filled
         </span>
       </div>
       {type === 'bookmark' && (

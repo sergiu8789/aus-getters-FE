@@ -2,16 +2,9 @@
 
 import styles from './JobsFilters.module.css';
 import Dropdown from 'react-bootstrap/Dropdown';
-
 import SalaryRangeSlider from '@/components/global/common/SalaryRangeSlider/SalaryRangeSlider';
 
 const JobsFilters = () => {
-  const model = {
-    annual: {},
-
-    hourly: {}
-  };
-
   return (
     <div className={styles.jobsFilters}>
       <div className={styles.jobFilter}>
@@ -36,7 +29,7 @@ const JobsFilters = () => {
       </div>
       <div className={styles.jobFilter}>
         <Dropdown variant="secondary" className={styles.filterDropdown}>
-          <Dropdown.Toggle variant="secondary">Renumeration</Dropdown.Toggle>
+          <Dropdown.Toggle variant="secondary">Remuneration </Dropdown.Toggle>
           <Dropdown.Menu className={styles.rangeWrap}>
             <SalaryRangeSlider />
           </Dropdown.Menu>
