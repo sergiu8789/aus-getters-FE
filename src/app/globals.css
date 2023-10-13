@@ -62,7 +62,7 @@
   );
   --title-gradient-bg: linear-gradient(180deg, #ef5de4 0%, #5d5fef 100%);
   --email-sent-color: #392020;
-
+  --header-nav-border: #FCDDEC;
   --light-grey-100: #f6f6f6;
   --light-grey-200: #c4c4c4;
   --text-grey-light: #989899;
