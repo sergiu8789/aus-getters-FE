@@ -12,7 +12,7 @@ import { Formik } from 'formik';
 import SignupSteps from '@/components/signup/SignupSteps';
 import Footer from '@/components/global/Footer/Footer';
 
-export default function page() {
+export default function Page() {
   const [passwordText, setPasswordText] = useState('password');
   const [registerStepPop, setRegisterStepPop] = useState(false);
 
@@ -282,11 +282,19 @@ export default function page() {
                     className={`${styles.agreetermLink} position-relative d-inline-block`}
                   >
                     By registering you agree to{' '}
-                    <Link href="/" target="_blank" className={styles.termsLink}>
+                    <Link
+                      href="/terms"
+                      target="_blank"
+                      className={styles.termsLink}
+                    >
                       Terms of Use
                     </Link>{' '}
                     and{' '}
-                    <Link href="/" target="_blank" className={styles.termsLink}>
+                    <Link
+                      href="/privacy"
+                      target="_blank"
+                      className={styles.termsLink}
+                    >
                       Privacy Policy
                     </Link>
                   </label>

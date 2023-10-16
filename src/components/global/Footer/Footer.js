@@ -219,10 +219,16 @@ function Footer() {
               © 2023 Aus-Getters Courses. All rights reserved
             </span>
             <div className={`${styles.copyRightLink} d-inline-flex gap-5`}>
-              <Link href="/" className={`${styles.footerLink} d-inline-block`}>
+              <Link
+                href="/terms"
+                className={`${styles.footerLink} d-inline-block`}
+              >
                 Terms & Conditions
               </Link>
-              <Link href="/" className={`${styles.footerLink} d-inline-block`}>
+              <Link
+                href="/privacy"
+                className={`${styles.footerLink} d-inline-block`}
+              >
                 Privacy
               </Link>
               <Link href="/" className={`${styles.footerLink} d-inline-block`}>
