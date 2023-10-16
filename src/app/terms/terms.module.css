@@ -1,0 +1,7 @@
+.termsNavList{
+    width: 267px;
+    border-right: 1px solid var(--light-grey-200);
+}
+.navListRow{
+    border-radius: 8px;
+}

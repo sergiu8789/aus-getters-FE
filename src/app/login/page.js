@@ -13,7 +13,7 @@ import apple from '../../../public/assets/images/apple.svg';
 import { Formik } from 'formik';
 import Footer from '@/components/global/Footer/Footer';
 
-export default function page() {
+export default function Page() {
   const [passwordText, setPasswordText] = useState('password');
 
   const showPassword = () => {

@@ -65,8 +65,8 @@ const JobsTable = (props) => {
         </div>
         <div className="col-12 d-inline-flex flex-wrap">
           {Array.from(Array(5)).map((i) => (
-            <div className="col-md-4 mb-3 px-2">
-              <JobCard key={i} type={type} />
+            <div key={i} className="col-md-4 mb-3 px-2">
+              <JobCard type={type} />
             </div>
           ))}
         </div>

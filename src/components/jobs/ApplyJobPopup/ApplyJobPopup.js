@@ -159,7 +159,7 @@ const Step1 = ({ setRegisterStep, onClose }) => {
                       )}
                     </div>
                     <div style={{ fontSize: '12px', fontWeight: 200 }}>
-                      'Updated 10 days ago'
+                      &apos;Updated 10 days ago&apos;
                     </div>
                     {/* <button
                       type="button"
@@ -379,7 +379,7 @@ const Step3 = ({ setRegisterStep, onClose }) => {
               </label>
               <div className={`${styles.messageManager} ${styles.addSpace}`}>
                 <p className={styles.mainText}>
-                  I'm a deeply curious Mutlidisciplinary Designer based in
+                  I&apos;m a deeply curious Mutlidisciplinary Designer based in
                   Uruguay with a background in Industrial Design and an early
                   taste of good design
                 </p>
