@@ -1,0 +1,12 @@
+.add_skill_btn {
+  border-radius: 6px;
+  border: 1px solid var(--secondary-color);
+  background: var(--btn-bg-color-1);
+  color: var(--secondary-black);
+  width: 124px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: -0.32px;
+  min-height: 50px;
+}

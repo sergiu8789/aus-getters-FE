@@ -5,7 +5,7 @@ import { ProfileImage } from '../ProfileImage/ProfileImage';
 import EditIcon from '../../../../public/assets/images/edit_icon.svg';
 import SaveIcon from '../../../../public/assets/images/save.svg';
 import VisibleEye from '../../../../public/assets/images/visible_eye.svg';
-import { SkillsAdd } from '../SkillsAdd/Skillsadd';
+import SkillsForm, { SkillsAdd } from '../SkillsForm/SkillsForm';
 import { SocialLinks } from '../SocialLinks/SocialLinks';
 import { EduTraining } from '../EduTraining/EduTraining';
 import { Workprefer } from '../WorkPreference/WorkPrefer';
@@ -20,23 +20,10 @@ import { Addworkexperience } from '../AddWorkExperience/Addworkexperience';
 import { AddEduTraining } from '../AddEduTraining/AddEduTraining';
 import { UploadResume } from '../UploadResume/UploadResume';
 import { UploadCoverLetter } from '../UploadCoverLetter/UploadCoverLetter';
+import Dropdown from 'react-bootstrap/Dropdown';
 
 export const AccountSetting = () => {
   const [editMode, setEditMode] = useState(false);
-  const formikRef = useRef();
-
-  const handleSubmit = (values) => {
-    // Handle form submission here
-    console.log('finally', values); // Do something with the form values
-    // You can make an API call or update the state here.
-  };
-
-  // Create a function to trigger form submission in the child component
-  const submitFormInChild = () => {
-    if (editMode) {
-      formikRef.current.submitForm(); // Trigger form submission using the ref
-    }
-  };
 
   return (
     <React.Fragment>
@@ -94,8 +81,7 @@ export const AccountSetting = () => {
         <div
           className={`${styles.user_basic_detail} row p-4 m-0 border-bottom position-relative`}
         >
-          <SkillsAdd />
-          <Skillspopup />
+          <SkillsForm />
         </div>
         <div
           className={`${styles.user_basic_detail} row p-4 m-0 border-bottom`}
