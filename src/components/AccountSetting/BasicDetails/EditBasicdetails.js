@@ -1,8 +1,8 @@
-import React from 'react';
-import { Formik, useFormik } from 'formik';
+import React, { useRef } from 'react';
+import { useFormik } from 'formik';
 import styles from './Basicdetails.module.css';
 
-export const EditBasicdetails = () => {
+export const EditBasicdetails = ({ setEditMode }) => {
   const formik = useFormik({
     initialValues: {
       Firstname: '',
@@ -17,6 +17,7 @@ export const EditBasicdetails = () => {
       Description: ''
     },
     onSubmit: (values) => {
+      setEditMode(false);
       console.log(values);
       formik.resetForm();
     }
@@ -28,6 +29,7 @@ export const EditBasicdetails = () => {
           e.preventDefault();
           formik.handleSubmit();
         }}
+        id="editProfileDetails"
       >
         <h6>Basic Details</h6>
         <div className="col-12">
@@ -192,7 +194,6 @@ export const EditBasicdetails = () => {
                 <span>* </span> Description
               </label>
             </div>
-            {/* <button type="submit">Submit</button> */}
           </div>
         </div>
       </form>

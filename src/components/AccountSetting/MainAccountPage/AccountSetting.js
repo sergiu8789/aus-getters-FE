@@ -41,18 +41,14 @@ export const AccountSetting = () => {
                 ></Image>
               </p>
             ) : (
-              <p
-                onClick={() => {
-                  setEditMode(!editMode);
-                }}
-              >
+              <button form="editProfileDetails" type="submit">
                 Save
                 <Image
                   src={SaveIcon}
                   className={`object-fit-cover`}
                   alt="SaveIcon"
                 ></Image>
-              </p>
+              </button>
             )}
             <p>
               Visibility{' '}
@@ -70,7 +66,7 @@ export const AccountSetting = () => {
           {!editMode ? (
             <Basicdetails />
           ) : (
-            <EditBasicdetails onSubmit={handleSubmit} />
+            <EditBasicdetails setEditMode={setEditMode} />
           )}
         </div>
         <div

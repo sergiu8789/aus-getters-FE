@@ -29,7 +29,19 @@
   text-align: center;
   letter-spacing: -0.32px;
 }
-.all_profile_edit p:nth-child(2) {
+.all_profile_edit button {
+  width: 124px;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid var(--input-border-color);
+  background: var(--iris-tints-tint-6);
+  color: var(--secondary-black);
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: -0.32px;
+}
+.all_profile_edit button:nth-child(2) {
   border: 1px solid var(--default-color);
   background: var(--fuschia-tints-tint-7);
 }
