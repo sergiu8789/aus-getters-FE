@@ -79,7 +79,7 @@
   font-family: 'Work Sans';
 }
 
-/* Utility classes */
+/*--- Utility classes ---*/
 
 .text-black {
   color: var(--secondary-black);
@@ -116,4 +116,26 @@
   color: var(--white-color);
   background: var(--main-gradient-color);
   padding: 12px 30px;
+}
+
+/*--- Utility Classes End ---*/
+
+/* External Library Overwrites */
+
+.salary-range-slider .multi-range-slider .thumb::before,
+.salary-range-slider .multi-range-slider .bar-left,
+.salary-range-slider .multi-range-slider .bar-right,
+.salary-range-slider .multi-range-slider .bar-inner,
+.salary-range-slider .multi-range-slider .thumb .caption * {
+  border: none;
+  box-shadow: none;
+}
+
+.salary-range-slider .multi-range-slider .caption {
+  bottom: 26px;
+}
+
+.salary-range-slider .multi-range-slider .thumb .caption * {
+  background: transparent;
+  color: #000;
 }

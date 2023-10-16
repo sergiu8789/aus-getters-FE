@@ -7,10 +7,10 @@ import Image from 'next/image';
 
 const JobsPortal = () => {
   return (
-    <div className="container py-4">
-      <div className="d-flex justify-content-center py-5">
+    <div className="container py-4 mb-4">
+      {/* <div className="d-flex justify-content-center py-5">
         <Image src={LogoPng} alt="logo" />
-      </div>
+      </div> */}
       <div className={styles.jobsSearchWrap}>
         <JobsSearchForm />
       </div>

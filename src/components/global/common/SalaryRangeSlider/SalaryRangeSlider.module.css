@@ -1,0 +1,14 @@
+.modeLabel {
+  cursor: pointer;
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 6px;
+  border: 1px solid var(--btn-bg-border-1);
+  font-size: 14px;
+  color: var(--secondary-black);
+}
+
+.modeRadio:checked + label {
+  background: var(--btn-bg-border-1);
+  color: var(--white-color);
+}

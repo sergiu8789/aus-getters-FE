@@ -16,7 +16,9 @@ const JobCard = ({ type }) => {
         <div className={styles.cardImageBox}></div>
 
         <div className={styles.cardInfo}>
-          <h3 className={`${styles.cardTitle} col-12`}>Job Name</h3>
+          <h3 className={`${styles.cardTitle} col-12`}>
+            <Link href="/jobs/1">Job Name</Link>
+          </h3>
           <Link
             href="#"
             className={`${styles.companyLink} text-decoration-none d-inline-flex align-items-center gap-1 position-relative`}
@@ -60,7 +62,7 @@ const JobCard = ({ type }) => {
         <span
           className={`${styles.ActiveType} d-inline-flex align-items-center`}
         >
-          Failed
+          Filled
         </span>
       </div>
       {type === 'bookmark' && (

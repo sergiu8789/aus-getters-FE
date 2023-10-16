@@ -1,333 +1,388 @@
-.registerLayer{
-    opacity: var(--bs-backdrop-opacity);
+.registerLayer {
+  opacity: var(--bs-backdrop-opacity);
 }
-.registerPopup{
-    z-index: 1055;
+.registerPopup {
+  z-index: 1055;
 }
-.stepTitle{
-    font-size: 32px;
-    font-weight: 600;
-    line-height: 44px;
-    color: var(--secondary-black);
-    margin-bottom: 32px;
+.stepTitle {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 44px;
+  color: var(--secondary-black);
+  margin-bottom: 32px;
 }
-.stepBlocks{
-    margin-bottom: 35px;
+.stepBlocks {
+  margin-bottom: 35px;
 }
-.stepCircle{
-    height: 30px;
-    width: 30px;
-    border-radius: 50%;
-    background: transparent;
-    border: 2px solid var(--white-color);
-    z-index: 5;
+.stepCircle {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background: transparent;
+  border: 2px solid var(--white-color);
+  z-index: 5;
 }
-.stepCircle:before{
-    content: '';
-    height: 22px;
-    width: 22px;
-    border-radius: 50%;
-    background: var(--step-line-bg);
-    position: absolute;
-    margin: auto;
-    inset: 0;
+.stepCircle:before {
+  content: '';
+  height: 22px;
+  width: 22px;
+  border-radius: 50%;
+  background: var(--step-line-bg);
+  position: absolute;
+  margin: auto;
+  inset: 0;
 }
-.stepBlocks::after, .stepBlocks:before{
-    content: '';
-    height: 6px;
-    background: var(--step-line-bg);
-    left: 10px;
-    position: absolute;
-    display: inline-block;
+.stepBlocks::after,
+.stepBlocks:before {
+  content: '';
+  height: 6px;
+  background: var(--step-line-bg);
+  left: 10px;
+  position: absolute;
+  display: inline-block;
 }
-.stepBlocks:before{
-    background: var(--progress-line-bg);
-    z-index: 2;
+.stepBlocks:before {
+  background: var(--progress-line-bg);
+  z-index: 2;
 }
-.stepBlocks::after{
-    right: 10px;
+.stepBlocks::after {
+  right: 10px;
 }
-.activeStep1 .stepCircle1:before, .activeStep2 .stepCircle1:before, .activeStep2 .stepCircle2:before, .activeStep3 .stepCircle1:before, .activeStep3 .stepCircle2:before, .activeStep3 .stepCircle3:before, .activeStep4 .stepCircle1:before, .activeStep4 .stepCircle2:before, .activeStep4 .stepCircle3:before, .activeStep4 .stepCircle4:before, .activeStep5 .stepCircle1:before, .activeStep5 .stepCircle2:before, .activeStep5 .stepCircle3:before, .activeStep5 .stepCircle4:before, .activeStep5 .stepCircle5:before{
-    background: var(--main-gradient-color);
+.activeStep1 .stepCircle1:before,
+.activeStep2 .stepCircle1:before,
+.activeStep2 .stepCircle2:before,
+.activeStep3 .stepCircle1:before,
+.activeStep3 .stepCircle2:before,
+.activeStep3 .stepCircle3:before,
+.activeStep4 .stepCircle1:before,
+.activeStep4 .stepCircle2:before,
+.activeStep4 .stepCircle3:before,
+.activeStep4 .stepCircle4:before,
+.activeStep5 .stepCircle1:before,
+.activeStep5 .stepCircle2:before,
+.activeStep5 .stepCircle3:before,
+.activeStep5 .stepCircle4:before,
+.activeStep5 .stepCircle5:before {
+  background: var(--main-gradient-color);
 }
-.activeStep1 .stepCircle1, .activeStep2 .stepCircle1, .activeStep2 .stepCircle2, .activeStep3 .stepCircle1, .activeStep3 .stepCircle2, .activeStep3 .stepCircle3, .activeStep4 .stepCircle1, .activeStep4 .stepCircle2, .activeStep4 .stepCircle3, .activeStep4 .stepCircle4, .activeStep5 .stepCircle1, .activeStep5 .stepCircle2, .activeStep5 .stepCircle3, .activeStep5 .stepCircle4, .activeStep5 .stepCircle5{
-    border: 2px solid var(--default-color);
+.activeStep1 .stepCircle1,
+.activeStep2 .stepCircle1,
+.activeStep2 .stepCircle2,
+.activeStep3 .stepCircle1,
+.activeStep3 .stepCircle2,
+.activeStep3 .stepCircle3,
+.activeStep4 .stepCircle1,
+.activeStep4 .stepCircle2,
+.activeStep4 .stepCircle3,
+.activeStep4 .stepCircle4,
+.activeStep5 .stepCircle1,
+.activeStep5 .stepCircle2,
+.activeStep5 .stepCircle3,
+.activeStep5 .stepCircle4,
+.activeStep5 .stepCircle5 {
+  border: 2px solid var(--default-color);
 }
-.activeStep2:before{
-    width: 23%;
+.activeStep2:before {
+  width: 23%;
 }
-.activeStep3:before{
-    width: 48%;
+.activeStep3:before {
+  width: 48%;
 }
-.activeStep4:before{
-    width: 72%;
+.activeStep4:before {
+  width: 72%;
 }
-.activeStep5:before{
-    width: 95%;
+.activeStep5:before {
+  width: 95%;
 }
-.registerContent{
-    max-width: 760px;
+.registerContent {
+  max-width: 760px;
 }
-.registerModel{
-    background: var(--white-color);
-    padding: 60px 80px;
-    height: 90vh;
-    max-height: 90vh;
+.registerModel {
+  background: var(--white-color);
+  padding: 60px 80px;
+  height: 90vh;
+  max-height: 90vh;
 }
-.registerModel::-webkit-scrollbar{
-    width: 5px;
+.registerModel::-webkit-scrollbar {
+  width: 5px;
 }
-.registerModel::-webkit-scrollbar-thumb{
-    background: var(--dark-grey);
-    border-radius: 5px;
+.registerModel::-webkit-scrollbar-thumb {
+  background: var(--dark-grey);
+  border-radius: 5px;
 }
-.registerModel::-webkit-scrollbar-track{
-    background: var(--step-line-bg);
+.registerModel::-webkit-scrollbar-track {
+  background: var(--step-line-bg);
 }
-.backStep{
-    margin-bottom: 28px;
+.backStep {
+  margin-bottom: 28px;
 }
-.backStep img{
-    height: 24px;
-    width: 24px;
+.backStep img {
+  height: 24px;
+  width: 24px;
 }
-.backLinkText{
-    font-size: 16px;
-    color: var(--secondary-black);
-    font-weight: 500;
-    line-height: 28px;
-    letter-spacing: -0.32px;
+.backLinkText {
+  font-size: 16px;
+  color: var(--secondary-black);
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: -0.32px;
 }
-.loginFormFloating{
-    margin-bottom: 32px;
+.loginFormFloating {
+  margin-bottom: 32px;
 }
-.formInput, .formTextarea, .formSelect{
-    height: 50px;
-    padding: 12px;
-    border-radius: 6px;
-    transition: .5s;
-    border: 1px solid var(--border-color);
-    background: transparent;
-    position: relative;
-    z-index: 2;
+.formInput,
+.formTextarea,
+.formSelect {
+  height: 50px;
+  padding: 12px;
+  border-radius: 6px;
+  transition: 0.5s;
+  border: 1px solid var(--border-color);
+  background: transparent;
+  position: relative;
+  z-index: 2;
 }
-.formTextarea{
-    height: 135px;
-    resize: none;
+.formTextarea {
+  height: 135px;
+  resize: none;
 }
-.formInput:focus, .formInput:focus-visible, .formInput:not(:placeholder-shown), .formTextarea:focus,.formTextarea:focus-visible, .formTextarea:not(:placeholder-shown), .formSelect:focus, .formSelect:focus-visible{
-    border: 1px solid var(--input-border-color);
-    outline: none;
+.formInput:focus,
+.formInput:focus-visible,
+.formInput:not(:placeholder-shown),
+.formTextarea:focus,
+.formTextarea:focus-visible,
+.formTextarea:not(:placeholder-shown),
+.formSelect:focus,
+.formSelect:focus-visible {
+  border: 1px solid var(--input-border-color);
+  outline: none;
 }
-.formInput::-webkit-input-placeholder, .formTextarea::-webkit-input-placeholder{
-    color: transparent;
+.formInput::-webkit-input-placeholder,
+.formTextarea::-webkit-input-placeholder {
+  color: transparent;
 }
-.formLabel{
-    left: 12px;
-    top: 12px;
-    padding: 0 10px;
-    background: var(--white-color);
-    font-size: 15px;
-    transition: .2s;
+.formLabel {
+  left: 12px;
+  top: 12px;
+  padding: 0 10px;
+  background: var(--white-color);
+  font-size: 15px;
+  transition: 0.2s;
 }
-.formInputLabel{
-    font-size: 15px;
+.formInputLabel {
+  font-size: 15px;
 }
-.required{
-    color: var(--red-bg);
+.required {
+  color: var(--red-bg);
 }
-.formInput:not(:placeholder-shown)+.formLabel, .formInput:focus+.formLabel, .profileImageBox .formLabel, .formTextarea:not(:placeholder-shown)+.formLabel, .formTextarea:focus+.formLabel, .formSelect:focus+.formLabel, .formSelect:not(:placeholder-shown)+.formLabel{
-    transform: translateY(-20px) translateX(0px);
-    -webkit-transform: translateY(-20px) translateX(0px);
-    font-size: 10px;
-    color: var(--secondary-color);
-    z-index: 3;
+.formInput:not(:placeholder-shown) + .formLabel,
+.formInput:focus + .formLabel,
+.profileImageBox .formLabel,
+.formTextarea:not(:placeholder-shown) + .formLabel,
+.formTextarea:focus + .formLabel,
+.formSelect:focus + .formLabel,
+.formSelect:not(:placeholder-shown) + .formLabel {
+  transform: translateY(-20px) translateX(0px);
+  -webkit-transform: translateY(-20px) translateX(0px);
+  font-size: 10px;
+  color: var(--secondary-color);
+  z-index: 3;
 }
-.passwordEye{
-    right: 10px;
-    top: 15px;
-    z-index: 5;
-    height: 20px;
+.passwordEye {
+  right: 10px;
+  top: 15px;
+  z-index: 5;
+  height: 20px;
 }
-.fromError{
-    font-size: 12px;
-    color: var(--error-color);
+.fromError {
+  font-size: 12px;
+  color: var(--error-color);
 }
-.profileImageBox{
-    border: 1px solid var(--input-border-color);
-    border-radius: 6px;
-    height: 132px;
+.profileImageBox {
+  border: 1px solid var(--input-border-color);
+  border-radius: 6px;
+  height: 132px;
 }
-.formSelect{
-    -webkit-appearance: none;
-    background-image: url(../../../public/assets/images/downArrow.svg);
-    background-repeat: no-repeat;
-    background-size: 24px;
-    background-position: right center;
-    background-position-x: 98%;
-    padding: 0 30px;
+.formSelect {
+  -webkit-appearance: none;
+  background-image: url(../../../public/assets/images/downArrow.svg);
+  background-repeat: no-repeat;
+  background-size: 24px;
+  background-position: right center;
+  background-position-x: 98%;
+  padding: 0 30px;
 }
-.removeSkill{
-    top: 0;
-    height: 50px;
-    width: 30px;
-    z-index: 5;
+.removeSkill {
+  top: 0;
+  height: 50px;
+  width: 30px;
+  z-index: 5;
 }
-.removeSkill img{
-    height: 14px;
-    width: 14px;
+.removeSkill img {
+  height: 14px;
+  width: 14px;
 }
-.loginFromBox{
-    min-height: 400px;
+.loginFromBox {
+  min-height: 400px;
 }
-.skipBtnNav{
-    margin-top: 50px;
+.skipBtnNav {
+  margin-top: 50px;
 }
-.skipBtn, .nextBtn, .addExperBtn{
-    padding: 12px;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 28px;
-    letter-spacing: -0.32px;
-    border-radius: 6px;
+.skipBtn,
+.nextBtn,
+.addExperBtn {
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: -0.32px;
+  border-radius: 6px;
 }
-.skipBtn{
-    background: var(--white-color);
-    color: var(--dark-grey);
+.skipBtn {
+  background: var(--white-color);
+  color: var(--dark-grey);
 }
-.nextBtn{
-    padding: 12px 24px;
-    background: var(--btn-bg-color-1);
-    color: var(--secondary-black);
-    border: 1px solid var(--btn-bg-border-1);
-    min-width: 132px;
+.nextBtn {
+  padding: 12px 24px;
+  background: var(--btn-bg-color-1);
+  color: var(--secondary-black);
+  border: 1px solid var(--btn-bg-border-1);
+  min-width: 132px;
 }
-.addExperBtn{
-    background: var(--btn-bg-color-1);
-    color: var(--btn-bg-border-1);
+.addExperBtn {
+  background: var(--btn-bg-color-1);
+  color: var(--btn-bg-border-1);
 }
-.purseingCheck{
-    color: var(--dark-greys-747474);
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 26px;
-    letter-spacing: -0.28px;
+.purseingCheck {
+  color: var(--dark-greys-747474);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: -0.28px;
 }
-.profileVisible{
-    border-radius: 6px;
-    background: var(--greys-fafafa);
-    padding: 25px 32px;
-    border: 1px solid var(--grey-d4d4d4);
+.profileVisible {
+  border-radius: 6px;
+  background: var(--greys-fafafa);
+  padding: 25px 32px;
+  border: 1px solid var(--grey-d4d4d4);
 }
-.visbleProfile img{
-    width: 24px;
-    height: 24px;
+.visbleProfile img {
+  width: 24px;
+  height: 24px;
 }
-.visbleText{
-    font-size: 16px;
-    color: var(--dark-grey-4A5568);
+.visbleText {
+  font-size: 16px;
+  color: var(--dark-grey-4A5568);
 }
 .btntoggleLabel {
-    background: #6f8898;
-    transition: all .4s ease;
-    -webkit-transition: all .4s ease;
-    box-shadow: inset 0 3px rgba(0, 0, 0, 0.15);
-    cursor: pointer;
-    display: block;
-    outline: 0;
-    position: relative;
-    user-select: none;
-    padding: 1px;
-    border-radius: 15px;
-    width: 42px;
-    height: 22px;
+  background: #6f8898;
+  transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  box-shadow: inset 0 3px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  display: block;
+  outline: 0;
+  position: relative;
+  user-select: none;
+  padding: 1px;
+  border-radius: 15px;
+  width: 42px;
+  height: 22px;
 }
 .btntoggleLabel:before {
-    background: var(--white-color);
-    border-radius: 35px;
-    transition: left .4s cubic-bezier(.175, .885, .32, 1.275), padding .1s ease, margin .3s ease;
-    left: 4px;
-    content: "";
-    display: block;
-    height: 13px;
-    position: relative;
-    width: 13px;
-    box-shadow: 0 0 0 1px rgba(0 0 0 / 10%), 0 4px rgba(0 0 0 / 8%);
-    transition: left .3s cubic-bezier(.175, .885, .32, 1.275), padding .1s ease, margin .3s ease;
-    top: 3px;
+  background: var(--white-color);
+  border-radius: 35px;
+  transition:
+    left 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+    padding 0.1s ease,
+    margin 0.3s ease;
+  left: 4px;
+  content: '';
+  display: block;
+  height: 13px;
+  position: relative;
+  width: 13px;
+  box-shadow:
+    0 0 0 1px rgba(0 0 0 / 10%),
+    0 4px rgba(0 0 0 / 8%);
+  transition:
+    left 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+    padding 0.1s ease,
+    margin 0.3s ease;
+  top: 3px;
 }
-.btntoggle:checked~.btntoggleLabel {
-    background: var(--secondary-color);
+.btntoggle:checked ~ .btntoggleLabel {
+  background: var(--secondary-color);
 }
-.btntoggle:checked~.btntoggleLabel:before {
-    left: 23px;
+.btntoggle:checked ~ .btntoggleLabel:before {
+  left: 23px;
 }
 .btntoggle {
-    z-index: 2;
-    width: 42px;
-    height: 22px;
-    opacity: 0;
+  z-index: 2;
+  width: 42px;
+  height: 22px;
+  opacity: 0;
 }
-.visibleInfo{
-    font-size: 14px;
-    color: var(--secondary-black);
-    font-weight: 400;
-    line-height: 26px;
+.visibleInfo {
+  font-size: 14px;
+  color: var(--secondary-black);
+  font-weight: 400;
+  line-height: 26px;
 }
-.profileListBox{
-    border-top: 1px solid var(--grey-border);
+.profileListBox {
+  border-top: 1px solid var(--grey-border);
 }
-.viewProfileBox{
-    border-radius: 12px;
+.viewProfileBox {
+  border-radius: 12px;
 }
-.imageBox:after{
-    content: '';
-    position: absolute;
-    inset: 0;
-    z-index: 2;
-    display: inline-block;
-    background: var(--image-overlay-gradient);
-    transition: .2s;
+.imageBox:after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: inline-block;
+  background: var(--image-overlay-gradient);
+  transition: 0.2s;
 }
-.profileLinkBox{
-    background: var(--greys-fafafa);
-    padding: 30px;
-    transition: .2s;
+.profileLinkBox {
+  background: var(--greys-fafafa);
+  padding: 30px;
+  transition: 0.2s;
 }
-.linkName{
-    color: var(--secondary-black);
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 28px;
+.linkName {
+  color: var(--secondary-black);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 28px;
 }
-.linkInfo{
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 26px;
-    color: var(--dark-grey-4A5568);
+.linkInfo {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+  color: var(--dark-grey-4A5568);
 }
-.linkArrow{
-    transform: rotate(-90deg);
-    -webkit-transform: rotate(-90deg);
-    position: absolute;
-    height: 24px;
-    width: 24px;
-    right: 10px;
-    top: 50%;
-    margin-top: -12px;
+.linkArrow {
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  position: absolute;
+  height: 24px;
+  width: 24px;
+  right: 10px;
+  top: 50%;
+  margin-top: -12px;
 }
-.viewProfileEnable .profileLinkBox{
-    background: var(--gradient-l-ight-gradient);
+.viewProfileEnable .profileLinkBox {
+  background: var(--gradient-l-ight-gradient);
 }
-.viewProfileEnable .imageBox:after{
-    background: var(--image-overlay-purple-gradient);
+.viewProfileEnable .imageBox:after {
+  background: var(--image-overlay-purple-gradient);
 }
-.viewProfileEnable .profileLinkBox .linkName{
-    color: var(--secondary-color)
+.viewProfileEnable .profileLinkBox .linkName {
+  color: var(--secondary-color);
 }
-.gradeintColor{
-    background: var(--title-gradient-bg);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.gradeintColor {
+  background: var(--title-gradient-bg);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
