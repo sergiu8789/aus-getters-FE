@@ -4,6 +4,7 @@ import styles from './AddEduTraining.module.css';
 import Image from 'next/image';
 import UploadImg from '../../../../public/assets/images/upload-documnet.png';
 import Closebtn from '../../../../public/assets/images/x_blk_close.svg';
+import pdfIcon from '../../../../public/assets/images/pdf.svg';
 
 export const AddEduTraining = ({ onShow, onClose, editData }) => {
   const isEditMode = !!editData;
@@ -198,12 +199,32 @@ export const AddEduTraining = ({ onShow, onClose, editData }) => {
                         className="position-absolute start-0 top-0 h-100 opacity-0 w-100"
                         id="file-input"
                         name="ImageStyle"
+                        accept="application/pdf"
+                        onChange={(event) => {
+                          const file = event.target.files[0];
+                          // const imageUrl = URL.createObjectURL(file);
+                          formik.setFieldValue('ImageStyle', file);
+                        }}
                       />
-                      <Image
-                        src={UploadImg}
-                        className="object-fit-contain"
-                        alt="Upload-Image"
-                      />
+                      {formik.values.ImageStyle ? (
+                        <>
+                          <span>
+                            <Image
+                              src={pdfIcon}
+                              alt="PDF Icon"
+                              width="20"
+                              height="20"
+                            />
+                          </span>
+                          <span>{formik.values.ImageStyle.name}</span>
+                        </>
+                      ) : (
+                        <Image
+                          src={UploadImg}
+                          className="object-fit-contain"
+                          alt="uploadIcon"
+                        />
+                      )}
                     </div>
                   </div>
                   <div className="col-lg-6 mb-3 pb-2">

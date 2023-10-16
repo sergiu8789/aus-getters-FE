@@ -4,6 +4,7 @@ import styles from './Addworkexperience.module.css';
 import Image from 'next/image';
 import UploadImg from '../../../../public/assets/images/upload-documnet.png';
 import Closebtn from '../../../../public/assets/images/x_blk_close.svg';
+import pdfIcon from '../../../../public/assets/images/pdf.svg';
 
 export const Addworkexperience = ({ onShow, onClose, editData }) => {
   const isEditMode = !!editData;
@@ -136,16 +137,22 @@ export const Addworkexperience = ({ onShow, onClose, editData }) => {
                         accept="application/pdf"
                         onChange={(event) => {
                           const file = event.target.files[0];
-                          const imageUrl = URL.createObjectURL(file);
-                          formik.setFieldValue('ImageStyle', imageUrl);
+                          // const imageUrl = URL.createObjectURL(file);
+                          formik.setFieldValue('ImageStyle', file);
                         }}
                       />
                       {formik.values.ImageStyle ? (
-                        <img
-                          src={formik.values.ImageStyle}
-                          className="object-fit-contain"
-                          alt="uploadedImage"
-                        />
+                        <>
+                          <span>
+                            <Image
+                              src={pdfIcon}
+                              alt="PDF Icon"
+                              width="20"
+                              height="20"
+                            />
+                          </span>
+                          <span>{formik.values.ImageStyle.name}</span>
+                        </>
                       ) : (
                         <Image
                           src={UploadImg}
