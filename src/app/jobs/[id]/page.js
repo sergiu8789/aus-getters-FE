@@ -1,10 +1,17 @@
-import JobsDetails from '@/components/jobs/JobsDetails/JobsDetails';
+'use client';
+import Footer from '@/components/global/Footer/Footer';
+import JobsHeaderNav from '@/components/jobs/JobsHeaderNav/JobsHeaderNav';
+import JobDetails from '@/components/jobs/JobsPortal/JobDetails/JobDetails';
 
 const JobPage = () => {
   return (
-    <div>
-      <JobsDetails />
-    </div>
+    <>
+      <JobsHeaderNav />
+      <div className={`container my-4`}>
+        <JobDetails />
+      </div>
+      <Footer />
+    </>
   );
 };
 

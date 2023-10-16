@@ -1,7 +1,17 @@
-import React from 'react';
+'use client';
+
+import Footer from '@/components/global/Footer/Footer';
+import JobsHeaderNav from '@/components/jobs/JobsHeaderNav/JobsHeaderNav';
+import JobsPortal from '@/components/jobs/JobsPortal/JobsPortal';
 
 const JobsPage = () => {
-  return <React.Fragment>JobsPage</React.Fragment>;
+  return (
+    <>
+      <JobsHeaderNav />
+      <JobsPortal />
+      <Footer />
+    </>
+  );
 };
 
 export default JobsPage;

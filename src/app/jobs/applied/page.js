@@ -1,12 +1,15 @@
 'use client';
+import React from 'react';
+import JobsHeaderNav from '@/components/jobs/JobsHeaderNav/JobsHeaderNav';
 import JobsTable from '@/components/jobs/JobsTable/JobsTable';
+import Footer from '@/components/global/Footer/Footer';
 
-const AppliedJobsPage = () => {
+export default function page() {
   return (
-    <div>
+    <React.Fragment>
+      <JobsHeaderNav />
       <JobsTable type={'applied'} />
-    </div>
+      <Footer />
+    </React.Fragment>
   );
-};
-
-export default AppliedJobsPage;
+}

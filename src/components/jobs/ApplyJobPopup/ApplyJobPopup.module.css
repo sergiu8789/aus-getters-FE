@@ -1,0 +1,278 @@
+.registerLayer {
+  opacity: var(--bs-backdrop-opacity);
+}
+
+.applyPopup {
+  z-index: 1055;
+}
+
+.applyContent {
+  max-width: 760px;
+}
+
+.applyModel {
+  background: var(--white-color);
+  padding: 60px 80px;
+  height: 90vh;
+  max-height: 90vh;
+}
+.applyModel::-webkit-scrollbar {
+  width: 5px;
+}
+.applyModel::-webkit-scrollbar-thumb {
+  background: var(--dark-grey);
+  border-radius: 5px;
+}
+.applyModel::-webkit-scrollbar-track {
+  background: var(--step-line-bg);
+}
+
+.backStep {
+  margin-bottom: 28px;
+}
+.backStep img {
+  height: 24px;
+  width: 24px;
+}
+
+.resumeHeading {
+  font-size: 16px;
+  font-weight: 600;
+}
+.backLinkText {
+  font-size: 16px;
+  color: var(--secondary-black);
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: -0.32px;
+}
+
+.nextBtn {
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: -0.32px;
+  border-radius: 6px;
+}
+
+.nextBtn {
+  padding: 12px 24px;
+  background: var(--btn-bg-color-1);
+  color: var(--secondary-black);
+  border: 1px solid var(--btn-bg-border-1);
+  min-width: 132px;
+}
+
+.pdfSection {
+  border: 1px solid var(--grey-d4d4d4);
+  padding: 16px;
+  border-radius: 12px;
+}
+
+.pdfName {
+  padding: 8px 20px 8px 8px;
+  background-color: var(--bg-light-2);
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 500;
+}
+.selected {
+  padding: 8px 8px 8px 8px;
+  background-color: var(--bg-light-2);
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 500;
+}
+.pdfNameHighLight {
+  padding: 8px 20px 8px 8px;
+  background-color: var(--bg-light-2);
+  border-radius: 6px;
+  border: 2px solid #0054a6;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.messageManager {
+  padding: 8px 20px 28px 8px;
+  margin-top: 8px;
+  background-color: var(--bg-light-2);
+  border-radius: 5px;
+}
+
+.pdfItem {
+  border-bottom: 1px solid var(--grey-d4d4d4);
+}
+
+.pdfItem:last-child {
+  border-bottom: none;
+}
+
+.customBtnPrimary {
+  display: flex;
+  width: 124px;
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--Radius-x6, 6px);
+  border: 1px solid var(--iris-100, #5d5fef);
+  background: var(--iris-tints-tint-7, #dadafb);
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  border-radius: 6px;
+  border: none;
+}
+
+.editCustomBtn {
+  color: var(--Black, #2b2b2b);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  display: flex;
+  width: 118px;
+  padding: 6px;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  border-radius: var(--Radius-x6, 6px);
+  border: 1px solid var(--input-border-color);
+  background: var(--iris-tints-tint-6);
+}
+
+.continueNav {
+  margin-top: 50px;
+}
+
+.addAttachment {
+  margin-top: 28px;
+  display: inline-block;
+  color: #0070cc;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.addAttachment:hover {
+  color: #0054a6;
+}
+
+.mainText {
+  font-size: '14px';
+  font-weight: 400;
+}
+
+/* second pop up */
+
+.questionsHeading {
+  font-size: 16px;
+  font-weight: 600;
+}
+.thirdHeading {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 28px;
+}
+
+.questionField {
+  margin: 20px 0;
+  font-size: 14px;
+}
+.inputField {
+  background-color: var(--bg-light-2);
+  padding: 5px;
+  border-radius: 6px;
+  outline: none;
+}
+
+.addSpace {
+  margin-bottom: 24px;
+}
+
+/* step header  */
+
+.stepTitle {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 44px;
+  color: var(--secondary-black);
+  margin-bottom: 32px;
+}
+.stepBlocks {
+  margin-bottom: 35px;
+}
+.stepBlocks::after,
+.stepBlocks:before {
+  content: '';
+  height: 6px;
+  background: var(--step-line-bg);
+  left: 10px;
+  position: absolute;
+  display: inline-block;
+}
+.stepBlocks:before {
+  background: var(--progress-line-bg);
+  z-index: 2;
+}
+.stepBlocks::after {
+  right: 10px;
+}
+
+.activeStep1 .stepCircle1:before,
+.activeStep2 .stepCircle1:before,
+.activeStep2 .stepCircle2:before,
+.activeStep3 .stepCircle1:before,
+.activeStep3 .stepCircle2:before,
+.activeStep3 .stepCircle3:before {
+  background: var(--main-gradient-color);
+}
+.activeStep1 .stepCircle1,
+.activeStep2 .stepCircle1,
+.activeStep2 .stepCircle2,
+.activeStep3 .stepCircle1,
+.activeStep3 .stepCircle2,
+.activeStep3 .stepCircle3 {
+  border: 2px solid var(--default-color);
+}
+.activeStep2:before {
+  width: 46%;
+}
+.activeStep3:before {
+  width: 95%;
+}
+
+.stepCircle {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background: transparent;
+  border: 2px solid var(--white-color);
+  z-index: 5;
+}
+.stepCircle:before {
+  content: '';
+  height: 22px;
+  width: 22px;
+  border-radius: 50%;
+  background: var(--step-line-bg);
+  position: absolute;
+  margin: auto;
+  inset: 0;
+}
+
+.radio {
+  display: none;
+}
+
+.radio + label {
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+
+.radio:checked + label {
+  padding: 8px 20px 8px 8px;
+  background-color: var(--bg-light-2);
+  border-radius: 6px;
+  border: 2px solid #0054a6;
+  font-size: 12px;
+  font-weight: 500;
+}
