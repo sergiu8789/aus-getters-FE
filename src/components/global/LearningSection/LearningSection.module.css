@@ -1,0 +1,20 @@
+.learnStepsTitle{
+    font-size: 16px;
+    color: var(--secondary-black);
+}
+.learnStepsDesc{
+    font-size: 14px;
+    color: var(--dark-greys-595959)
+}
+.learnTitle{
+    font-size: 44px;
+    color: var(--secondary-black);
+    font-weight: 600;
+}
+.siteColor{
+    color: var(--default-color);
+}
+.learnBox img{
+    height: 38px;
+    width: 38px;
+}

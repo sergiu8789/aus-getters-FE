@@ -1,5 +1,3 @@
-'use client';
-
 import styles from './JobsFilters.module.css';
 import Dropdown from 'react-bootstrap/Dropdown';
 import SalaryRangeSlider from '@/components/global/common/SalaryRangeSlider/SalaryRangeSlider';
