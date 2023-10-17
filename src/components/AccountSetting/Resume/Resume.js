@@ -16,6 +16,10 @@ const Resume = () => {
           <h6>Resume</h6>
           <p
             className={`${styles.edu_edit_btn} m-0 d-flex gap-1 align-items-center`}
+            role="button"
+            onClick={() => {
+              setShowPopup(!showPopUp);
+            }}
           >
             Edit{' '}
             <Image

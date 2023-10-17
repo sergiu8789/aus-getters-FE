@@ -4,28 +4,39 @@ import styles from './UploadCoverLetter.module.css';
 import Image from 'next/image';
 import UploadImg from '../../../../public/assets/images/upload-documnet.png';
 import Closebtn from '../../../../public/assets/images/x_blk_close.svg';
-import CoverLetter from '../CoverLetter/CoverLetter';
 
-const UploadCoverLetter = ({ onShow, onClose }) => {
-  const [selectedFile, setSelectedFile] = useState([]);
+const UploadCoverLetter = ({ onShow, onClose, editMode, initialFiles }) => {
+  const [selectedFiles, setselectedFiles] = useState([]);
+
+  useEffect(() => {
+    if (editMode && initialFiles) {
+      // If in edit mode and there are initial files, set them in the state.
+      setselectedFiles(initialFiles);
+    }
+  }, [editMode, initialFiles]);
 
   const handleFileChange = (event) => {
     const files = Array.from(event.target.files);
-    setSelectedFile(files);
+    setselectedFiles(files);
   };
 
   const formik = useFormik({
     initialValues: {
-      ImageStyle: selectedFile
+      ImageStyle: selectedFiles
     },
     onSubmit: (values) => {
       // Handle the submission of the selected file (values.ImageStyle)
       console.log('Selected File:', values.ImageStyle);
+      onClose();
+      formik.resetForm();
     }
   });
 
   return (
     <React.Fragment>
+      {onShow && (
+        <div className={`${styles.registerLayer} modal-backdrop`}></div>
+      )}
       <form onSubmit={formik.handleSubmit}>
         {onShow && (
           <div
@@ -61,8 +72,8 @@ const UploadCoverLetter = ({ onShow, onClose }) => {
                           );
                         }}
                       />
-                      {selectedFile ? (
-                        <p>{selectedFile.length} PDF files selected</p>
+                      {selectedFiles.length > 0 ? (
+                        <p>{selectedFiles.length} PDF files selected</p>
                       ) : (
                         <Image src={UploadImg} className="object-fit-contain" />
                       )}

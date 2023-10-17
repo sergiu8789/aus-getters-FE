@@ -16,6 +16,10 @@ const CoverLetter = () => {
           <h6>Cover Letter</h6>
           <p
             className={`${styles.edu_edit_btn} m-0 d-flex gap-1 align-items-center`}
+            onClick={() => {
+              setShowPopup(!showPopUp);
+            }}
+            role="button"
           >
             Edit{' '}
             <Image

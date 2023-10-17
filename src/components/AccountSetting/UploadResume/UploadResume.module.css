@@ -33,3 +33,7 @@
 .registerContent {
   max-width: 900px;
 }
+
+.registerLayer {
+  opacity: var(--bs-backdrop-opacity);
+}
