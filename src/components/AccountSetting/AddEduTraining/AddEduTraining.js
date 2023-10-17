@@ -49,6 +49,9 @@ export const AddEduTraining = ({ onShow, onClose, editData }) => {
   };
   return (
     <React.Fragment>
+      {onShow && (
+        <div className={`${styles.registerLayer} modal-backdrop`}></div>
+      )}
       <form onSubmit={formik.handleSubmit} className="row">
         {onShow && (
           <div
