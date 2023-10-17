@@ -62,11 +62,28 @@
   letter-spacing: -0.28px;
   padding: 6px 10px;
   height: initial;
+  outline: 1px solid var(--grey-d4d4d4);
+}
+.linkInput {
+  border-radius: 6px;
+  border: 1px solid var(--grey-d4d4d4);
+  -webkit-appearance: none;
+  background-repeat: no-repeat;
+  background-size: 16px;
+  background-position: 98%;
+  color: var(--dark-greys-989899);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: -0.28px;
+  padding: 6px 10px;
+  height: initial;
+  outline: 1px solid var(--grey-d4d4d4);
 }
 
-.formInput {
+/* .formInput {
   background-image: url(../../../../public/assets/images/search_icon.svg);
-}
+} */
 .skill_popup_box_form label {
   flex-shrink: 0;
   min-width: 125px;

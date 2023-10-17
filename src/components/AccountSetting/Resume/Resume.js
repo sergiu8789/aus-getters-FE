@@ -5,9 +5,9 @@ import EditIcon from '../../../../public/assets/images/edit_icon.svg';
 import Location from '../../../../public/assets/images/location_line.svg';
 import Image from 'next/image';
 import Plus from '../../../../public/assets/images/plus.svg';
-import { UploadResume } from '../UploadResume/UploadResume';
+import UploadResume from '../UploadResume/UploadResume';
 
-export const Resume = () => {
+const Resume = () => {
   const [showPopUp, setShowPopup] = useState(false);
   return (
     <React.Fragment>
@@ -68,3 +68,5 @@ export const Resume = () => {
     </React.Fragment>
   );
 };
+
+export default Resume;

@@ -8,7 +8,7 @@ import Plus from '../../../../public/assets/images/plus.svg';
 import Image from 'next/image';
 import { Addworkexperience } from '../AddWorkExperience/Addworkexperience';
 
-export const WorkExp = () => {
+const WorkExp = () => {
   const [showPopUp, setShowPopup] = useState(false);
   const [editMode, setEditMode] = useState(false);
 
@@ -249,3 +249,5 @@ export const WorkExp = () => {
     </React.Fragment>
   );
 };
+
+export default WorkExp;

@@ -4,8 +4,9 @@ import styles from './UploadCoverLetter.module.css';
 import Image from 'next/image';
 import UploadImg from '../../../../public/assets/images/upload-documnet.png';
 import Closebtn from '../../../../public/assets/images/x_blk_close.svg';
+import CoverLetter from '../CoverLetter/CoverLetter';
 
-export const UploadCoverLetter = ({ onShow, onClose }) => {
+const UploadCoverLetter = ({ onShow, onClose }) => {
   const [selectedFile, setSelectedFile] = useState([]);
 
   const handleFileChange = (event) => {
@@ -90,3 +91,5 @@ export const UploadCoverLetter = ({ onShow, onClose }) => {
     </React.Fragment>
   );
 };
+
+export default UploadCoverLetter;

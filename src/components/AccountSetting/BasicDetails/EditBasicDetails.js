@@ -1,8 +1,8 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import { useFormik } from 'formik';
-import styles from './Basicdetails.module.css';
+import styles from './BasicDetails.module.css';
 
-export const EditBasicdetails = ({ setEditMode }) => {
+const EditBasicDetails = ({ setEditMode }) => {
   const formik = useFormik({
     initialValues: {
       Firstname: '',
@@ -200,3 +200,5 @@ export const EditBasicdetails = ({ setEditMode }) => {
     </React.Fragment>
   );
 };
+
+export default EditBasicDetails;

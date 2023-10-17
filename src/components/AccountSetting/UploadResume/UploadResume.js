@@ -5,7 +5,7 @@ import Image from 'next/image';
 import UploadImg from '../../../../public/assets/images/upload-documnet.png';
 import Closebtn from '../../../../public/assets/images/x_blk_close.svg';
 
-export const UploadResume = ({ onShow, onClose }) => {
+const UploadResume = ({ onShow, onClose }) => {
   const [selectedFiles, setSelectedFiles] = useState([]);
 
   const handleFileChange = (event) => {
@@ -90,3 +90,5 @@ export const UploadResume = ({ onShow, onClose }) => {
     </React.Fragment>
   );
 };
+
+export default UploadResume;

@@ -5,30 +5,30 @@ import Image from 'next/image';
 import { v4 as uuidv4 } from 'uuid';
 import SocialLinkDropdown from '../SocialLinkDropdown/SocialLinkDropdown';
 
-const skillsData = [
-  { id: 101, name: 'React' },
-  { id: 102, name: 'Angular' },
-  { id: 103, name: 'UI' },
-  { id: 104, name: 'UX' },
-  { id: 105, name: 'Design' }
+const SocialLinksData = [
+  { id: 101, name: 'Insta' },
+  { id: 102, name: 'LinkedIn' },
+  { id: 103, name: 'Git' },
+  { id: 104, name: 'FaceBook' },
+  { id: 105, name: 'Twitter' }
 ];
 
 const SocialLinks = () => {
-  const [skills, setSkills] = useState(skillsData);
+  const [socialLinks, setSocialLinks] = useState(SocialLinksData);
 
   return (
     <React.Fragment>
       <h6>Social Links</h6>
       <form className="row mt-3">
-        {skills.map((skill, i) => (
+        {socialLinks.map((link, i) => (
           <div
             className={`${styles.loginFormBox} mb-4 pb-1 col-md-6 position-relative`}
             key={i}
           >
             <SocialLinkDropdown
-              skill={skill}
+              link={link}
               onRemoveClick={() =>
-                setSkills(skills.filter((x) => x.id !== skill.id))
+                setSocialLinks(socialLinks.filter((x) => x.id !== skill.id))
               }
             />
           </div>
@@ -38,7 +38,9 @@ const SocialLinks = () => {
           <button
             role="button"
             className={`${styles.add_skill_btn} col-12 d-inline-block`}
-            onClick={() => setSkills([...skills, { name: '', id: uuidv4() }])}
+            onClick={() =>
+              setSocialLinks([...socialLinks, { name: '', id: uuidv4() }])
+            }
             type="button"
           >
             <Image src={Plus} className="" width="10" alt="plus"></Image> Add

@@ -1,0 +1,32 @@
+.formInput,
+.form_textarea {
+  height: 50px;
+  border-radius: 6px;
+  border: 1px solid var(--input-border-color);
+  padding: 0 20px;
+  color: var(--secondary-black);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: -0.28px;
+}
+.form_textarea {
+  height: auto;
+}
+
+.formLabel {
+  left: 20px;
+  top: 12px;
+  padding: 0 10px;
+  background: var(--white-color);
+  font-size: 15px;
+  transition: 0.2s;
+  transform: translateY(-20px) translateX(0px);
+  -webkit-transform: translateY(-20px) translateX(0px);
+  font-size: 10px;
+  color: var(--secondary-color);
+  z-index: 3;
+}
+.formLabel span {
+  color: var(--error-color);
+}

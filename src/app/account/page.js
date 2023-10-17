@@ -1,11 +1,11 @@
 'use client';
+import Account from '@/components/AccountSetting/MainAccountPage/Account';
 import React from 'react';
-import { AccountSetting } from '@/components/AccountSetting/MainAccountPage/AccountSetting';
 
 function Page() {
   return (
     <React.Fragment>
-      <AccountSetting />
+      <Account />
     </React.Fragment>
   );
 }
