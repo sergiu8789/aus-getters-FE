@@ -1,0 +1,59 @@
+.topHeader{
+    background: var(--light-grey-100);
+}
+.topHeaderNav{
+    height: 68px;
+}
+.headerLink{
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--secondary-black);
+    border-bottom: 3px solid transparent;
+    padding: 0 10px;
+}
+.headerLink:hover, .headerLink.active{
+    border-bottom-color: var(--header-nav-border);
+}
+.topSiteHeader{
+    background: var(--white-color);
+}
+.siteLogoLink img{
+    height: 48px;
+}
+.loggedProfile img{
+    height: 32px;
+    width: 32px;
+}
+.profileName{
+    font-size: 16px;
+    color: var(--secondary-black);
+    font-weight: 500;
+}
+.profileStatus{
+    color: var(--dark-greys-747474);
+    font-size: 14px;
+    font-weight: 400;
+}
+.profileStatus::before{
+    content: '';
+    width: 7px;
+    height: 7px;
+    border-radius: 7px;
+    background: var(--green-bg);
+    display: inline-block;
+}
+.loggedInNavRow{
+    background: var(--light-grey-100);
+}
+.loggedInNav{
+    height: 68px;
+}
+.userLinks{
+    font-size: 16px;
+    color: var(--secondary-black);
+    margin-left: 5px;
+}
+.loggedLink img{
+    height: 15px;
+    width: 15px;
+}

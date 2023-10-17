@@ -1,0 +1,32 @@
+.BtnCustomPrimary, .BtnCustomSecondary {
+  width: 124px;
+  padding: 12px;
+  background-color: var(--btn-bg-color-1);
+  border-radius: 6px;
+  border: 1px solid var(--secondary-color);
+  font-weight: 500;
+  color: var(--secondary-black);
+}
+.BtnCustomSecondary {
+  background-color: var(--off-white);
+  border: 1px solid var(--grey-border);
+  color: var(--dark-grey-4A5568);
+}
+.SelectDropdown {
+  width: 203px;
+  padding: 12px;
+  background-color: var(--white-color);
+  border-radius: 6px;
+  border: 1px solid var(--input-border-color);
+  font-weight: 500;
+}
+.TableHeading {
+  color: var(--secondary-black);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 32px;
+}
+.ArrowUpIcon {
+  padding-top: 63px;
+  padding-bottom: 72px;
+}

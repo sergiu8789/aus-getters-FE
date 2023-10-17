@@ -1,3 +1,6 @@
+.LoginContainer{
+    height: 100vh;
+}
 .LogoBox{
     top: 30px;
     left: 30px;
@@ -105,4 +108,35 @@
     letter-spacing: -0.28px;
     font-size: 14px;
     font-weight: 600;
+}
+.thirdPartyLoginBtn{
+    height: 48px;
+    border: 1px solid var(--secondary-black);
+    color: var(--secondary-black);
+    border-radius: 6px;
+}
+.thirdPartyLoginBtn img{
+    height: 24px;
+    width: 24px;
+    object-fit: contain;
+    left: 15px;
+    top: 50%;
+    margin-top: -12px;
+}
+.orLabel span{
+    font-size: 14px;
+    color: var(--secondary-black);
+    background: var(--white-color);
+    z-index: 2;
+}
+.orLabel:before{
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    border-top: 1px solid var(--secondary-black);
+    top: 50%;
+    margin-top: 1px;
+    display: inline-block;
+    opacity: 0.2;
 }

@@ -1,8 +1,17 @@
-import JobPortal from '@/components/jobs/JobPortal';
+'use client';
+
+import Footer from '@/components/global/Footer/Footer';
+import JobsHeaderNav from '@/components/jobs/JobsHeaderNav/JobsHeaderNav';
+import JobsPortal from '@/components/jobs/JobsPortal/JobsPortal';
 
 const JobsPage = () => {
-  const x = 3;
-  return <JobPortal />;
+  return (
+    <>
+      <JobsHeaderNav />
+      <JobsPortal />
+      <Footer />
+    </>
+  );
 };
 
 export default JobsPage;

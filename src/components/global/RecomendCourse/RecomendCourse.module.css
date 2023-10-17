@@ -1,0 +1,21 @@
+.recomendTitle{
+    font-size: 35px;
+    line-height: 48px;
+    color: var(--secondary-black);
+}
+.recomendBtn{
+    background: var(--main-gradient-color);
+    height: 45px;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #FFF;
+}
+.courseBuyBtn{
+    border-radius: 6px;
+    background: var(--gradient-l-ight-gradient);
+    border: 1px solid var(--pink-border);
+    height: 35px;
+    padding: 0 12px;
+    font-size: 14px;
+    color: var(--secondary-color);
+}

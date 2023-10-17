@@ -1,0 +1,11 @@
+.jobsSearchWrap {
+  margin: 36px 0;
+}
+
+.jobsFiltersWrap {
+  flex: 1;
+}
+
+.jobsListingWrap {
+  flex: 2;
+}

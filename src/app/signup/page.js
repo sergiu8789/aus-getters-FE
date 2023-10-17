@@ -10,8 +10,9 @@ import passwordClose from '../../../public/assets/images/password-close.svg';
 import location from '../../../public/assets/images/location.svg';
 import { Formik } from 'formik';
 import SignupSteps from '@/components/signup/SignupSteps';
+import Footer from '@/components/global/Footer/Footer';
 
-export default function page() {
+export default function Page() {
   const [passwordText, setPasswordText] = useState('password');
   const [registerStepPop, setRegisterStepPop] = useState(false);
 
@@ -25,7 +26,7 @@ export default function page() {
   return (
     <React.Fragment>
       <div
-        className={`position-fixed col-12 d-inline-flex align-items-stretch start-0 top-0 end-0 bottom-0`}
+        className={`${styles.LoginContainer} col-12 d-inline-flex align-items-stretch`}
       >
         <div className={`${styles.LogoBox} position-absolute d-inline-block`}>
           <Image src={Logo} className="object-fit-contain" alt="Logo"></Image>
@@ -266,6 +267,38 @@ export default function page() {
                     </span>
                   )}
                 </div>
+                <div
+                  className={`${styles.agreeterms} mb-4 col-12 d-inline-flex align-items-center position-relative`}
+                >
+                  <input
+                    type="checkbox"
+                    id="agreeterms"
+                    name="agreeterms"
+                    className="position-absolute opacity-0"
+                  />
+                  <label
+                    htmlFor="agreeterms"
+                    role="button"
+                    className={`${styles.agreetermLink} position-relative d-inline-block`}
+                  >
+                    By registering you agree to{' '}
+                    <Link
+                      href="/terms"
+                      target="_blank"
+                      className={styles.termsLink}
+                    >
+                      Terms of Use
+                    </Link>{' '}
+                    and{' '}
+                    <Link
+                      href="/privacy"
+                      target="_blank"
+                      className={styles.termsLink}
+                    >
+                      Privacy Policy
+                    </Link>
+                  </label>
+                </div>
                 <button
                   type="submit"
                   className={`${styles.fromSubmitBtn} col-12 d-inline-block`}
@@ -289,8 +322,12 @@ export default function page() {
         </div>
       </div>
       {registerStepPop === true && (
-        <SignupSteps registerStepPop={registerStepPop} setRegisterStepPop={setRegisterStepPop} />
+        <SignupSteps
+          registerStepPop={registerStepPop}
+          setRegisterStepPop={setRegisterStepPop}
+        />
       )}
+      <Footer />
     </React.Fragment>
   );
 }

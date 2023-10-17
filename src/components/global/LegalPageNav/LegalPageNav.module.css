@@ -1,0 +1,18 @@
+.termsNavList{
+    width: 267px;
+    border-right: 1px solid var(--light-grey-200);
+}
+.navListRow{
+    border-radius: 8px;
+    height: 52px;
+    padding-left: 20px;
+    color: var(--secondary-black);
+    border-left: 5px solid transparent;
+    transition: all ease 400ms;
+    -webkit-transition: all ease 400ms;
+}
+.navListRowActive{
+    border-left-color: var(--input-border-color);
+    background: var(--step-line-bg);
+    color: var(--secondary-color);
+}

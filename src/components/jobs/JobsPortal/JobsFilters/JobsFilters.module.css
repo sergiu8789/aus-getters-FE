@@ -1,0 +1,38 @@
+.jobsFilters {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  padding: 20px 0;
+  border-radius: 6px;
+}
+
+.filterDropdown button {
+  --bs-btn-bg: var(--bg-light-2);
+  --bs-btn-hover-bg: var(--bg-light-2);
+  --bs-btn-active-bg: var(--bg-light-2);
+  border: none;
+  color: var(--secondary-black) !important;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.jobFilter {
+  display: block;
+}
+
+.rangeWrap {
+  min-width: 450px !important;
+  padding: 25px;
+}
+
+/* .filterDropdown button:hover {
+  color: var(--secondary-black);
+} */
+
+/* .filterDropdown button[aria-expanded='true'] {
+  background-color: #fff0a6;
+} */
