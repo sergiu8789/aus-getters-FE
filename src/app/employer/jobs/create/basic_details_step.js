@@ -7,7 +7,7 @@ import Select from 'react-select';
 import Button from 'react-bootstrap/Button';
 
 import Image from 'next/image';
-import Location24Img from '../../../../../public/assets/images/location_24*24.png';
+import Location24Img from '../../../../../public/assets/images/location_24x24.png';
 import LenseImg from '../../../../../public/assets/images/lense.svg';
 import PlusImg from '../../../../../public/assets/images/plus.svg';
 import MinusImg from '../../../../../public/assets/images/minus.svg';

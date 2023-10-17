@@ -3,7 +3,7 @@ import styles from './recent-applications.module.css';
 import Link from 'next/link';
 import Image from 'next/image';
 import DollarImg from '../../../../public/assets/images/dollar.png';
-import SuitcaseImg from '../../../../public/assets/images/suitcase_16*16.png';
+import SuitcaseImg from '../../../../public/assets/images/suitcase_16x16.png';
 import LocationPointImg from '../../../../public/assets/images/location_point.png';
 
 const RecentApplicationsComponents = () => {
