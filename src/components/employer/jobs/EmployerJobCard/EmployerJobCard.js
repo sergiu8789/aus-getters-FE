@@ -3,8 +3,8 @@ import locationSvg from '../../../../../public/assets/images/icons/location.svg'
 import moneySvg from '../../../../../public/assets/images/icons/money.svg';
 import officeSvg from '../../../../../public/assets/images/icons/job.svg';
 import crossSvg from '../../../../../public/assets/images/icons/cross-boxed.svg';
-import pencilSvg from '../../../../../public/assets/images/icons/cross-boxed.svg';
-import lockSvg from '../../../../../public/assets/images/icons/cross-boxed.svg';
+import pencilSvg from '../../../../../public/assets/images/icons/pencil-boxed.svg';
+import lockSvg from '../../../../../public/assets/images/icons/lock-boxed.svg';
 import styles from './EmployerJobCard.module.css';
 import Link from 'next/link';
 
@@ -21,6 +21,17 @@ const EmployerJobCard = () => {
           <h3 className={`${styles.cardTitle} col-12`}>
             <Link href="/jobs/1">Job Name</Link>
           </h3>
+          <div className="d-flex gap-2">
+            <button className={styles.iconButton} title="Lock">
+              <Image src={lockSvg} alt="Lock" />
+            </button>
+            <button className={styles.iconButton} title="Edit">
+              <Image src={pencilSvg} alt="Edit" />
+            </button>
+            <button className={styles.iconButton} title="Delete">
+              <Image src={crossSvg} alt="Remove" />
+            </button>
+          </div>
         </div>
       </div>
       <div className={`col-12 d-inline-flex flex-column`}>
@@ -54,7 +65,7 @@ const EmployerJobCard = () => {
       </div>
       <div className={`${styles.jobStatusType} position-absolute`}>
         <span
-          className={`${styles.failedType} d-inline-flex align-items-center`}
+          className={`${styles.activeType} d-inline-flex align-items-center`}
         >
           Active
         </span>
