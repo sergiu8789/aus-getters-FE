@@ -17,14 +17,13 @@ import BlueHyphonImg from '../../../../../public/assets/images/blue_hyphon.png';
 import PageTitleComponent from '@/components/employer/PageTitle/page_title';
 
 const JobCreatePage = () => {
-  const [activeStep, setActiveStep] = useState(2);
+  const [activeStep, setActiveStep] = useState(1);
   const [basicDetails, setBasicDetails] = useState({});
 
   useEffect(() => {
     console.log(basicDetails);
   }, [basicDetails]);
 
-  
   return (
     <>
       <EmployerLayout>
@@ -47,7 +46,7 @@ const JobCreatePage = () => {
                     setBasicDetails={setBasicDetails}
                   />
                 ) : (
-                  <JobDetailsComponent/>
+                  <JobDetailsComponent />
                 )}
               </Col>
             </Row>

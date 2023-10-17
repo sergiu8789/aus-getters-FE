@@ -14,7 +14,6 @@ import SubscriptionsImg from '../../../../public/assets/images/subscriptions.png
 import DefaultUserImage from '../../../../public/assets/images/default_user.png';
 import CollaspLeftImage from '../../../../public/assets/images/collasp_left.png';
 
-
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -52,10 +51,7 @@ const EmployerSidebarComponent = () => {
             className={`${styles.menu_item_img} `}
             alt="Jobs"
           ></Image>
-          <Link
-            href="/employer/dashboard"
-            className={`${styles.menu_item_text} `}
-          >
+          <Link href="/employer/jobs" className={`${styles.menu_item_text} `}>
             Jobs
           </Link>
         </div>
@@ -200,7 +196,6 @@ const EmployerSidebarComponent = () => {
           className={`${styles.collasp_in}`}
           alt="Collasp-left"
         ></Image>
-        
       </div>
     </div>
   );

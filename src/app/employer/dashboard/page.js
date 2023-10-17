@@ -9,7 +9,6 @@ import RecentJobsComponents from '../../../components/employer/RecentJobs/recent
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
-import Button from 'react-bootstrap/Button';
 import Image from 'next/image';
 import ShortlistedApplicantsImg from '../../../../public/assets/images/shortlisted_applicants.png';
 import JobsCardImg from '../../../../public/assets/images/jobs_card.png';

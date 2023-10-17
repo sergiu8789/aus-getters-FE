@@ -1,4 +1,3 @@
-
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
@@ -8,28 +7,30 @@ import styles from './page_title.module.css';
 import Link from 'next/link';
 
 const PageTitleComponent = (props) => {
-    const pageTitle = props.pageTitle;
-    const isShowJobBtn = props.isShowJobBtn || false;
-    return (
-        <Container className={`${styles.page_top}`}>
-        <Row>
+  const pageTitle = props.pageTitle;
+  const isShowJobBtn = props.isShowJobBtn || false;
+  return (
+    <Container className={`${styles.page_top}`}>
+      <Row>
+        <Col>
+          <div className={`${styles.page_title} `}>{pageTitle}</div>
+        </Col>
+        {isShowJobBtn && (
           <Col>
-            <div className={`${styles.page_title} `}>{pageTitle}</div>
-          </Col>
-          {isShowJobBtn && <Col>
             <div className={`${styles.page_top_btn} d-inline-block`}>
-              <Link href="/employer/jobs/create" 
+              <Link
+                href="/employer/jobs/create"
                 className={`${styles.btn_pink} `}
                 variant="none"
               >
                 Post a Job
-              </Link>{' '}
+              </Link>
             </div>
-          </Col>}
-        </Row>
-      </Container>
-    );
+          </Col>
+        )}
+      </Row>
+    </Container>
+  );
 };
-  
-  export default PageTitleComponent;
-  
+
+export default PageTitleComponent;
