@@ -31,10 +31,10 @@ function RecomendCourse() {
                   src={courseImage}
                   className="col-12 d-inline-block object-fit-cover"
                 />
-                <div className="col-12 d-inline-block">
-                  <div className="col-12 d-inline-flex justify-content-between align-items-start mt-3">
+                <div className="col-12 d-inline-block mt-3">
+                  <div className="col-12 d-inline-flex justify-content-between align-items-start pe-2">
                     <div
-                      className={`${styles.courseInfo} col-8 d-inline-flex flex-column gap-1`}
+                      className={`${styles.courseInfo} col-9 d-inline-flex flex-column gap-1`}
                     >
                       <label
                         className={`${styles.courseTitle} col-12 d-inline-block`}
@@ -42,12 +42,12 @@ function RecomendCourse() {
                         Course Name
                       </label>
                       <p
-                        className={`${styles.coursedesc} col-12 d-inline-block`}
+                        className={`${styles.coursedesc} col-12 mb-2 d-inline-block`}
                       >
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                       </p>
                     </div>
-                    <div className={`col-4 d-inline-flex px-2`}>
+                    <div className={`col-3 d-inline-flex`}>
                       <span
                         className={`${styles.courseBuyBtn} d-inline-flex col-12 justify-content-center align-items-center`}
                       >
@@ -55,7 +55,7 @@ function RecomendCourse() {
                       </span>
                     </div>
                   </div>
-                  <div className="col-12 d-inline-flex align-items-center gap-2">
+                  <div className="col-12 d-inline-flex align-items-center gap-3">
                     <div
                       className={`${styles.coursePoints} d-inline-flex align-items-center gap-1`}
                     >
@@ -80,7 +80,63 @@ function RecomendCourse() {
                 </div>
               </div>
             </div>
-            <div className="col-md-4 px-2"></div>
+            <div className="col-md-4 px-2">
+              <div
+                className={`${styles.courseSellBox} col-12 d-inline-flex flex-column`}
+              >
+                <Image
+                  src={courseImage}
+                  className="col-12 d-inline-block object-fit-cover"
+                />
+                <div className="col-12 d-inline-block mt-3">
+                  <div className="col-12 d-inline-flex justify-content-between align-items-start pe-2">
+                    <div
+                      className={`${styles.courseInfo} col-9 d-inline-flex flex-column gap-1`}
+                    >
+                      <label
+                        className={`${styles.courseTitle} col-12 d-inline-block`}
+                      >
+                        Course Name
+                      </label>
+                      <p
+                        className={`${styles.coursedesc} col-12 mb-2 d-inline-block`}
+                      >
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      </p>
+                    </div>
+                    <div className={`col-3 d-inline-flex`}>
+                      <span
+                        className={`${styles.courseBuyBtn} d-inline-flex col-12 justify-content-center align-items-center`}
+                      >
+                        View
+                      </span>
+                    </div>
+                  </div>
+                  <div className="col-12 d-inline-flex align-items-center gap-3">
+                    <div
+                      className={`${styles.coursePoints} d-inline-flex align-items-center gap-1`}
+                    >
+                      <Image src={courseCalender} alt="courseCalender" />
+                      <span className={styles.courseSubinfo}>
+                        17 July - 05 Oct 2023
+                      </span>
+                    </div>
+                    <div
+                      className={`${styles.coursePoints} d-inline-flex align-items-center gap-1`}
+                    >
+                      <Image src={courseTime} alt="courseTime" />
+                      <span className={styles.courseSubinfo}>11 Weeks</span>
+                    </div>
+                    <div
+                      className={`${styles.coursePoints} d-inline-flex align-items-center gap-1`}
+                    >
+                      <Image src={courseType} alt="courseType" />
+                      <span className={styles.courseSubinfo}>Online</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
