@@ -10,7 +10,7 @@
   background: var(--greys-fafafa);
   min-height: 288px;
 }
-.cancel_sub_btn p {
+.cancel_sub_btn button {
   color: var(--secondary-black);
   font-size: 16px;
   font-weight: 500;
@@ -21,7 +21,7 @@
   border-radius: 6px;
   border: 1px solid var(--red-bg);
 }
-.cancel_sub_btn p:nth-child(2) {
+.cancel_sub_btn button:nth-child(2) {
   border: 1px solid var(--secondary-color);
   background: var(--btn-bg-color-1);
 }
