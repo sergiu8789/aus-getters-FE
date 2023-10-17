@@ -60,6 +60,9 @@
     --image-overlay-purple-gradient: linear-gradient(270deg, #DEDAF8 0%, #DADAFB 16.49%, rgba(251, 218, 235, 0.00) 100%);
     --title-gradient-bg: linear-gradient(180deg, #EF5DE4 0%, #5D5FEF 100%);
     --email-sent-color: #392020;
+    --signals-red: #B71F3A;
+    --White: #FFF;
+    --signals-yellow: #B6910E;
     
 }
 

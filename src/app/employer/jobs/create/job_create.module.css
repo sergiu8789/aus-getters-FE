@@ -42,7 +42,6 @@
   background: var(--iris-tints-tint-8);
   border-radius: 0 0 8px 8px;
 
-
   color: var(--Black, #2b2b2b);
   text-align: center;
   font-size: 14px;
@@ -50,5 +49,300 @@
   line-height: 26px; /* 185.714% */
 }
 .current_step {
-  color: var(--iris-tints-t-int-1, #6f71f1);
+  color: var(--iris-tints-t-int-1);
+}
+
+.required {
+  color: var(--signals-red) !important;
+}
+.FormElementFloating {
+  margin-bottom: 24px;
+}
+
+.heading {
+  color: var(--Black);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: -0.32px;
+  margin-bottom: 10px;
+}
+.formInput ,.formSelect{
+  height: 50px;
+  transition: 0.5s;
+  /* position: relative;
+  z-index: 2; */
+
+  display: inline-flex;
+  padding: 12px;
+  justify-content: space-between;
+  align-items: center;
+
+  border-radius: var(--Radius-x6);
+  border: 1px solid var(--iris-tints-tint-2) !important;
+  background: var(--White, #fff);
+  width: 100%;
+}
+
+.formSelect{
+  -webkit-appearance: none;
+  background-image: url(../../../../../public/assets/images/downArrow.svg);
+  background-repeat: no-repeat;
+  background-size: 24px;
+  background-position: right center;
+  background-position-x: 98%;
+  padding: 0 30px;
+}
+
+
+select.formInput {
+  width: 100%;
+}
+.formInputJobCategory{
+  padding: 0px;
+}
+
+.formLabelWantedSkills{
+  left: 12px !important;
+  top: 23px !important;
+}
+
+
+
+.formInput:focus,
+.formInput:focus-visible,
+.formInput:not(:placeholder-shown) {
+  border: 1px solid var(--iris-tints-tint-2);
+  outline: none;
+}
+
+.formLabel {
+  left: 12px;
+    top: -16px;
+  background: var(--white-color);
+  transition: 0.2s;
+
+  color: var(--iris-100);
+  text-align: center;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 26px; /* 260% */
+  letter-spacing: -0.2px;
+  padding: 0px 8px;
+  margin-top: 3px;
+}
+.formLabelCity {
+  right: 12px;
+    top: 12px;
+}
+
+.fromError {
+  font-size: 12px;
+  color: var(--error-color);
+}
+
+.passwordEye {
+  right: 12px;
+  top: 50px;
+  z-index: 5;
+  height: 24px;
+  width: 24px;
+}
+.location_point_left {
+  position: absolute !important;
+  top: 12px;
+    right: 12px;
+  height: 24px;
+  width: 24px;
+}
+.category_box {
+}
+.category_text {
+  color: var(--dark-greys-747474, #747474);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 26px; /* 185.714% */
+  letter-spacing: -0.28px;
+  margin-bottom: 24px;
+}
+.formLabelSearch {
+  top: 63px;
+  left: 12px;
+  z-index: 5;
+}
+.job_create_lense {
+  right: 12px;
+  top: 92px;
+  z-index: 5;
+  height: 24px;
+  width: 24px;
+}
+.subCategoryBox {
+  margin-top: 16px;
+}
+.subcat_label {
+  color: var(--dark-greys-747474);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 26px; /* 185.714% */
+  letter-spacing: -0.28px;
+  margin-bottom: 20px;
+}
+.flex_parent_element {
+  display: flex;
+  width: 100%;
+}
+
+.flex_child_element {
+  flex: 1;
+}
+
+.flex_child_element:first-child {
+  margin-right: 20px;
+}
+.RunemerationSection {
+  width: 505px;
+  /* height: 242px;
+  flex-shrink: 0; */
+}
+.formLabelRunemerationType {
+  left: 12px;
+  top: -14px;
+}
+.lable_minimum_amount {
+  color: var(--Black);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 26px; /* 185.714% */
+  letter-spacing: -0.28px;
+}
+.runemeration_gap {
+  margin-top: 24px;
+}
+.lable_no_of_people {
+  color: var(--Black);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: -0.32px;
+}
+.runemeration_gap_2 {
+  margin-top: 32px;
+  .PlusImg {
+    right: 12px;
+    top: 17px;
+    z-index: 5;
+  }
+  .MinusImg {
+    left: 6px;
+    top: 13px;
+    z-index: 5;
+  }
+}
+
+/* Chrome, Safari, Edge, Opera */
+input.hide_number_arrow::-webkit-outer-spin-button,
+input.hide_number_arrow::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input.hide_number_arrow[type='number'] {
+  -moz-appearance: textfield;
+}
+
+.btn_block {
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+.save_as_draft_btn {
+  display: flex;
+  width: 165px;
+  height: 44px;
+  padding: 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+
+  border-radius: var(--Radius-x6);
+  border: 1px solid var(--iris-tints-tint-2);
+  background: var(--greys-f-6-f-6-f-6);
+}
+.save_as_draft_btn:hover {
+  border: 1px solid var(--iris-tints-tint-2);
+}
+.next_btn ,.pre_btn{
+  width: 24px;
+  height: 24px;
+  /* transform: rotate(-90deg); */
+  flex-shrink: 0;
+
+  display: flex;
+  width: 133px;
+  height: 44px;
+  padding: 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+
+  border-radius: var(--Radius-x6, 6px);
+  border: 1px solid var(--iris-tints-t-int-1, #6f71f1);
+  background: var(--iris-tints-tint-7, #dadafb);
+}
+
+.next_btn:hover,.pre_btn:hover {
+  border: 1px solid var(--iris-tints-t-int-1, #6f71f1);
+}
+.type_of_employement_label,
+.type_of_environment_label ,
+.job_sub_categories_label{
+  margin-right: 8px;
+  margin-bottom: 8px;
+  flex: 1;
+  padding: 8px 8px;
+  align-items: center;
+  gap: 8px;
+  border-radius: var(--Radius-x6);
+  background: var(--greys-f-8-f-8-f-8);
+
+  color: var(--dark-greys-747474);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px; /* 142.857% */
+  cursor: pointer;
+}
+
+.type_of_employement,
+.type_of_environment ,
+.job_sub_categories{
+  margin-right: 8px;
+  display: none;
+}
+
+.type_of_employement_label_green,
+.type_of_environment_label_green ,
+.job_sub_categories_label_green{
+  border: 0.5px solid var(--signals-green);
+  background: var(--greys-fafafa);
+
+  color: var(--signals-green);
+}
+
+.type_of_employement_icon,
+.type_of_environment_icon,
+.job_sub_categories_icon {
+  width: 12px;
+  margin-right: 8px;
+}
+.expiration_date_box {
+  margin-top: 24px;
+}
+.lable_expiration_date {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 28px; /* 175% */
+  letter-spacing: -0.32px;
 }
