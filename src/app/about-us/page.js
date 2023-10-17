@@ -1,6 +1,6 @@
 'use client';
 import React from 'react';
-import styles from './about.module.css';
+import AboutBanner from '@/components/global/AboutBanner/AboutBanner';
 import Footer from '@/components/global/Footer/Footer';
 import AboutJob from '@/components/global/AboutJob/AboutJob';
 import LearningSection from '@/components/global/LearningSection/LearningSection';
@@ -11,6 +11,7 @@ export default function Page() {
   return (
     <React.Fragment>
       <JobsHeaderNav />
+      <AboutBanner />
       <LearningSection />
       <UserTestimonial />
       <AboutJob />

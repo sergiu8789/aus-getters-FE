@@ -1,0 +1,63 @@
+.userReviewBox {
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.reviewImage img {
+    height: 85px;
+    width: 85px;
+    border-radius: 100%;
+}
+
+.reviewImage {
+    margin-right: 8px;
+}
+
+.reviewName {
+    font-size: 16px;
+    line-height: 28px;
+    color: var(--secondary-black);
+}
+
+.reviewDesgn {
+    font-size: 14px;
+    line-height: 26px;
+    color: var(--dark-grey);
+    margin-bottom: 8px;
+}
+
+.reviewCount {
+    font-size: 12px;
+    padding: 8px 12px;
+    border: 1px solid var(--review-border);
+    background: var(--review-bg);
+    border-radius: 6px;
+}
+
+.reviewCount img {
+    height: 16px;
+    width: 16px;
+}
+
+.postReviewText {
+    font-size: 14px;
+    line-height: 26px;
+    color: var(--secondary-black);
+    margin-top: 8px;
+}
+
+.swiperArrow {
+    z-index: 5;
+}
+
+.swiperArrowPrev, .swiperArrowNext {
+    height: 42px;
+    width: 42px;
+    cursor: pointer;
+}
+
+.swiperArrowPrev img, .swiperArrowNext img {
+    height: 42px;
+    width: 42px;
+    object-fit: contain;
+}
