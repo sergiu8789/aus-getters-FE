@@ -1,7 +1,7 @@
 import React from 'react';
 
-function Page() {
-  return <div>page</div>;
+export default function Page() {
+  return <React.Fragment>
+    
+  </React.Fragment>;
 }
-
-export default Page;
