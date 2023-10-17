@@ -20,8 +20,8 @@ const Account = () => {
 
   return (
     <React.Fragment>
-      <div className={`${styles.account_sett_container} p-0 container`}>
-        <h5>Account Settings</h5>
+      <div className={`${styles.account_sett_container} p-0 container my-4`}>
+        <h5 className="p-3">Account Settings</h5>
         <div className="row px-4 m-0 pt-4">
           <div className={`col-md-6 ${styles.profile_pic_edit}`}>
             <ProfileImage />
