@@ -23,6 +23,23 @@
   line-height: 26px;
   letter-spacing: -0.28px;
 }
+.datepickerInput {
+  max-width: 110px;
+  height: 50px;
+  border-radius: 6px;
+  border: 1px solid var(--grey-d4d4d4);
+  -webkit-appearance: none;
+  background: var(--greys-fafafa);
+  background-repeat: no-repeat;
+  background-size: 16px;
+  background-position: 98%;
+  padding: 0 12px;
+  color: var(--secondary-black);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: -0.28px;
+}
 select.formInput_arrow {
   min-width: 110px;
 }

@@ -4,7 +4,7 @@ import styles from './SocialLinkDropdown.module.css';
 import Image from 'next/image';
 import Dropdown from 'react-bootstrap/Dropdown';
 
-const SkillDropdown = (props) => {
+const socialSkillDropdown = (props) => {
   const { link, onRemoveClick } = props;
 
   return (
@@ -56,4 +56,4 @@ const SkillDropdown = (props) => {
   );
 };
 
-export default SkillDropdown;
+export default socialSkillDropdown;
