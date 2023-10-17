@@ -1,6 +1,6 @@
 import React from 'react';
 import crossIcon from '../../../../public/assets/images/x_close.svg';
-import styles from './SkillDropdown.module.css';
+import styles from './SocialLinkDropdown.module.css';
 import Image from 'next/image';
 import Dropdown from 'react-bootstrap/Dropdown';
 

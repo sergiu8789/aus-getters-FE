@@ -5,8 +5,8 @@ import { ProfileImage } from '../ProfileImage/ProfileImage';
 import EditIcon from '../../../../public/assets/images/edit_icon.svg';
 import SaveIcon from '../../../../public/assets/images/save.svg';
 import VisibleEye from '../../../../public/assets/images/visible_eye.svg';
-import SkillsForm, { SkillsAdd } from '../SkillsForm/SkillsForm';
-import { SocialLinks } from '../SocialLinks/SocialLinks';
+import SkillsForm from '../SkillsForm/SkillsForm';
+import SocialLinks from '../SocialLinks/SocialLinks';
 import { EduTraining } from '../EduTraining/EduTraining';
 import { Workprefer } from '../WorkPreference/WorkPrefer';
 import { WorkExp } from '../WorkExperience/WorkExp';
@@ -87,7 +87,6 @@ export const AccountSetting = () => {
           className={`${styles.user_basic_detail} row p-4 m-0 border-bottom`}
         >
           <SocialLinks />
-          <Sociallinkpopup />
         </div>
         <div
           className={`${styles.user_basic_detail} row p-4 m-0 border-bottom`}
