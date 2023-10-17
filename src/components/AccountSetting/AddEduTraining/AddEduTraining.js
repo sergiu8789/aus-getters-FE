@@ -5,6 +5,7 @@ import Image from 'next/image';
 import UploadImg from '../../../../public/assets/images/upload-documnet.png';
 import Closebtn from '../../../../public/assets/images/x_blk_close.svg';
 import pdfIcon from '../../../../public/assets/images/pdf.svg';
+import DatePicker from 'react-datepicker';
 
 export const AddEduTraining = ({ onShow, onClose, editData }) => {
   const isEditMode = !!editData;
@@ -15,8 +16,8 @@ export const AddEduTraining = ({ onShow, onClose, editData }) => {
     scoreGPA: isEditMode ? editData.scoreGPA : 'Score/GPA',
     scoreValue: isEditMode ? editData.scoreValue : '',
     specialization: isEditMode ? editData.specialization : 'Specialization',
-    durationFrom: isEditMode ? editData.durationFrom : '1',
-    durationTo: isEditMode ? editData.durationTo : 'To',
+    durationFrom: isEditMode ? editData.durationFrom : new Date(),
+    durationTo: isEditMode ? editData.durationTo : new Date(),
     stillPursuing: isEditMode ? editData.stillPursuing : false,
     ImageStyle: isEditMode ? editData.ImageStyle : null,
     postContent: isEditMode ? editData.postContent : ''
@@ -48,6 +49,9 @@ export const AddEduTraining = ({ onShow, onClose, editData }) => {
   };
   return (
     <React.Fragment>
+      {onShow && (
+        <div className={`${styles.registerLayer} modal-backdrop`}></div>
+      )}
       <form onSubmit={formik.handleSubmit} className="row">
         {onShow && (
           <div
@@ -149,7 +153,24 @@ export const AddEduTraining = ({ onShow, onClose, editData }) => {
 
                   <div className="col-lg-6 mb-3 d-sm-flex align-items-center justify-content-between gap-2 pb-2">
                     <p className="m-0">Duration</p>
-                    <select
+                    <DatePicker
+                      name="durationFrom"
+                      className={styles.datepickerInput}
+                      selected={formik.values.durationFrom}
+                      onChange={(date) =>
+                        formik.setFieldValue('durationFrom', date)
+                      }
+                    />
+                    <DatePicker
+                      name="durationTo"
+                      className={styles.datepickerInput}
+                      selected={formik.values.durationTo}
+                      disabled={disableTo ? true : false}
+                      onChange={(date) =>
+                        formik.setFieldValue('durationTo', date)
+                      }
+                    />
+                    {/* <select
                       name="durationFrom"
                       value={formik.values.durationFrom}
                       onChange={(e) =>
@@ -173,7 +194,7 @@ export const AddEduTraining = ({ onShow, onClose, editData }) => {
                     >
                       <option value="To">To</option>
                       <option value="2">2</option>
-                    </select>
+                    </select> */}
                     <div className="d-flex align-items-center gap-2">
                       <input
                         type="checkbox"

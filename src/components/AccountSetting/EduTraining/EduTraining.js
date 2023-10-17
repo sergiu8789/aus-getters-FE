@@ -8,7 +8,7 @@ import Plus from '../../../../public/assets/images/plus.svg';
 import Image from 'next/image';
 import { AddEduTraining } from '../AddEduTraining/AddEduTraining';
 
-export const EduTraining = () => {
+const EduTraining = () => {
   const [showPopUp, setShowPopup] = useState(false);
   const [editMode, setEditMode] = useState(false);
 
@@ -193,3 +193,5 @@ export const EduTraining = () => {
     </React.Fragment>
   );
 };
+
+export default EduTraining;

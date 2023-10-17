@@ -55,13 +55,16 @@
   background-repeat: no-repeat;
   background-size: 16px;
   background-position: 98%;
-  color: var(--dark-greys-989899);
+  color: var(--secondary-black);
   font-size: 14px;
   font-weight: 500;
   line-height: 26px;
   letter-spacing: -0.28px;
   padding: 6px 10px;
   height: initial;
+}
+.formInput::placeholder {
+  color: var(--dark-greys-989899);
 }
 
 .formInput {

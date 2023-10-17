@@ -4,8 +4,8 @@ import styles from './SocialLinkDropdown.module.css';
 import Image from 'next/image';
 import Dropdown from 'react-bootstrap/Dropdown';
 
-const SkillDropdown = (props) => {
-  const { skill, onRemoveClick } = props;
+const socialSkillDropdown = (props) => {
+  const { link, onRemoveClick } = props;
 
   return (
     <React.Fragment>
@@ -18,8 +18,8 @@ const SkillDropdown = (props) => {
           >
             <Image src={crossIcon} alt="close button"></Image>
           </span>
-          {skill.name ? (
-            <span>{skill.name}</span>
+          {link.name ? (
+            <span>{link.name}</span>
           ) : (
             <span className={styles.skillPlaceholder}>Skill</span>
           )}
@@ -33,19 +33,20 @@ const SkillDropdown = (props) => {
                 className="position-absolute"
               /> */}
               <div className={styles.skillDropdownFormBlocks}>
-                <label>Skill name</label>
+                <label>Social Media</label>
+                <select className={`${styles.formSelect} w-100`} role="button">
+                  <option value="Insta">Insta</option>
+                  <option value="LinkedIn">LinkedIn</option>
+                  <option value="Git">Git</option>
+                  <option value="FaceBook">FaceBook</option>
+                </select>
+                <label>Links</label>
                 <input
                   type="text"
-                  name="Search"
-                  placeholder="Search"
-                  className={`${styles.formInput} w-100`}
+                  name="Enter"
+                  placeholder="Enter"
+                  className={`${styles.linkInput} w-100`}
                 />
-                <label>Level of Expertise</label>
-                <select className={`${styles.formSelect} w-100`} role="button">
-                  <option value="beginner">Beginner</option>
-                  <option value="intermediate">Intermediate</option>
-                  <option value="advanced">Advanced</option>
-                </select>
               </div>
             </form>
           </div>
@@ -55,4 +56,4 @@ const SkillDropdown = (props) => {
   );
 };
 
-export default SkillDropdown;
+export default socialSkillDropdown;

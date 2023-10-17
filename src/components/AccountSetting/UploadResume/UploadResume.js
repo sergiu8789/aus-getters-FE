@@ -1,12 +1,19 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useFormik } from 'formik'; // Import useFormik hook
 import styles from './UploadResume.module.css';
 import Image from 'next/image';
 import UploadImg from '../../../../public/assets/images/upload-documnet.png';
 import Closebtn from '../../../../public/assets/images/x_blk_close.svg';
 
-export const UploadResume = ({ onShow, onClose }) => {
+const UploadResume = ({ onShow, onClose, editMode, initialFiles }) => {
   const [selectedFiles, setSelectedFiles] = useState([]);
+
+  useEffect(() => {
+    if (editMode && initialFiles) {
+      // If in edit mode and there are initial files, set them in the state.
+      setSelectedFiles(initialFiles);
+    }
+  }, [editMode, initialFiles]);
 
   const handleFileChange = (event) => {
     const files = Array.from(event.target.files);
@@ -25,6 +32,9 @@ export const UploadResume = ({ onShow, onClose }) => {
 
   return (
     <React.Fragment>
+      {onShow && (
+        <div className={`${styles.registerLayer} modal-backdrop`}></div>
+      )}
       <form onSubmit={formik.handleSubmit}>
         {onShow && (
           <div
@@ -37,7 +47,7 @@ export const UploadResume = ({ onShow, onClose }) => {
                 <div className="d-flex justify-content-between">
                   <h6>Upload Resume</h6>
                   <div onClick={() => onClose()}>
-                    <Image src={Closebtn} className="" />
+                    <Image src={Closebtn} className="" alt="close" />
                   </div>
                 </div>
                 <div className="row">
@@ -90,3 +100,5 @@ export const UploadResume = ({ onShow, onClose }) => {
     </React.Fragment>
   );
 };
+
+export default UploadResume;

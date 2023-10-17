@@ -1,3 +1,4 @@
+@import 'react-datepicker/dist/react-datepicker.css';
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@100&family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap');
 
@@ -55,7 +56,7 @@
       rgba(251, 218, 235, 0) 100%);
   --title-gradient-bg: linear-gradient(180deg, #ef5de4 0%, #5d5fef 100%);
   --email-sent-color: #392020;
-  --header-nav-border: #FCDDEC;
+  --header-nav-border: #fcddec;
   --light-grey-100: #f6f6f6;
   --light-grey-200: #c4c4c4;
   --text-grey-light: #989899;
@@ -63,7 +64,7 @@
   --off-white: #f8f8f8;
   --bg-light: #fafafa;
   --bg-light-2: #f4f4f4;
-  --contact-bg: #FDECF5;
+  --contact-bg: #fdecf5;
   --contact-title-color: #202124;
   --contactdesc-color: #696969;
   --review-border: #B6910E;

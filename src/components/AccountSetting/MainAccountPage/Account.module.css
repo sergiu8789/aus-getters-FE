@@ -29,6 +29,10 @@
   text-align: center;
   letter-spacing: -0.32px;
 }
+.all_profile_edit p:nth-child(2) {
+  border: 1px solid var(--default-color);
+  background: var(--fuschia-tints-tint-7);
+}
 .all_profile_edit button {
   width: 124px;
   padding: 12px;

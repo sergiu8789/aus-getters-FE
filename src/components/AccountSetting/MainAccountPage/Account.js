@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import styles from './AccountSetting.module.css';
+import styles from './Account.module.css';
 import Image from 'next/image';
 import { ProfileImage } from '../ProfileImage/ProfileImage';
 import EditIcon from '../../../../public/assets/images/edit_icon.svg';
@@ -7,21 +7,21 @@ import SaveIcon from '../../../../public/assets/images/save.svg';
 import VisibleEye from '../../../../public/assets/images/visible_eye.svg';
 import SkillsForm from '../SkillsForm/SkillsForm';
 import SocialLinks from '../SocialLinks/SocialLinks';
-import { EduTraining } from '../EduTraining/EduTraining';
-import { Workprefer } from '../WorkPreference/WorkPrefer';
-import { WorkExp } from '../WorkExperience/WorkExp';
-import { Resume } from '../Resume/Resume';
-import { Coverletter } from '../CoverLetter/Coverletter';
-import { Basicdetails } from '../BasicDetails/Basicdetails';
-import { EditBasicdetails } from '../BasicDetails/EditBasicdetails';
+import EduTraining from '../EduTraining/EduTraining';
+import Workprefer from '../WorkPreference/WorkPrefer';
+import WorkExp from '../WorkExperience/WorkExp';
+import Resume from '../Resume/Resume';
+import CoverLetter from '../CoverLetter/CoverLetter';
+import Basicdetails from '../BasicDetails/BasicDetails';
+import EditBasicdetails from '../BasicDetails/EditBasicDetails';
 
-export const AccountSetting = () => {
+const Account = () => {
   const [editMode, setEditMode] = useState(false);
 
   return (
     <React.Fragment>
-      <div className={`${styles.account_sett_container} p-0 container`}>
-        <h5>Account Settings</h5>
+      <div className={`${styles.account_sett_container} p-0 container my-4`}>
+        <h5 className="p-3">Account Settings</h5>
         <div className="row px-4 m-0 pt-4">
           <div className={`col-md-6 ${styles.profile_pic_edit}`}>
             <ProfileImage />
@@ -30,7 +30,11 @@ export const AccountSetting = () => {
             className={`${styles.all_profile_edit} col-md-6 gap-3 d-flex justify-content-end align-items-start`}
           >
             {!editMode ? (
-              <p onClick={() => setEditMode(!editMode)}>
+              <p
+                role="button"
+                onClick={() => setEditMode(!editMode)}
+                className="gap-1 d-flex justify-content-center"
+              >
                 Edit
                 <Image
                   src={EditIcon}
@@ -39,7 +43,11 @@ export const AccountSetting = () => {
                 ></Image>
               </p>
             ) : (
-              <button form="editProfileDetails" type="submit">
+              <button
+                form="editProfileDetails"
+                type="submit"
+                className="gap-1 d-flex justify-content-center"
+              >
                 Save
                 <Image
                   src={SaveIcon}
@@ -48,7 +56,7 @@ export const AccountSetting = () => {
                 ></Image>
               </button>
             )}
-            <p>
+            <p role="button">
               Visibility{' '}
               <Image
                 src={VisibleEye}
@@ -99,10 +107,12 @@ export const AccountSetting = () => {
             <Resume />
           </div>
           <div className="col-md-6">
-            <Coverletter />
+            <CoverLetter />
           </div>
         </div>
       </div>
     </React.Fragment>
   );
 };
+
+export default Account;

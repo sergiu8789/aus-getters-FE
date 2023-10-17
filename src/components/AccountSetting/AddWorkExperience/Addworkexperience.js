@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useFormik } from 'formik';
 import styles from './Addworkexperience.module.css';
 import Image from 'next/image';
 import UploadImg from '../../../../public/assets/images/upload-documnet.png';
 import Closebtn from '../../../../public/assets/images/x_blk_close.svg';
 import pdfIcon from '../../../../public/assets/images/pdf.svg';
+import DatePicker from 'react-datepicker';
 
 export const Addworkexperience = ({ onShow, onClose, editData }) => {
   const isEditMode = !!editData;
@@ -23,8 +24,8 @@ export const Addworkexperience = ({ onShow, onClose, editData }) => {
         CompanyName: '',
         Location: '',
         Title: '',
-        DurationFrom: 'From',
-        DurationTo: 'To',
+        DurationFrom: new Date(),
+        DurationTo: new Date(),
         StillWorking: false,
         ImageStyle: null,
         postContent: ''
@@ -45,6 +46,9 @@ export const Addworkexperience = ({ onShow, onClose, editData }) => {
   });
   return (
     <React.Fragment>
+      {onShow && (
+        <div className={`${styles.registerLayer} modal-backdrop`}></div>
+      )}
       <form onSubmit={formik.handleSubmit}>
         {onShow && (
           <div
@@ -94,27 +98,23 @@ export const Addworkexperience = ({ onShow, onClose, editData }) => {
 
                   <div className="col-lg-6 mb-3 d-sm-flex align-items-center justify-content-between gap-2 pb-2">
                     <p className="m-0">Duration</p>
-                    <select
-                      className={`${styles.formInput_arrow}`}
-                      role="button"
+                    <DatePicker
                       name="DurationFrom"
-                      value={formik.values.DurationFrom}
-                      onChange={formik.handleChange}
-                    >
-                      <option value="From">From</option>
-                      <option value="2">2</option>
-                    </select>
-                    <select
-                      className={`${styles.formInput_arrow}`}
-                      role="button"
+                      className={styles.datepickerInput}
+                      selected={formik.values.DurationFrom}
+                      onChange={(date) =>
+                        formik.setFieldValue('DurationFrom', date)
+                      }
+                    />
+                    <DatePicker
                       name="DurationTo"
+                      className={styles.datepickerInput}
+                      selected={formik.values.DurationTo}
                       disabled={formik.values.StillWorking}
-                      value={formik.values.DurationTo}
-                      onChange={formik.handleChange}
-                    >
-                      <option value="To">To</option>
-                      <option value="2">2</option>
-                    </select>
+                      onChange={(date) =>
+                        formik.setFieldValue('DurationTo', date)
+                      }
+                    />
                     <div className="d-flex align-items-center gap-2">
                       <input
                         type="checkbox"

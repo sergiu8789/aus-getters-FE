@@ -5,9 +5,9 @@ import EditIcon from '../../../../public/assets/images/edit_icon.svg';
 import Location from '../../../../public/assets/images/location_line.svg';
 import Image from 'next/image';
 import Plus from '../../../../public/assets/images/plus.svg';
-import { UploadResume } from '../UploadResume/UploadResume';
+import UploadResume from '../UploadResume/UploadResume';
 
-export const Resume = () => {
+const Resume = () => {
   const [showPopUp, setShowPopup] = useState(false);
   return (
     <React.Fragment>
@@ -16,6 +16,10 @@ export const Resume = () => {
           <h6>Resume</h6>
           <p
             className={`${styles.edu_edit_btn} m-0 d-flex gap-1 align-items-center`}
+            role="button"
+            onClick={() => {
+              setShowPopup(!showPopUp);
+            }}
           >
             Edit{' '}
             <Image
@@ -68,3 +72,5 @@ export const Resume = () => {
     </React.Fragment>
   );
 };
+
+export default Resume;
