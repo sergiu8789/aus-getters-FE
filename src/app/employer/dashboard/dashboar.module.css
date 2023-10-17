@@ -1,0 +1,40 @@
+
+.page_content{
+  margin-top:20px;
+  padding-bottom: 10px;
+}
+
+.cards {
+  /* width: 331px; */
+  height: 83px;
+  flex-shrink: 0;
+  border-radius: var(--Radius-x6);
+  background: var(--greys-fafafa);
+  text-align: left;
+  padding: 12px 12px 12px;
+}
+.card_img {
+  width: 59px;
+  height: 59px;
+  flex-shrink: 0;
+}
+.card_value{
+    color: var(--signals-orange);
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 32px; /* 114.286% */
+    letter-spacing: -0.56px;
+}
+
+.card_title{
+    color: var(--Black);
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 24px; /* 200% */
+    letter-spacing: -0.24px;
+}
+.section2,.section3{
+    margin-top:20px;
+}
+
+
