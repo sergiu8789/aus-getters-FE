@@ -1,0 +1,33 @@
+.LoginContainer {
+    height: 100vh;
+}
+
+.LogoBox {
+    top: 30px;
+    left: 30px;
+}
+
+.LogoBox img {
+    height: 65px;
+    width: auto;
+}
+
+.startTitle {
+    font-size: 44px;
+    color: var(--secondary-black);
+    font-weight: 600;
+}
+
+.startInfo {
+    font-size: 16px;
+    color: var(--dark-greys-595959)
+}
+
+.proceedBtn {
+    height: 50px;
+    padding: 0 30px;
+    font-size: 16px;
+    border-radius: 6px;
+    background: var(--main-gradient-color);
+    color: var(--white-color);
+}

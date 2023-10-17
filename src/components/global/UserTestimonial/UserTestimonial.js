@@ -36,8 +36,8 @@ function UserTestimonial() {
               slidesPerView={2}
               loop={true}
               navigation={{
-                prevEl: navigationNextRef.current,
-                nextEl: navigationPrevRef.current
+                prevEl: navigationPrevRef.current,
+                nextEl: navigationNextRef.current
               }}
               pagination={{
                 clickable: true
