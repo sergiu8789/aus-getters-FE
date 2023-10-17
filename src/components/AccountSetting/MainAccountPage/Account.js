@@ -57,7 +57,7 @@ const Account = () => {
               </button>
             )}
             <p>
-              Visibility{' '}
+              role='button' Visibility{' '}
               <Image
                 src={VisibleEye}
                 className={`object-fit-cover`}
