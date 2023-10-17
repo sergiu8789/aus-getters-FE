@@ -5,8 +5,8 @@ import { ProfileImage } from '../ProfileImage/ProfileImage';
 import EditIcon from '../../../../public/assets/images/edit_icon.svg';
 import SaveIcon from '../../../../public/assets/images/save.svg';
 import VisibleEye from '../../../../public/assets/images/visible_eye.svg';
-import { SkillsAdd } from '../SkillsAdd/Skillsadd';
-import { SocialLinks } from '../SocialLinks/SocialLinks';
+import SkillsForm from '../SkillsForm/SkillsForm';
+import SocialLinks from '../SocialLinks/SocialLinks';
 import { EduTraining } from '../EduTraining/EduTraining';
 import { Workprefer } from '../WorkPreference/WorkPrefer';
 import { WorkExp } from '../WorkExperience/WorkExp';
@@ -14,8 +14,6 @@ import { Resume } from '../Resume/Resume';
 import { Coverletter } from '../CoverLetter/Coverletter';
 import { Basicdetails } from '../BasicDetails/Basicdetails';
 import { EditBasicdetails } from '../BasicDetails/EditBasicdetails';
-import { Skillspopup } from '../SkillsDropOptions/Skillspopup';
-import { Sociallinkpopup } from '../SocialLinkPopUp/Sociallinkpopup';
 
 export const AccountSetting = () => {
   const [editMode, setEditMode] = useState(false);
@@ -72,14 +70,12 @@ export const AccountSetting = () => {
         <div
           className={`${styles.user_basic_detail} row p-4 m-0 border-bottom position-relative`}
         >
-          <SkillsAdd />
-          <Skillspopup />
+          <SkillsForm />
         </div>
         <div
           className={`${styles.user_basic_detail} row p-4 m-0 border-bottom`}
         >
           <SocialLinks />
-          <Sociallinkpopup />
         </div>
         <div
           className={`${styles.user_basic_detail} row p-4 m-0 border-bottom`}

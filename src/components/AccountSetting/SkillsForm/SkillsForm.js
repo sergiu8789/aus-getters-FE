@@ -1,31 +1,31 @@
 import React, { useState } from 'react';
-import styles from './SocialLinks.module.css';
+import styles from './SkillsForm.module.css';
 import Plus from '../../../../public/assets/images/plus.svg';
 import Image from 'next/image';
+import SkillDropdown from '../SkillDropdown/SkillDropdown';
 import { v4 as uuidv4 } from 'uuid';
-import SocialLinkDropdown from '../SocialLinkDropdown/SocialLinkDropdown';
 
 const skillsData = [
-  { id: 101, name: 'React' },
-  { id: 102, name: 'Angular' },
-  { id: 103, name: 'UI' },
-  { id: 104, name: 'UX' },
-  { id: 105, name: 'Design' }
+  { id: 1, name: 'React' },
+  { id: 2, name: 'Angular' },
+  { id: 3, name: 'UI' },
+  { id: 4, name: 'UX' },
+  { id: 5, name: 'Design' }
 ];
 
-const SocialLinks = () => {
+const SkillsForm = () => {
   const [skills, setSkills] = useState(skillsData);
 
   return (
     <React.Fragment>
-      <h6>Social Links</h6>
+      <h6>Skills</h6>
       <form className="row mt-3">
         {skills.map((skill, i) => (
           <div
             className={`${styles.loginFormBox} mb-4 pb-1 col-md-6 position-relative`}
             key={i}
           >
-            <SocialLinkDropdown
+            <SkillDropdown
               skill={skill}
               onRemoveClick={() =>
                 setSkills(skills.filter((x) => x.id !== skill.id))
@@ -49,4 +49,4 @@ const SocialLinks = () => {
   );
 };
 
-export default SocialLinks;
+export default SkillsForm;
