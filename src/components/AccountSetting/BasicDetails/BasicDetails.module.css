@@ -30,3 +30,8 @@
 .formLabel span {
   color: var(--error-color);
 }
+.errorMessage {
+  margin-top: 1px;
+  font-size: 12px;
+  color: var(--error-color);
+}

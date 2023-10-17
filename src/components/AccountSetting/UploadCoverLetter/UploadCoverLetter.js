@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useFormik } from 'formik';
 import styles from './UploadCoverLetter.module.css';
 import Image from 'next/image';
