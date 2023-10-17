@@ -41,7 +41,7 @@ select.formInput_arrow {
   background: var(--greys-fafafa);
   min-height: 288px;
 }
-.cancel_sub_btn p {
+.cancel_sub_btn button {
   color: var(--secondary-black);
   font-size: 16px;
   font-weight: 500;
@@ -52,7 +52,7 @@ select.formInput_arrow {
   border-radius: 6px;
   border: 1px solid var(--red-bg);
 }
-.cancel_sub_btn p:nth-child(2) {
+.cancel_sub_btn button:nth-child(2) {
   border: 1px solid var(--secondary-color);
   background: var(--btn-bg-color-1);
 }
@@ -62,4 +62,25 @@ select.formInput_arrow {
 
 .registerContent {
   max-width: 900px;
+}
+
+.datepickerInput {
+  max-width: 110px;
+  height: 50px;
+  border-radius: 6px;
+  border: 1px solid var(--grey-d4d4d4);
+  -webkit-appearance: none;
+  background: var(--greys-fafafa);
+  background-repeat: no-repeat;
+  background-size: 16px;
+  background-position: 98%;
+  padding: 0 12px;
+  color: var(--secondary-black);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: -0.28px;
+}
+.registerLayer {
+  opacity: var(--bs-backdrop-opacity);
 }

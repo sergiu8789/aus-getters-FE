@@ -5,9 +5,9 @@ import EditIcon from '../../../../public/assets/images/edit_icon.svg';
 import Location from '../../../../public/assets/images/location_line.svg';
 import Image from 'next/image';
 import Plus from '../../../../public/assets/images/plus.svg';
-import { UploadCoverLetter } from '../UploadCoverLetter/UploadCoverLetter';
+import UploadCoverLetter from '../UploadCoverLetter/UploadCoverLetter';
 
-export const Coverletter = () => {
+const CoverLetter = () => {
   const [showPopUp, setShowPopup] = useState(false);
   return (
     <React.Fragment>
@@ -16,6 +16,10 @@ export const Coverletter = () => {
           <h6>Cover Letter</h6>
           <p
             className={`${styles.edu_edit_btn} m-0 d-flex gap-1 align-items-center`}
+            onClick={() => {
+              setShowPopup(!showPopUp);
+            }}
+            role="button"
           >
             Edit{' '}
             <Image
@@ -68,3 +72,5 @@ export const Coverletter = () => {
     </React.Fragment>
   );
 };
+
+export default CoverLetter;

@@ -8,8 +8,20 @@ import Plus from '../../../../public/assets/images/plus.svg';
 import Image from 'next/image';
 import { Addworkexperience } from '../AddWorkExperience/Addworkexperience';
 
-export const WorkExp = () => {
+const WorkExp = () => {
   const [showPopUp, setShowPopup] = useState(false);
+  const [editMode, setEditMode] = useState(false);
+
+  const handleEdit = () => {
+    setEditMode(!showPopUp);
+    setShowPopup(true);
+  };
+
+  // Function to handle opening the form in add new mode
+  const handleAddNew = () => {
+    setEditMode(!showPopUp);
+    setShowPopup(true);
+  };
   return (
     <React.Fragment>
       <h6>Work Experience</h6>
@@ -25,11 +37,21 @@ export const WorkExp = () => {
                 className={`${styles.location_icon_text} d-flex gap-3 flex-wrap`}
               >
                 <p className="gap-1 align-items-center m-0 d-flex me-2">
-                  <Image src={LocationLine} className="" alt location></Image>
+                  <Image
+                    src={LocationLine}
+                    className=""
+                    alt="location"
+                    location
+                  ></Image>
                   Location
                 </p>
                 <p className="gap-1 align-items-center m-0 d-flex me-2">
-                  <Image src={SuitCase} className="" alt location></Image>
+                  <Image
+                    src={SuitCase}
+                    className=""
+                    alt="icon"
+                    location
+                  ></Image>
                   Jan 2019 - Mar 2021
                 </p>
               </div>
@@ -38,7 +60,13 @@ export const WorkExp = () => {
               className={`${styles.edu_edit_btn} col-lg-3 text-end flex-wrap d-flex flex-column align-items-end justify-content-between`}
             >
               <Image src={Cross} className="" alt location></Image>
-              <p className="m-0 d-flex gap-1 align-items-center">
+              <p
+                className="m-0 d-flex gap-1 align-items-center"
+                role="button"
+                onClick={() => {
+                  handleEdit();
+                }}
+              >
                 Edit{' '}
                 <Image
                   src={EditIcon}
@@ -60,11 +88,21 @@ export const WorkExp = () => {
                 className={`${styles.location_icon_text} d-flex gap-3 flex-wrap`}
               >
                 <p className="gap-1 align-items-center m-0 d-flex me-2">
-                  <Image src={LocationLine} className="" alt location></Image>
+                  <Image
+                    src={LocationLine}
+                    className=""
+                    alt="location"
+                    location
+                  ></Image>
                   Location
                 </p>
                 <p className="gap-1 align-items-center m-0 d-flex me-2">
-                  <Image src={SuitCase} className="" alt location></Image>
+                  <Image
+                    src={SuitCase}
+                    className=""
+                    alt="icon"
+                    location
+                  ></Image>
                   Jan 2019 - Mar 2021
                 </p>
               </div>
@@ -72,8 +110,14 @@ export const WorkExp = () => {
             <div
               className={`${styles.edu_edit_btn} col-lg-3 text-end flex-wrap d-flex flex-column align-items-end justify-content-between`}
             >
-              <Image src={Cross} className="" alt location></Image>
-              <p className="m-0 d-flex gap-1 align-items-center">
+              <Image src={Cross} className="" alt="crossIcon" location></Image>
+              <p
+                className="m-0 d-flex gap-1 align-items-center"
+                role="button"
+                onClick={() => {
+                  handleEdit();
+                }}
+              >
                 Edit{' '}
                 <Image
                   src={EditIcon}
@@ -95,11 +139,21 @@ export const WorkExp = () => {
                 className={`${styles.location_icon_text} d-flex gap-3 flex-wrap`}
               >
                 <p className="gap-1 align-items-center m-0 d-flex me-2">
-                  <Image src={LocationLine} className="" alt location></Image>
+                  <Image
+                    src={LocationLine}
+                    className=""
+                    alt="Location"
+                    location
+                  ></Image>
                   Location
                 </p>
                 <p className="gap-1 align-items-center m-0 d-flex me-2">
-                  <Image src={SuitCase} className="" alt location></Image>
+                  <Image
+                    src={SuitCase}
+                    className=""
+                    alt="Icon"
+                    location
+                  ></Image>
                   Jan 2019 - Mar 2021
                 </p>
               </div>
@@ -107,9 +161,15 @@ export const WorkExp = () => {
             <div
               className={`${styles.edu_edit_btn} col-lg-3 text-end flex-wrap d-flex flex-column align-items-end justify-content-between`}
             >
-              <Image src={Cross} className="" alt location></Image>
-              <p className="m-0 d-flex gap-1 align-items-center">
-                Edit{' '}
+              <Image src={Cross} className="" alt="Icon" location></Image>
+              <p
+                className="m-0 d-flex gap-1 align-items-center"
+                role="button"
+                onClick={() => {
+                  handleEdit();
+                }}
+              >
+                Edit
                 <Image
                   src={EditIcon}
                   className={`object-fit-cover`}
@@ -130,11 +190,21 @@ export const WorkExp = () => {
                 className={`${styles.location_icon_text} d-flex gap-3 flex-wrap`}
               >
                 <p className="gap-1 align-items-center m-0 d-flex me-2">
-                  <Image src={LocationLine} className="" alt location></Image>
+                  <Image
+                    src={LocationLine}
+                    className=""
+                    alt="location"
+                    location
+                  ></Image>
                   Location
                 </p>
                 <p className="gap-1 align-items-center m-0 d-flex me-2">
-                  <Image src={SuitCase} className="" alt location></Image>
+                  <Image
+                    src={SuitCase}
+                    className=""
+                    alt="Icon"
+                    location
+                  ></Image>
                   Jan 2019 - Mar 2021
                 </p>
               </div>
@@ -142,8 +212,14 @@ export const WorkExp = () => {
             <div
               className={`${styles.edu_edit_btn} col-lg-3 text-end flex-wrap d-flex flex-column align-items-end justify-content-between`}
             >
-              <Image src={Cross} className="" alt location></Image>
-              <p className="m-0 d-flex gap-1 align-items-center">
+              <Image src={Cross} className="" alt="crossIcon" location></Image>
+              <p
+                role="button"
+                className="m-0 d-flex gap-1 align-items-center"
+                onClick={() => {
+                  handleEdit();
+                }}
+              >
                 Edit{' '}
                 <Image
                   src={EditIcon}
@@ -159,7 +235,7 @@ export const WorkExp = () => {
             role="button"
             className={`${styles.add_skill_btn} col-12 d-inline-block`}
             onClick={() => {
-              setShowPopup(!showPopUp);
+              handleAddNew();
             }}
           >
             <Image src={Plus} className="" width="10" alt="plus"></Image> Add
@@ -173,3 +249,5 @@ export const WorkExp = () => {
     </React.Fragment>
   );
 };
+
+export default WorkExp;

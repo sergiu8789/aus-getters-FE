@@ -1,0 +1,18 @@
+.aboutusTitle {
+    color: var(--secondary-black);
+    font-size: 44px;
+}
+
+.aboutUsDesc {
+    color: var(--dark-greys-747474);
+    font-size: 16px;
+}
+
+.aboutusBtn {
+    height: 45px;
+    border-radius: 6px;
+    font-size: 16px;
+    color: var(--secondary-black);
+    background: var(--btn-bg-color-1);
+    border: 1px solid var(--secondary-color);
+}

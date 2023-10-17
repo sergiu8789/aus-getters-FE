@@ -1,0 +1,109 @@
+.formSelect {
+  height: 50px;
+  border-radius: 6px;
+  border: 1px solid var(--grey-d4d4d4);
+  -webkit-appearance: none;
+  background-image: url(../../../../public/assets/images/downArrow.svg);
+  background-repeat: no-repeat;
+  background-size: 24px;
+  background-position: 98%;
+  padding: 0 20px 0 35px;
+  color: var(--dark-greys-989899);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: -0.28px;
+}
+
+.skill_popup_box {
+  border-radius: 6px;
+  background: var(--main-gradient-color);
+  box-shadow: 0px 20px 36px 0px rgba(68, 68, 68, 0.08);
+  padding: 1px;
+}
+.skillDropdownFormBlocks {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+}
+.skill_popup_box_form label {
+  font-size: 14px;
+}
+.skill_popup_box_form img {
+  right: 0;
+  top: -24px;
+}
+.skill_popup_box_form {
+  border-radius: 6px;
+  background: var(--white-color);
+  padding: 15px 20px;
+}
+.skill_popup_box label {
+  color: var(--secondary-black);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: -0.28px;
+}
+.formSelect,
+.formInput {
+  border-radius: 6px;
+  border: 1px solid var(--grey-d4d4d4);
+  -webkit-appearance: none;
+  background-image: url(../../../../public/assets/images/downArrow.svg);
+  background-repeat: no-repeat;
+  background-size: 16px;
+  background-position: 98%;
+  color: var(--secondary-black);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: -0.28px;
+  padding: 6px 10px;
+  height: initial;
+}
+.formInput::placeholder {
+  color: var(--dark-greys-989899);
+}
+
+.formInput {
+  background-image: url(../../../../public/assets/images/search_icon.svg);
+}
+.skill_popup_box_form label {
+  flex-shrink: 0;
+  min-width: 125px;
+}
+
+.close_rmv_skill {
+  top: 50%;
+  transform: translateY(-50%);
+  left: 12px;
+}
+
+.skillPlaceholder {
+  color: var(--dark-greys-989899);
+}
+
+.skillDropdown,
+.skillDropdown button {
+  width: 100%;
+}
+
+.skillToggle {
+  background-color: transparent !important;
+  color: var(--secondary-black) !important;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 15px 12px 40px;
+  border-color: var(--grey-d4d4d4);
+  --bs-btn-active-border-color: var(--pink-border);
+  --bs-btn-hover-border-color: var(--pink-border);
+}
+
+.skillPopover {
+  width: 100%;
+  background-color: var(--white-color);
+  border-color: var(--pink-border);
+}

@@ -8,8 +8,20 @@ import Plus from '../../../../public/assets/images/plus.svg';
 import Image from 'next/image';
 import { AddEduTraining } from '../AddEduTraining/AddEduTraining';
 
-export const EduTraining = () => {
+const EduTraining = () => {
   const [showPopUp, setShowPopup] = useState(false);
+  const [editMode, setEditMode] = useState(false);
+
+  const handleEdit = () => {
+    setEditMode(!showPopUp);
+    setShowPopup(true);
+  };
+
+  // Function to handle opening the form in add new mode
+  const handleAddNew = () => {
+    setEditMode(!showPopUp);
+    setShowPopup(true);
+  };
   return (
     <React.Fragment>
       <h6>Education & Training</h6>
@@ -36,7 +48,11 @@ export const EduTraining = () => {
               className={`${styles.edu_edit_btn} col-lg-6 text-end flex-wrap d-flex flex-column align-items-end justify-content-between`}
             >
               <Image src={Cross} className="" alt location></Image>
-              <p className="m-0 d-flex gap-1 align-items-center">
+              <p
+                className="m-0 d-flex gap-1 align-items-center"
+                onClick={() => handleEdit()}
+                role="button"
+              >
                 Edit{' '}
                 <Image
                   src={EditIcon}
@@ -69,7 +85,11 @@ export const EduTraining = () => {
               className={`${styles.edu_edit_btn} col-lg-6 text-end flex-wrap d-flex flex-column align-items-end justify-content-between`}
             >
               <Image src={Cross} className="" alt location></Image>
-              <p className="m-0 d-flex gap-1 align-items-center">
+              <p
+                className="m-0 d-flex gap-1 align-items-center"
+                onClick={() => handleEdit()}
+                role="button"
+              >
                 Edit{' '}
                 <Image
                   src={EditIcon}
@@ -102,7 +122,11 @@ export const EduTraining = () => {
               className={`${styles.edu_edit_btn} col-lg-6 text-end flex-wrap d-flex flex-column align-items-end justify-content-between`}
             >
               <Image src={Cross} className="" alt location></Image>
-              <p className="m-0 d-flex gap-1 align-items-center">
+              <p
+                className="m-0 d-flex gap-1 align-items-center"
+                onClick={() => handleEdit()}
+                role="button"
+              >
                 Edit{' '}
                 <Image
                   src={EditIcon}
@@ -135,7 +159,11 @@ export const EduTraining = () => {
               className={`${styles.edu_edit_btn} col-lg-6 text-end flex-wrap d-flex flex-column align-items-end justify-content-between`}
             >
               <Image src={Cross} className="" alt location></Image>
-              <p className="m-0 d-flex gap-1 align-items-center">
+              <p
+                className="m-0 d-flex gap-1 align-items-center"
+                onClick={() => handleEdit()}
+                role="button"
+              >
                 Edit
                 <Image
                   src={EditIcon}
@@ -151,7 +179,7 @@ export const EduTraining = () => {
             role="button"
             className={`${styles.add_skill_btn} col-12 d-inline-block`}
             onClick={() => {
-              setShowPopup(!showPopUp);
+              handleAddNew();
             }}
           >
             <Image src={Plus} className="" width="10" alt="plus"></Image> Add
@@ -165,3 +193,5 @@ export const EduTraining = () => {
     </React.Fragment>
   );
 };
+
+export default EduTraining;
