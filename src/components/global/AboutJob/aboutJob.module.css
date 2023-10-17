@@ -1,0 +1,41 @@
+.aboutJobContainer {
+    padding: 200px 0px;
+}
+
+.centerJobBox {
+    z-index: 5;
+}
+
+.aboutJobTitle {
+    color: var(--secondary-black);
+    font-size: 44px;
+}
+
+.siteColor {
+    color: var(--default-color);
+}
+
+.aboutJobDesc {
+    color: var(--dark-greys-747474);
+    font-size: 16px;
+}
+
+.searchJobBtn, .applyJobBtn {
+    height: 50px;
+    min-width: 150px;
+    padding: 0 30px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: 1px solid transparent;
+}
+
+.searchJobBtn {
+    background: var(--main-gradient-color);
+    color: var(--white-color);
+}
+
+.applyJobBtn {
+    background: var(--gradient-l-ight-gradient);
+    color: var(--secondary-black);
+    border-color: var(--pink-border);
+}
