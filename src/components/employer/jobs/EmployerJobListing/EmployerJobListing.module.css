@@ -1,0 +1,34 @@
+.formInput,
+.formTextarea,
+.formSelect {
+  padding: 12px 6px;
+  border-radius: 6px;
+  transition: 0.5s;
+  border: 1px solid var(--border-color);
+  background: transparent;
+  position: relative;
+  z-index: 2;
+  font-size: 14px;
+  color: var(--secondary-black);
+  min-width: 150px;
+}
+
+.formInputSearch {
+  -webkit-appearance: none;
+  background-image: url(../../../../../public/assets/images/search_icon.svg);
+  background-repeat: no-repeat;
+  background-size: 18px;
+  background-position: right center;
+  background-position-x: 1%;
+  padding: 12px 6px 12px 36px;
+}
+
+.formSelect {
+  -webkit-appearance: none;
+  background-image: url(../../../../../public/assets/images/downArrow.svg);
+  background-repeat: no-repeat;
+  background-size: 18px;
+  padding: 12px 10px;
+  background-position: right center;
+  background-position-x: 96%;
+}

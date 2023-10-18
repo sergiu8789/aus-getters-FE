@@ -1,0 +1,74 @@
+.card {
+  border-radius: 8px;
+  border: 1px solid var(--grey-d4d4d4);
+  background: var(--white-color);
+}
+.cardMain {
+  padding-bottom: 20px;
+}
+.cardImageBox {
+  background: var(--grey-d4d4d4);
+  width: 106px;
+  height: 106px;
+}
+.cardInfo {
+  flex: 1;
+  padding-right: 20px;
+}
+.cardTitle {
+  color: var(--clr-black);
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+.cardTitle a {
+  text-decoration: none;
+  color: var(--secondary-black);
+}
+.jobPostTime {
+  font-size: 12px;
+  color: var(--secondary-black);
+}
+.cardDetailRow img {
+  height: 16px;
+  width: 16px;
+}
+.jobStatusType {
+  bottom: 20px;
+  right: 20px;
+}
+.activeType,
+.filledType {
+  padding: 12px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+  border-radius: 6px;
+}
+.filledType {
+  color: var(--red-bg);
+  background: var(--light-red-bg);
+}
+.activeType {
+  color: var(--green-bg);
+  background: var(--light-green-bg);
+}
+.jobSavedType {
+  top: 20px;
+  right: 20px;
+}
+.bookmarkJob img {
+  height: 36px;
+  width: 36px;
+}
+.iconButton {
+  border: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+}
+
+.iconButton svg {
+  width: 20px;
+  height: 20px;
+}

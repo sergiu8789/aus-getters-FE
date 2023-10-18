@@ -1,0 +1,22 @@
+.jobsListHeader {
+  display: grid;
+  grid-template-columns: 2fr repeat(4, 1fr);
+  background: var(--step-line-bg);
+  padding: 20px 10px;
+  align-items: center;
+}
+
+.jobsListHeader h3 {
+  font-size: 16px;
+  margin: 0;
+  color: var(--iris-100);
+  font-weight: 500;
+}
+
+.jobsListRow {
+  display: grid;
+  grid-template-columns: 2fr repeat(4, 1fr);
+  background: var(--step-line-bg);
+  padding: 20px 10px;
+  align-items: center;
+}
