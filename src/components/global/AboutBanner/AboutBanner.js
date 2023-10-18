@@ -2,8 +2,10 @@ import React from 'react';
 import styles from './AboutBanner.module.css';
 import Image from 'next/image';
 import aboutUs from '../../../../public/assets/images/about-us.jpg';
+import { useRouter } from 'next/navigation';
 
 function AboutBanner() {
+  const router = useRouter();
   return (
     <React.Fragment>
       <div className="col-12 d-inline-block py-5 bg-white">
@@ -36,6 +38,7 @@ function AboutBanner() {
               <span
                 className={`${styles.aboutusBtn} d-inline-flex align-items-center px-5`}
                 role="button"
+                onClick={() => router.push('/contact-us')}
               >
                 Contact Us
               </span>

@@ -104,7 +104,7 @@ function Footer() {
                 <ul className="list-unstyled col-12 d-inline-flex flex-column gap-3">
                   <li className="col-12">
                     <Link
-                      href="/"
+                      href="/jobs"
                       className={`${styles.footerLink} d-inline-block text-decoration-none`}
                     >
                       Search Jobs
@@ -120,7 +120,7 @@ function Footer() {
                   </li>
                   <li className="col-12">
                     <Link
-                      href="/"
+                      href="/about-us"
                       className={`${styles.footerLink} d-inline-block text-decoration-none`}
                     >
                       About
@@ -165,7 +165,7 @@ function Footer() {
                 <ul className="list-unstyled col-12 d-inline-flex flex-column gap-3">
                   <li className="col-12">
                     <Link
-                      href="/"
+                      href="/contact-us"
                       className={`${styles.footerLink} d-inline-block text-decoration-none`}
                     >
                       Contact Us

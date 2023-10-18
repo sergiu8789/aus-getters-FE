@@ -29,9 +29,12 @@ export default function Page() {
       <div
         className={`${styles.LoginContainer} col-12 d-inline-flex align-items-stretch`}
       >
-        <div className={`${styles.LogoBox} position-absolute d-inline-block`}>
+        <Link
+          href="/"
+          className={`${styles.LogoBox} position-absolute d-inline-block`}
+        >
           <Image src={Logo} className="object-fit-contain" alt="Logo"></Image>
-        </div>
+        </Link>
         <div className="col-md-6">
           <Image
             src={LoginBg}
@@ -45,7 +48,10 @@ export default function Page() {
           >
             <span className={styles.loginName}>Sign In</span>
             &nbsp;/&nbsp;
-            <Link href="/signup" className={`text-black ${styles.signLink}`}>
+            <Link
+              href="/get-started"
+              className={`text-black ${styles.signLink}`}
+            >
               Sign Up
             </Link>
           </h1>
@@ -165,7 +171,10 @@ export default function Page() {
             <span className={`d-inline-block ${styles.accountSignup}`}>
               New to Aus-Getters?
             </span>
-            <Link href="/signup" className={`text-black ${styles.signLink}`}>
+            <Link
+              href="/get-started"
+              className={`text-black ${styles.signLink}`}
+            >
               Sign Up
             </Link>
           </div>

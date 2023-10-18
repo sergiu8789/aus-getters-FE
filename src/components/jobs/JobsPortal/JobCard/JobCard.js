@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import Image from 'next/image';
 import locationSvg from '../../../../../public/assets/images/icons/location.svg';
 import moneySvg from '../../../../../public/assets/images/icons/money.svg';
@@ -7,6 +8,7 @@ import styles from './JobCard.module.css';
 import Link from 'next/link';
 
 const JobCard = ({ type }) => {
+  const [jobStatus, setJobStatus] = useState('filled');
   return (
     <div
       className={`p-4 pb-3 col-12 d-inline-block position-relative ${styles.card}`}
@@ -54,16 +56,21 @@ const JobCard = ({ type }) => {
         </p>
       </div>
       <div className={`${styles.jobStatusType} position-absolute`}>
-        <span
-          className={`${styles.failedType} d-inline-flex align-items-center`}
-        >
-          Active
-        </span>
-        <span
-          className={`${styles.ActiveType} d-inline-flex align-items-center`}
-        >
-          Filled
-        </span>
+        {jobStatus === 'active' ? (
+          <span
+            className={`${styles.failedType} d-inline-flex align-items-center`}
+          >
+            Active
+          </span>
+        ) : jobStatus === 'filled' ? (
+          <span
+            className={`${styles.ActiveType} d-inline-flex align-items-center`}
+          >
+            Filled
+          </span>
+        ) : (
+          <></>
+        )}
       </div>
       {type === 'bookmark' && (
         <div className={`${styles.jobSavedType} position-absolute`}>

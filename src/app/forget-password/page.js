@@ -20,9 +20,12 @@ export default function Page() {
       <div
         className={`${styles.LoginContainer} col-12 d-inline-flex align-items-stretch`}
       >
-        <div className={`${styles.LogoBox} position-absolute d-inline-block`}>
+        <Link
+          href="/"
+          className={`${styles.LogoBox} position-absolute d-inline-block`}
+        >
           <Image src={Logo} className="object-fit-contain" alt="Logo"></Image>
-        </div>
+        </Link>
         <div className="col-md-6">
           <Image
             src={LoginBg}

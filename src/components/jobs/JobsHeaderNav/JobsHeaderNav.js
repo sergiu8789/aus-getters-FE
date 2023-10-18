@@ -42,7 +42,7 @@ function JobsHeaderNav() {
                   Insights
                 </Link>
                 <Link
-                  href=""
+                  href="about-us"
                   className={`${styles.headerLink} d-inline-flex text-decoration-none h-100 align-items-center`}
                 >
                   About Us
@@ -114,7 +114,7 @@ function JobsHeaderNav() {
                 </span>
               </Link>
               <Link
-                href="/"
+                href="/account"
                 className={`${styles.loggedLink} d-inline-flex align-items-center text-decoration-none`}
               >
                 <Image src={account} alt="account" />

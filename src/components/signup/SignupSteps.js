@@ -131,7 +131,7 @@ const Step1 = ({ setRegisterStep }) => {
                       <Image
                         src={values.image}
                         alt="Profile"
-                        className="col-12 object-fit-contain m-auto d-block"
+                        className="object-fit-contain m-auto d-block"
                       />
                     </div>
                     <div
@@ -202,7 +202,7 @@ const Step1 = ({ setRegisterStep }) => {
                       <Image
                         src={values.resume}
                         alt="Profile"
-                        className="col-12 object-fit-contain m-auto d-block"
+                        className="object-fit-contain m-auto d-block"
                       />
                     </div>
                     <div
@@ -222,7 +222,7 @@ const Step1 = ({ setRegisterStep }) => {
                       <Image
                         src={values.letter}
                         alt="Profile"
-                        className="col-12 object-fit-contain m-auto d-block"
+                        className="object-fit-contain m-auto d-block"
                       />
                     </div>
                   </div>

@@ -31,3 +31,40 @@
     background: var(--main-gradient-color);
     color: var(--white-color);
 }
+
+.signupBox {
+    border-radius: 8px;
+    padding: 20px;
+    border: 2px solid var(--grey-d4d4d4);
+    transition: .2s;
+    width: 18%;
+}
+
+.signupBox:hover {
+    box-shadow: 0px 10px 20px 3px rgba(0, 0, 0, .15);
+}
+
+.signupBoxSelected {
+    border-color: var(--default-color);
+    box-shadow: 0px 10px 20px 3px rgba(0, 0, 0, .15);
+}
+
+.signupLabel {
+    font-size: 20px;
+    color: var(--secondary-black);
+    font-weight: 500;
+    margin-top: 15px;
+}
+
+.selectTick {
+    height: 25px;
+    width: 25px;
+    top: 10px;
+    right: 10px;
+}
+
+.selectTick img {
+    height: 25px;
+    width: 25px;
+    object-fit: contain;
+}
