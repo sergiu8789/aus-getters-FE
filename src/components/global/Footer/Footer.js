@@ -104,7 +104,7 @@ function Footer() {
                 <ul className="list-unstyled col-12 d-inline-flex flex-column gap-3">
                   <li className="col-12">
                     <Link
-                      href="/jobs"
+                      href="/candidate/jobs"
                       className={`${styles.footerLink} d-inline-block text-decoration-none`}
                     >
                       Search Jobs

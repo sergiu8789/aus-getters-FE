@@ -42,7 +42,7 @@ function JobsHeaderNav() {
                   Insights
                 </Link>
                 <Link
-                  href="about-us"
+                  href="/about-us"
                   className={`${styles.headerLink} d-inline-flex text-decoration-none h-100 align-items-center`}
                 >
                   About Us
@@ -82,9 +82,10 @@ function JobsHeaderNav() {
                 role="button"
               >
                 <Image src={userProfile} alt="user Profile" />
-                <div
-                  className={`position-relative d-inline-flex flex-column align-items-center`}
+                <Link
+                  className={`position-relative d-inline-flex flex-column align-items-center text-decoration-none`}
                   role="button"
+                  href="/candidate/profile"
                 >
                   <span className={`${styles.profileName} d-inline-block`}>
                     Jason
@@ -94,7 +95,7 @@ function JobsHeaderNav() {
                   >
                     Online
                   </span>
-                </div>
+                </Link>
               </div>
             </div>
           </div>
@@ -114,7 +115,7 @@ function JobsHeaderNav() {
                 </span>
               </Link>
               <Link
-                href="/account"
+                href="/candidate/account"
                 className={`${styles.loggedLink} d-inline-flex align-items-center text-decoration-none`}
               >
                 <Image src={account} alt="account" />
@@ -123,7 +124,7 @@ function JobsHeaderNav() {
                 </span>
               </Link>
               <Link
-                href="/"
+                href="/candidate/jobs"
                 className={`${styles.loggedLink} d-inline-flex align-items-center text-decoration-none`}
               >
                 <Image src={jobs} alt="jobs" />
@@ -132,7 +133,7 @@ function JobsHeaderNav() {
                 </span>
               </Link>
               <Link
-                href="/"
+                href="/candidate/messages"
                 className={`${styles.loggedLink} d-inline-flex align-items-center text-decoration-none`}
               >
                 <Image src={message} alt="message" />
