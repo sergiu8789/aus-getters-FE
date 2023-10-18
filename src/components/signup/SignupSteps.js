@@ -25,16 +25,18 @@ const StepHeader = ({ title, colorTitle, step }) => {
         </h2>
         <div
           className={`${styles.stepBlocks} ${
-            step === 1
+            step === '1'
               ? styles.activeStep1
-              : step === 2
+              : step === '2'
               ? styles.activeStep2
-              : step === 3
+              : step === '3'
               ? styles.activeStep3
-              : step === 4
+              : step === '4'
               ? styles.activeStep4
               : step === '5'
               ? styles.activeStep5
+              : step === '6'
+              ? styles.activeStep6
               : ''
           } position-relative overflow-hidden col-12 d-inline-flex align-items-center justify-content-between`}
         >
@@ -52,6 +54,9 @@ const StepHeader = ({ title, colorTitle, step }) => {
           ></div>
           <div
             className={`${styles.stepCircle} ${styles.stepCircle5} d-inline-block position-relative`}
+          ></div>
+          <div
+            className={`${styles.stepCircle} ${styles.stepCircle6} d-inline-block position-relative`}
           ></div>
         </div>
       </div>
@@ -176,9 +181,9 @@ const Step1 = ({ setRegisterStepPop }) => {
                     >
                       Describe Yourself (250 words)
                     </label>
-                    {errors.email && touched.email && errors.email && (
+                    {errors.yourself && touched.yourself && errors.yourself && (
                       <span className={`${styles.fromError} d-inline-block`}>
-                        {errors.email}
+                        {errors.yourself}
                       </span>
                     )}
                   </div>
@@ -485,26 +490,40 @@ const Step3 = ({ setRegisterStepPop }) => {
                       <div
                         className={`${styles.loginFormBox} col-6 flex-shrink-1 position-relative d-inline-block`}
                       >
-                        <select
+                        <input
+                          type="text"
+                          name="jobTitle"
                           onChange={handleChange}
                           onBlur={handleBlur}
-                          className={`${styles.formSelect} d-inline-block col-12`}
-                          role="button"
+                          value={values.age}
+                          placeholder="name"
+                          autoComplete="off"
+                          className={`${styles.formInput} d-inline-block col-12`}
+                        />
+                        <label
+                          className={`${styles.formLabel} position-absolute d-inline-flex align-items-center`}
                         >
-                          <option value="">Experience</option>
-                        </select>
+                          Job Title
+                        </label>
                       </div>
                       <div
                         className={`${styles.loginFormBox} col-6 flex-shrink-1 position-relative d-inline-block`}
                       >
-                        <select
+                        <input
+                          type="text"
+                          name="employer"
                           onChange={handleChange}
                           onBlur={handleBlur}
-                          className={`${styles.formSelect} d-inline-block col-12`}
-                          role="button"
+                          value={values.age}
+                          placeholder="name"
+                          autoComplete="off"
+                          className={`${styles.formInput} d-inline-block col-12`}
+                        />
+                        <label
+                          className={`${styles.formLabel} position-absolute d-inline-flex align-items-center`}
                         >
-                          <option value="">Work Profile</option>
-                        </select>
+                          Employer
+                        </label>
                       </div>
                     </div>
                     <div
@@ -513,27 +532,68 @@ const Step3 = ({ setRegisterStepPop }) => {
                       <div
                         className={`${styles.loginFormBox} col-6 flex-shrink-1 position-relative d-inline-block`}
                       >
-                        <select
+                        <input
+                          type="text"
+                          name="startdate"
                           onChange={handleChange}
                           onBlur={handleBlur}
-                          className={`${styles.formSelect} d-inline-block col-12`}
-                          role="button"
+                          value={values.age}
+                          placeholder="name"
+                          autoComplete="off"
+                          className={`${styles.formInput} d-inline-block col-12`}
+                        />
+                        <label
+                          className={`${styles.formLabel} position-absolute d-inline-flex align-items-center`}
                         >
-                          <option value="CSS">CSS</option>
-                        </select>
+                          Start Date
+                        </label>
                       </div>
                       <div
                         className={`${styles.loginFormBox} col-6 flex-shrink-1 position-relative d-inline-block`}
                       >
-                        <select
+                        <input
+                          type="text"
+                          name="enddate"
                           onChange={handleChange}
                           onBlur={handleBlur}
-                          className={`${styles.formSelect} d-inline-block col-12`}
-                          role="button"
+                          value={values.age}
+                          placeholder="name"
+                          autoComplete="off"
+                          className={`${styles.formInput} d-inline-block col-12`}
+                        />
+                        <label
+                          className={`${styles.formLabel} position-absolute d-inline-flex align-items-center`}
                         >
-                          <option value="CSS">CSS</option>
-                        </select>
+                          End Date
+                        </label>
                       </div>
+                    </div>
+                    <div
+                      className={`${styles.loginFormFloating} col-12 position-relative d-inline-block`}
+                    >
+                      <textarea
+                        name="email"
+                        onChange={handleChange}
+                        onBlur={handleBlur}
+                        value={values.yourself}
+                        placeholder="email"
+                        autoComplete="off"
+                        className={`${styles.formTextarea} d-inline-block col-12`}
+                      />
+                      <label
+                        className={`${styles.formLabel} position-absolute d-inline-flex align-items-center`}
+                      >
+                        Describe Yourself (250 words)
+                      </label>
+                      {errors.yourself &&
+                        touched.yourself &&
+                        errors.yourself && (
+                          <span
+                            className={`${styles.fromError} d-inline-block`}
+                          >
+                            {errors.yourself}
+                          </span>
+                        )}
                     </div>
                     <div className="col-12 d-inline-flex">
                       <span
@@ -582,11 +642,204 @@ const Step4 = ({ setRegisterStepPop }) => {
           className={`${styles.registerContent} col-12 d-flex h-100 align-items-center m-auto`}
         >
           <div className={`${styles.registerModel} overflow-y-auto col-12`}>
-            <StepHeader title="Add your Education History" step="4" />
+            <StepHeader title="Add your Job Prefrence" step="4" />
             <div
               className={`${styles.backStep} d-inline-flex align-items-center gap-2`}
               role="button"
               onClick={() => setRegisterStepPop(3)}
+            >
+              <Image src={backArrow} alt="Back" />
+              <span className={styles.backLinkText}>Back</span>
+            </div>
+            <Formik
+              initialValues={{}}
+              validate={(values) => {
+                const errors = {};
+                return errors;
+              }}
+              onSubmit={(values, { setSubmitting }) => {
+                setTimeout(() => {
+                  alert(JSON.stringify(values, null, 2));
+                  setSubmitting(false);
+                }, 400);
+              }}
+            >
+              {({
+                values,
+                errors,
+                touched,
+                handleChange,
+                handleBlur,
+                handleSubmit,
+                isSubmitting
+                /* and other goodies */
+              }) => (
+                <React.Fragment>
+                  <form
+                    className={`${styles.loginFromBox} col-12 d-inline-flex flex-column`}
+                    onSubmit={handleSubmit}
+                  >
+                    <div
+                      className={`${styles.loginFormFloating} col-12 position-relative d-inline-flex align-items-center gap-4`}
+                    >
+                      <div
+                        className={`${styles.loginFormBox} col-6 flex-shrink-1 position-relative d-inline-block`}
+                      >
+                        <input
+                          type="text"
+                          name="jobPrefTitle"
+                          onChange={handleChange}
+                          onBlur={handleBlur}
+                          value={values.age}
+                          placeholder="name"
+                          autoComplete="off"
+                          className={`${styles.formInput} d-inline-block col-12`}
+                        />
+                        <label
+                          className={`${styles.formLabel} position-absolute d-inline-flex align-items-center`}
+                        >
+                          Job Title
+                        </label>
+                      </div>
+                      <div
+                        className={`${styles.loginFormBox} col-6 flex-shrink-1 position-relative d-inline-block`}
+                      >
+                        <select
+                          onChange={handleChange}
+                          onBlur={handleBlur}
+                          className={`${styles.formSelect} d-inline-block col-12`}
+                          role="button"
+                        >
+                          <option value="">Employment type</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div
+                      className={`${styles.loginFormFloating} col-12 position-relative d-inline-flex align-items-center gap-4`}
+                    >
+                      <div
+                        className={`${styles.loginFormBox} col-6 flex-shrink-1 position-relative d-inline-block`}
+                      >
+                        <input
+                          type="text"
+                          name="workschedule"
+                          onChange={handleChange}
+                          onBlur={handleBlur}
+                          value={values.age}
+                          placeholder="name"
+                          autoComplete="off"
+                          className={`${styles.formInput} d-inline-block col-12`}
+                        />
+                        <label
+                          className={`${styles.formLabel} position-absolute d-inline-flex align-items-center`}
+                        >
+                          Work Schedule
+                        </label>
+                      </div>
+                      <div
+                        className={`${styles.loginFormBox} col-6 flex-shrink-1 position-relative d-inline-flex`}
+                      >
+                        <div className="col-8 pe-2">
+                          <input
+                            type="number"
+                            name="enddate"
+                            onChange={handleChange}
+                            onBlur={handleBlur}
+                            value={values.age}
+                            placeholder="name"
+                            autoComplete="off"
+                            className={`${styles.formInput} d-inline-block col-12`}
+                          />
+                          <label
+                            className={`${styles.formLabel} position-absolute d-inline-flex align-items-center`}
+                          >
+                            Remuneration
+                          </label>
+                        </div>
+                        <div className="col-4 ps-2">
+                          <select
+                            onChange={handleChange}
+                            onBlur={handleBlur}
+                            className={`${styles.formSelect} d-inline-block col-12 ps-2`}
+                            role="button"
+                          >
+                            <option value="">Salary</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      className={`${styles.loginFormFloating} col-12 position-relative d-inline-flex align-items-center gap-4`}
+                    >
+                      <div
+                        className={`${styles.loginFormBox} col-6 flex-shrink-1 position-relative d-inline-block`}
+                      >
+                        <select
+                          onChange={handleChange}
+                          onBlur={handleBlur}
+                          className={`${styles.formSelect} d-inline-block col-12 ps-2`}
+                          role="button"
+                        >
+                          <option value="">Work Environment</option>
+                        </select>
+                      </div>
+                      <div
+                        className={`${styles.loginFormBox} col-6 flex-shrink-1 position-relative d-inline-block`}
+                      >
+                        <select
+                          onChange={handleChange}
+                          onBlur={handleBlur}
+                          className={`${styles.formSelect} d-inline-block col-12 ps-2`}
+                          role="button"
+                        >
+                          <option value="">Rather work</option>
+                        </select>
+                      </div>
+                    </div>
+                  </form>
+                </React.Fragment>
+              )}
+            </Formik>
+            <div
+              className={`${styles.skipBtnNav} col-12 d-inline-flex align-items-center justify-content-between`}
+            >
+              <span
+                className={`${styles.skipBtn} d-inline-flex align-items-center`}
+                role="button"
+                onClick={() => setRegisterStepPop(0)}
+              >
+                Skip
+              </span>
+              <span
+                className={`${styles.nextBtn} d-inline-flex align-items-center gap-2 justify-content-center`}
+                role="button"
+                onClick={() => setRegisterStepPop(5)}
+              >
+                Next <Image src={nextArrow} alt="nextArrow" />
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </React.Fragment>
+  );
+};
+
+const Step5 = ({ setRegisterStepPop }) => {
+  return (
+    <React.Fragment>
+      <div
+        className={`${styles.registerPopup} position-fixed h-100 col-12 d-inline-block start-0 top-0`}
+      >
+        <div
+          className={`${styles.registerContent} col-12 d-flex h-100 align-items-center m-auto`}
+        >
+          <div className={`${styles.registerModel} overflow-y-auto col-12`}>
+            <StepHeader title="Add your Education History" step="5" />
+            <div
+              className={`${styles.backStep} d-inline-flex align-items-center gap-2`}
+              role="button"
+              onClick={() => setRegisterStepPop(4)}
             >
               <Image src={backArrow} alt="Back" />
               <span className={styles.backLinkText}>Back</span>
@@ -768,7 +1021,7 @@ const Step4 = ({ setRegisterStepPop }) => {
               <span
                 className={`${styles.nextBtn} d-inline-flex align-items-center gap-2 justify-content-center`}
                 role="button"
-                onClick={() => setRegisterStepPop(5)}
+                onClick={() => setRegisterStepPop(6)}
               >
                 Next <Image src={nextArrow} alt="nextArrow" />
               </span>
@@ -780,7 +1033,7 @@ const Step4 = ({ setRegisterStepPop }) => {
   );
 };
 
-const Step5 = ({
+const Step6 = ({
   setRegisterStepPop,
   changeProfile,
   highlightProfile,
@@ -795,11 +1048,11 @@ const Step5 = ({
           className={`${styles.registerContent} col-12 d-flex h-100 align-items-center m-auto`}
         >
           <div className={`${styles.registerModel} overflow-y-auto col-12`}>
-            <StepHeader title="Lets Get" colorTitle="Started" step="5" />
+            <StepHeader title="Lets Get" colorTitle="Started" step="6" />
             <div
               className={`${styles.backStep} d-inline-flex align-items-center gap-2`}
               role="button"
-              onClick={() => setRegisterStepPop(4)}
+              onClick={() => setRegisterStepPop(5)}
             >
               <Image src={backArrow} alt="Back" />
               <span className={styles.backLinkText}>Back</span>
@@ -959,7 +1212,10 @@ const SignupSteps = ({ registerStepPop, setRegisterStepPop }) => {
         <Step4 setRegisterStepPop={setRegisterStepPop} />
       )}
       {registerStepPop === 5 && (
-        <Step5
+        <Step5 setRegisterStepPop={setRegisterStepPop} />
+      )}
+      {registerStepPop === 6 && (
+        <Step6
           setRegisterStepPop={setRegisterStepPop}
           changeProfile={changeProfile}
           highlightProfile={highlightProfile}
