@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import JobCard from '../JobsPortal/JobCard/JobCard';
 import styles from './JobsTable.module.css';
 import Link from 'next/link';
-import ArrowUpIcon from '@/components/global/Icons/ArrowUpIcon';
+import ArrowUpIcon from '@/components/global/icons/ArrowUpIcon';
 const JobsTable = (props) => {
   const { type } = props;
   const [selectedOption, setSelectedOption] = useState('');

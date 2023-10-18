@@ -129,6 +129,7 @@
   border-radius: 6px;
   line-height: 1;
   border: none;
+  text-decoration: none;
 }
 
 .btn-custom--primary {

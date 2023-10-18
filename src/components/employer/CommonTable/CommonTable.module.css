@@ -1,0 +1,40 @@
+.tableHeader {
+  display: flex;
+  gap: 8px;
+  padding: 18px;
+  background: var(--iris-tints-tint-8);
+  align-items: center;
+}
+
+.tableHeader h3,
+.tableHeader h5 {
+  font-size: 16px;
+  color: var(--secondary-color);
+  margin: 0;
+  line-height: 1;
+}
+
+.tableBody p,
+.tableBody h3,
+.tableBody h4 {
+  margin: 0;
+}
+
+.tableRow {
+  padding: 15px 0;
+  gap: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.tableRow + .tableRow {
+  border-top: 1px solid var(--greys-c-4-c-4-c-4);
+}
+
+.flex-2 {
+  flex: 2;
+}
+
+.flex-1 {
+  flex: 1;
+}

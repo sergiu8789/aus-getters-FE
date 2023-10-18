@@ -1,0 +1,22 @@
+.icon {
+  max-width: 24px;
+}
+
+.iconText {
+  font-size: 14px;
+  color: var(--dark-greys-595959);
+}
+
+.container h5 {
+  font-size: 16px;
+}
+
+.skillBadge {
+  font-size: 12px;
+  padding: 7px 5px;
+  border: 1px solid currentColor;
+  background-color: var(--greys-fafafa);
+  color: var(--signals-green);
+  border-radius: 6px;
+  font-weight: 500;
+}

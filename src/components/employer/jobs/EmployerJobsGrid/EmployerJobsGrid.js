@@ -2,7 +2,7 @@ import styles from './EmployerJobsGrid.module.css';
 import locationSvg from '../../../../../public/assets/images/icons/location.svg';
 import Image from 'next/image';
 import Link from 'next/link';
-import ArrowUpIcon from '@/components/global/Icons/ArrowUpIcon';
+import ArrowUpIcon from '@/components/global/icons/ArrowUpIcon';
 import EmployerJobCard from '../EmployerJobCard/EmployerJobCard';
 import { scrollToTop } from '@/utils/scroll.utils';
 
