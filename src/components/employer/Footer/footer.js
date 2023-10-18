@@ -3,7 +3,9 @@ import Link from 'next/link';
 
 const EmployerFooterComponent = () => {
   return (
-    <div className={`${styles.footer_conatainer}`}>
+    <div
+      className={`${styles.footer_conatainer} d-inline-flex flex-column gap-2`}
+    >
       <div className={`${styles.footer_text}`}>
         © 2023 Aus-Getters Courses. All rights reserved
       </div>

@@ -9,12 +9,13 @@ import Link from 'next/link';
 const PageTitleComponent = (props) => {
   const pageTitle = props.pageTitle;
   const isShowJobBtn = props.isShowJobBtn || false;
+  const pageSubTitle = props.pageSubTitle;
   return (
     <Container className={`${styles.page_top}`}>
       <Row>
-        <Col>
+        <div className="d-flex align-items-center">
           <div className={`${styles.page_title} `}>{pageTitle}</div>
-        </Col>
+        </div>
         {isShowJobBtn && (
           <Col>
             <div className={`${styles.page_top_btn} d-inline-block`}>

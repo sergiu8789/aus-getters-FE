@@ -1,27 +1,21 @@
 .footer_conatainer {
-  display: inline-flex;
-  padding: 24px 849px 24px 80px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 20px;
   background: var(--greys-fafafa);
-  width: 100%;
-
   font-weight: 500;
-  line-height: 28px; /* 175% */
+  line-height: 28px;
   letter-spacing: -0.32px;
-  color: var(--Black, #2b2b2b);
+  color: var(--secondary-black);
+  padding: 24px 80px;
 }
-.footer_text {
-}
+
 .footer_menus {
   margin-top: 20px;
 }
+
 .footer_menu_item {
   text-decoration-line: underline;
   color: var(--Black);
 }
+
 .footer_menu_gap {
   padding: 0 20px;
 }

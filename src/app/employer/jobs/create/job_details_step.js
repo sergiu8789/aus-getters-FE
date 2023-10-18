@@ -31,15 +31,12 @@ const JobDetailsComponent = () => {
     { value: 'lms_plugins', label: 'LMS Plugins' }
   ];
 
-  
   return (
     <Formik
       initialValues={{
         job_title: '',
-        description:
-          'onsectetur iaculis aliquam. Maecenas id arcu aliquam, ultrices nibh eget, congue odio. Nam fringilla risus eget lacus venenatis scelerisque. Sed tempor arcu tellus, quis vehicula tortor bibendum et. Sed vestibulum odio sed ex blandit sodales. Ut id sollicitudin risus. Aliquam cursus ultricies sollicitudin. Aliquam feugiat elit feugiat leo consectetur, a sodales leo euismod. Aenean varius finibus tincidunt. Quisque non tellus et tellus feugiat venenatis sit amet a dolor. Aliquam ut dolor mollis, commodo libero quis, ullamcorper nisi.',
-        responsibilty:
-          'a dictumst. Ut id interdum augue. Fusce non eleifend tortor. In consectetur ligula dapibus enim vulputate vestibulum. Integer ac sem id ipsum sagittis rutrum at vitae quam.'
+        description: 'onsectetur iaculis aliquam.',
+        responsibilty: 'a dictumst.'
       }}
       validate={handleFormValidation}
       onSubmit={handleFormSubmission}
@@ -236,54 +233,57 @@ const JobDetailsComponent = () => {
             >
               {skills &&
                 skills?.map((val, index) => {
-                  return <div key={index}
-                    className={`${innerStyles.loginFormBox} ${innerStyles.wantedSkillChildConatiner} col-6 box d-inline-block flex-shrink-1 position-relatived `}
-                  
-                  >
-                    <span
-                      className={`${innerStyles.removeSkill} position-absolute d-inline-flex align-items-center justify-content-center`}
+                  return (
+                    <div
+                      key={index}
+                      className={`${innerStyles.loginFormBox} ${innerStyles.wantedSkillChildConatiner} col-6 box d-inline-block flex-shrink-1 position-relatived `}
                     >
-                      <Image
-                        src={TrashboxImg}
-                        alt="Cross"
-                        className="object-fit-contain"
-                      />
-                    </span>
-                    <span
-                      className={`${innerStyles.selectSkillName} position-absolute d-inline-flex align-items-center justify-content-center`}
-                    >
-                      {val.label}
-                    </span>
-                    <select
-                      name="skills"
-                      onChange={handleChange}
-                      onBlur={handleBlur}
-                      className={`${styles.formSelect} ${innerStyles.formSelect}  d-inline-block col-12`}
-                      role="button"
-                    >
-                      <option value="Beginner">Beginner</option>
-                      <option value="Intermediate">Intermediate</option>
-                      <option value="Advance">Advance</option>
-                    </select>
-                  </div>;
+                      <span
+                        className={`${innerStyles.removeSkill} position-absolute d-inline-flex align-items-center justify-content-center`}
+                      >
+                        <Image
+                          src={TrashboxImg}
+                          alt="Cross"
+                          className="object-fit-contain"
+                        />
+                      </span>
+                      <span
+                        className={`${innerStyles.selectSkillName} position-absolute d-inline-flex align-items-center justify-content-center`}
+                      >
+                        {val.label}
+                      </span>
+                      <select
+                        name="skills"
+                        onChange={handleChange}
+                        onBlur={handleBlur}
+                        className={`${styles.formSelect} ${innerStyles.formSelect}  d-inline-block col-12`}
+                        role="button"
+                      >
+                        <option value="Beginner">Beginner</option>
+                        <option value="Intermediate">Intermediate</option>
+                        <option value="Advance">Advance</option>
+                      </select>
+                    </div>
+                  );
                 })}
             </div>
           </div>
           {/* Submit Buttons  */}
-          <div
-              className={`${styles.btn_block} `}
+          <div className={`${styles.btn_block} `}>
+            <Button
+              variant="none"
+              className={`${styles.save_as_draft_btn} ${innerStyles.save_as_draft_btn} d-inline-block`}
             >
-              <Button variant="none" className={`${styles.save_as_draft_btn} ${innerStyles.save_as_draft_btn} d-inline-block`}>
-                Save as Draft <Image src={SaveImg} role="button" alt="Eye" />
-              </Button>
-              <div className='d-inline-block float-end'>
+              Save as Draft <Image src={SaveImg} role="button" alt="Eye" />
+            </Button>
+            <div className="d-inline-block float-end">
               <Button
                 type="button"
                 variant="none"
                 className={`${styles.pre_btn} ${innerStyles.pre_btn} d-inline-block`}
               >
                 Previous <Image src={NextArrowImg} role="button" alt="Eye" />
-              </Button> {" "}
+              </Button>{' '}
               <Button
                 type="submit"
                 disabled={isSubmitting}
@@ -292,8 +292,8 @@ const JobDetailsComponent = () => {
               >
                 Next <Image src={NextArrowImg} role="button" alt="Eye" />
               </Button>
-              </div>
             </div>
+          </div>
         </form>
       )}
     </Formik>

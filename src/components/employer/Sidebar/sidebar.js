@@ -1,4 +1,3 @@
-'use client';
 import styles from './siderbar.module.css';
 import BrandLogo from '../../../../public/assets/images/brand_logo.jpeg';
 import DashboardImg from '../../../../public/assets/images/dashboard.png';
@@ -13,13 +12,14 @@ import SettingImg from '../../../../public/assets/images/setting.png';
 import SubscriptionsImg from '../../../../public/assets/images/subscriptions.png';
 import DefaultUserImage from '../../../../public/assets/images/default_user.png';
 import CollaspLeftImage from '../../../../public/assets/images/collasp_left.png';
-
 import Image from 'next/image';
 import Link from 'next/link';
 
-const EmployerSidebarComponent = () => {
+const EmployerSidebarComponent = ({ type }) => {
   return (
-    <div className={`${styles.sidebar_container}`}>
+    <div
+      className={`${styles.sidebar_container} col-12 d-inline-flex flex-column gap-2`}
+    >
       <div className={`${styles.sidebar_brand}`}>
         <Image
           src={BrandLogo}
@@ -28,7 +28,7 @@ const EmployerSidebarComponent = () => {
         ></Image>
         <span className={`${styles.brand_name} `}>Company Name</span>
       </div>
-      <div className="menus">
+      <div className="menus d-inline-flex flex-column gap-2 col-12">
         {/* Dashbaord Menu */}
         <div className={`${styles.menu_item} ${styles.menu_item_active}`}>
           <Image

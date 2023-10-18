@@ -1,5 +1,5 @@
+'use client';
 import styles from './dashboar.module.css';
-
 import EmployerLayout from '../../../components/employer/Layout/layout';
 import PageTitleComponent from '@/components/employer/PageTitle/page_title';
 import CandidateTraficGraphComponent from '../../../components/employer/CandidateTraficGraph/candidate-trafic-graph';
@@ -18,7 +18,7 @@ const EmployerDashboardPage = () => {
   return (
     <EmployerLayout>
       {/* page title */}
-      <PageTitleComponent pageTitle={'Dashbaord'} isShowJobBtn={true} />
+      <PageTitleComponent pageTitle={'Dashboard'} isShowJobBtn={true} />
       <div className={`${styles.page_content}`}>
         {/* Dashboard Card section */}
         <Container>

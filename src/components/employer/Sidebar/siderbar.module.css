@@ -1,7 +1,8 @@
 .sidebar_container {
-  width: 417px;
-  padding-left: 72px;
+  padding-left: 60px;
+  padding-right: 40px;
 }
+
 .sidebar_container a {
   text-decoration: none;
 }
@@ -23,7 +24,7 @@
   color: var(--Black);
   font-size: 16px;
   font-weight: 500;
-  line-height: 28px; /* 175% */
+  line-height: 28px;
   letter-spacing: -0.32px;
 }
 
@@ -35,44 +36,41 @@
 .menu_item_text {
   font-size: 16px;
   font-weight: 500;
-  line-height: 28px; /* 175% */
+  line-height: 28px;
   letter-spacing: -0.32px;
 }
 
 .menu_item {
   display: flex;
-  width: 321px;
+  width: 100%;
   height: 52px;
   padding: 12px 0px 12px 12px;
   align-items: center;
   flex-shrink: 0;
   border-radius: 8px;
+}
 
-  .menu_item_img {
-    width: 28px;
-    height: 28px;
-  }
+.menu_item_img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}
 
-  .menu_item_text {
-    color: var(--dark-greys-4-a-5568);
-    text-decoration: none;
-  }
+.menu_item_text {
+  color: var(--dark-greys-4-a-5568);
+  text-decoration: none;
 }
 
 .menu_item_active {
   display: inline-flex;
   border-left: 5px solid var(--iris-tints-tint-2);
   background: var(--iris-tints-tint-8);
-
-  .menu_item_img {
-    width: 20.533px;
-    height: 14px;
-  }
-
-  .menu_item_text {
-    color: var(--iris-100);
-  }
 }
+
+.menu_item_text {
+  color: var(--dark-grey-4A5568);
+}
+
 .sidebar_user_menu {
   display: flex;
   width: 321px;
@@ -90,9 +88,11 @@
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
-  line-height: 28px; /* 175% */
+  line-height: 28px;
+  /* 175% */
   letter-spacing: -0.32px;
 }
+
 .collasp {
   display: flex;
   width: 321px;
@@ -101,13 +101,14 @@
   justify-content: flex-end;
   align-items: center;
   flex-shrink: 0;
-  .collasp_in {
-    width: 36px;
-    height: 36px;
-    /* transform: rotate(90deg); */
-    flex-shrink: 0;
-    stroke-width: 1px;
-    stroke: var(--dark-greys-4-a-5568);
-    cursor: pointer;
-  }
+}
+
+.collasp_in {
+  width: 36px;
+  height: 36px;
+  /* transform: rotate(90deg); */
+  flex-shrink: 0;
+  stroke-width: 1px;
+  stroke: var(--dark-greys-4-a-5568);
+  cursor: pointer;
 }
