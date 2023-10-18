@@ -31,7 +31,7 @@ const JobsTable = (props) => {
         <div className="d-flex justify-content-between align-items-center mb-4">
           <div className={`gap-3 d-flex align-items-center`}>
             <Link
-              href="/jobs/applied"
+              href="/candidate/jobs/applied"
               className={`${
                 type === 'applied'
                   ? styles.BtnCustomPrimary
@@ -41,7 +41,7 @@ const JobsTable = (props) => {
               Applied
             </Link>
             <Link
-              href="/jobs/bookmarked"
+              href="/candidate/jobs/bookmarked"
               className={`${
                 type === 'bookmark'
                   ? styles.BtnCustomPrimary

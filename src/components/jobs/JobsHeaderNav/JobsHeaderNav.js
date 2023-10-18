@@ -142,7 +142,7 @@ function JobsHeaderNav() {
                 </span>
               </Link>
               <Link
-                href="/"
+                href="/candidate/profile"
                 className={`${styles.loggedLink} d-inline-flex align-items-center text-decoration-none`}
               >
                 <Image src={learner} alt="learner" />
