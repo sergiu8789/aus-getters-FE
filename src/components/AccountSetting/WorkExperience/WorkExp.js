@@ -59,7 +59,7 @@ const WorkExp = () => {
             <div
               className={`${styles.edu_edit_btn} col-lg-3 text-end flex-wrap d-flex flex-column align-items-end justify-content-between`}
             >
-              <Image src={Cross} className="" alt location></Image>
+              <Image src={Cross} className="" alt="cross" location></Image>
               <p
                 className="m-0 d-flex gap-1 align-items-center"
                 role="button"

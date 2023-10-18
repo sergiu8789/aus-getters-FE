@@ -49,7 +49,7 @@ const UploadCoverLetter = ({ onShow, onClose, editMode, initialFiles }) => {
                 <div className="d-flex justify-content-between">
                   <h6>Upload Cover Letter</h6>
                   <div onClick={() => onClose()}>
-                    <Image src={Closebtn} className="" />
+                    <Image src={Closebtn} alt="close" className="" />
                   </div>
                 </div>
                 <div className="row">
@@ -75,7 +75,11 @@ const UploadCoverLetter = ({ onShow, onClose, editMode, initialFiles }) => {
                       {selectedFiles.length > 0 ? (
                         <p>{selectedFiles.length} PDF files selected</p>
                       ) : (
-                        <Image src={UploadImg} className="object-fit-contain" />
+                        <Image
+                          src={UploadImg}
+                          alt="upload"
+                          className="object-fit-contain"
+                        />
                       )}
                     </div>
                   </div>

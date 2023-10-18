@@ -29,6 +29,7 @@ function RecomendCourse() {
               >
                 <Image
                   src={courseImage}
+                  alt="course"
                   className="col-12 d-inline-block object-fit-cover"
                 />
                 <div className="col-12 d-inline-block mt-3">
@@ -86,6 +87,7 @@ function RecomendCourse() {
               >
                 <Image
                   src={courseImage}
+                  alt="course"
                   className="col-12 d-inline-block object-fit-cover"
                 />
                 <div className="col-12 d-inline-block mt-3">

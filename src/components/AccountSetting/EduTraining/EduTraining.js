@@ -35,11 +35,16 @@ const EduTraining = () => {
               </p>
               <div className={`${styles.location_icon_text} d-flex gap-3`}>
                 <p className="gap-1 align-items-center m-0 d-flex me-2">
-                  <Image src={LocationLine} className="" alt location></Image>
+                  <Image
+                    src={LocationLine}
+                    className=""
+                    alt=""
+                    location
+                  ></Image>
                   Location
                 </p>
                 <p className="gap-1 align-items-center m-0 d-flex me-2">
-                  <Image src={SuitCase} className="" alt location></Image>
+                  <Image src={SuitCase} className="" alt="" location></Image>
                   GPA: 3.8
                 </p>
               </div>
@@ -47,7 +52,7 @@ const EduTraining = () => {
             <div
               className={`${styles.edu_edit_btn} col-lg-6 text-end flex-wrap d-flex flex-column align-items-end justify-content-between`}
             >
-              <Image src={Cross} className="" alt location></Image>
+              <Image src={Cross} className="" alt="" location></Image>
               <p
                 className="m-0 d-flex gap-1 align-items-center"
                 onClick={() => handleEdit()}
@@ -72,11 +77,16 @@ const EduTraining = () => {
               </p>
               <div className={`${styles.location_icon_text} d-flex gap-3`}>
                 <p className="gap-1 align-items-center m-0 d-flex me-2">
-                  <Image src={LocationLine} className="" alt location></Image>
+                  <Image
+                    src={LocationLine}
+                    className=""
+                    alt=""
+                    location
+                  ></Image>
                   Location
                 </p>
                 <p className="gap-1 align-items-center m-0 d-flex me-2">
-                  <Image src={SuitCase} className="" alt location></Image>
+                  <Image src={SuitCase} className="" alt="" location></Image>
                   GPA: 3.8
                 </p>
               </div>
@@ -84,7 +94,7 @@ const EduTraining = () => {
             <div
               className={`${styles.edu_edit_btn} col-lg-6 text-end flex-wrap d-flex flex-column align-items-end justify-content-between`}
             >
-              <Image src={Cross} className="" alt location></Image>
+              <Image src={Cross} className="" alt="" location></Image>
               <p
                 className="m-0 d-flex gap-1 align-items-center"
                 onClick={() => handleEdit()}
@@ -109,11 +119,16 @@ const EduTraining = () => {
               </p>
               <div className={`${styles.location_icon_text} d-flex gap-3`}>
                 <p className="gap-1 align-items-center m-0 d-flex me-2">
-                  <Image src={LocationLine} className="" alt location></Image>
+                  <Image
+                    src={LocationLine}
+                    className=""
+                    alt=""
+                    location
+                  ></Image>
                   Location
                 </p>
                 <p className="gap-1 align-items-center m-0 d-flex me-2">
-                  <Image src={SuitCase} className="" alt location></Image>
+                  <Image src={SuitCase} className="" alt="" location></Image>
                   GPA: 3.8
                 </p>
               </div>
@@ -121,7 +136,7 @@ const EduTraining = () => {
             <div
               className={`${styles.edu_edit_btn} col-lg-6 text-end flex-wrap d-flex flex-column align-items-end justify-content-between`}
             >
-              <Image src={Cross} className="" alt location></Image>
+              <Image src={Cross} className="" alt="" location></Image>
               <p
                 className="m-0 d-flex gap-1 align-items-center"
                 onClick={() => handleEdit()}
@@ -146,11 +161,16 @@ const EduTraining = () => {
               </p>
               <div className={`${styles.location_icon_text} d-flex gap-3`}>
                 <p className="gap-1 align-items-center m-0 d-flex me-2">
-                  <Image src={LocationLine} className="" alt location></Image>
+                  <Image
+                    src={LocationLine}
+                    className=""
+                    alt=""
+                    location
+                  ></Image>
                   Location
                 </p>
                 <p className="gap-1 align-items-center m-0 d-flex me-2">
-                  <Image src={SuitCase} className="" alt location></Image>
+                  <Image src={SuitCase} className="" alt="" location></Image>
                   GPA: 3.8
                 </p>
               </div>
@@ -158,7 +178,7 @@ const EduTraining = () => {
             <div
               className={`${styles.edu_edit_btn} col-lg-6 text-end flex-wrap d-flex flex-column align-items-end justify-content-between`}
             >
-              <Image src={Cross} className="" alt location></Image>
+              <Image src={Cross} className="" alt="" location></Image>
               <p
                 className="m-0 d-flex gap-1 align-items-center"
                 onClick={() => handleEdit()}

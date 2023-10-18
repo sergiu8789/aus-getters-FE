@@ -14,7 +14,7 @@ import Footer from '@/components/global/Footer/Footer';
 
 export default function Page() {
   const [passwordText, setPasswordText] = useState('password');
-  const [registerStepPop, setRegisterStepPop] = useState(false);
+  const [registerStepPop, setRegisterStepPop] = useState(0);
 
   const showPassword = () => {
     if (passwordText === 'password') {
@@ -73,7 +73,7 @@ export default function Page() {
             }}
             onSubmit={(values, { setSubmitting }) => {
               setTimeout(() => {
-                setRegisterStepPop(true);
+                setRegisterStepPop(1);
                 setSubmitting(false);
               }, 400);
             }}

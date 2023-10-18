@@ -25,13 +25,13 @@ const StepHeader = ({ title, colorTitle, step }) => {
         </h2>
         <div
           className={`${styles.stepBlocks} ${
-            step === '1'
+            step === 1
               ? styles.activeStep1
-              : step === '2'
+              : step === 2
               ? styles.activeStep2
-              : step === '3'
+              : step === 3
               ? styles.activeStep3
-              : step === '4'
+              : step === 4
               ? styles.activeStep4
               : step === '5'
               ? styles.activeStep5
@@ -59,7 +59,7 @@ const StepHeader = ({ title, colorTitle, step }) => {
   );
 };
 
-const Step1 = ({ setRegisterStep }) => {
+const Step1 = ({ setRegisterStepPop }) => {
   return (
     <React.Fragment>
       <div
@@ -73,7 +73,7 @@ const Step1 = ({ setRegisterStep }) => {
             <div
               className={`${styles.backStep} d-inline-flex align-items-center gap-2`}
               role="button"
-              onClick={() => setRegisterStep('0')}
+              onClick={() => setRegisterStepPop(0)}
             >
               <Image src={backArrow} alt="Back" />
               <span className={styles.backLinkText}>Back</span>
@@ -235,14 +235,14 @@ const Step1 = ({ setRegisterStep }) => {
               <span
                 className={`${styles.skipBtn} d-inline-flex align-items-center`}
                 role="button"
-                onClick={() => setRegisterStep('0')}
+                onClick={() => setRegisterStepPop(0)}
               >
                 Skip
               </span>
               <span
                 className={`${styles.nextBtn} d-inline-flex align-items-center gap-2 justify-content-center`}
                 role="button"
-                onClick={() => setRegisterStep('2')}
+                onClick={() => setRegisterStepPop(2)}
               >
                 Next <Image src={nextArrow} alt="nextArrow" />
               </span>
@@ -254,7 +254,7 @@ const Step1 = ({ setRegisterStep }) => {
   );
 };
 
-const Step2 = ({ setRegisterStep }) => {
+const Step2 = ({ setRegisterStepPop }) => {
   return (
     <React.Fragment>
       <div
@@ -268,7 +268,7 @@ const Step2 = ({ setRegisterStep }) => {
             <div
               className={`${styles.backStep} d-inline-flex align-items-center gap-2`}
               role="button"
-              onClick={() => setRegisterStep('1')}
+              onClick={() => setRegisterStepPop(1)}
             >
               <Image src={backArrow} alt="Back" />
               <span className={styles.backLinkText}>Back</span>
@@ -413,14 +413,14 @@ const Step2 = ({ setRegisterStep }) => {
               <span
                 className={`${styles.skipBtn} d-inline-flex align-items-center`}
                 role="button"
-                onClick={() => setRegisterStep('0')}
+                onClick={() => setRegisterStepPop(0)}
               >
                 Skip
               </span>
               <span
                 className={`${styles.nextBtn} d-inline-flex align-items-center gap-2 justify-content-center`}
                 role="button"
-                onClick={() => setRegisterStep('3')}
+                onClick={() => setRegisterStepPop(3)}
               >
                 Next <Image src={nextArrow} alt="nextArrow" />
               </span>
@@ -432,7 +432,7 @@ const Step2 = ({ setRegisterStep }) => {
   );
 };
 
-const Step3 = ({ setRegisterStep }) => {
+const Step3 = ({ setRegisterStepPop }) => {
   return (
     <React.Fragment>
       <div
@@ -446,7 +446,7 @@ const Step3 = ({ setRegisterStep }) => {
             <div
               className={`${styles.backStep} d-inline-flex align-items-center gap-2`}
               role="button"
-              onClick={() => setRegisterStep('2')}
+              onClick={() => setRegisterStepPop(2)}
             >
               <Image src={backArrow} alt="Back" />
               <span className={styles.backLinkText}>Back</span>
@@ -553,14 +553,14 @@ const Step3 = ({ setRegisterStep }) => {
               <span
                 className={`${styles.skipBtn} d-inline-flex align-items-center`}
                 role="button"
-                onClick={() => setRegisterStep('0')}
+                onClick={() => setRegisterStepPop(0)}
               >
                 Skip
               </span>
               <span
                 className={`${styles.nextBtn} d-inline-flex align-items-center gap-2 justify-content-center`}
                 role="button"
-                onClick={() => setRegisterStep('4')}
+                onClick={() => setRegisterStepPop(4)}
               >
                 Next <Image src={nextArrow} alt="nextArrow" />
               </span>
@@ -572,7 +572,7 @@ const Step3 = ({ setRegisterStep }) => {
   );
 };
 
-const Step4 = ({ setRegisterStep }) => {
+const Step4 = ({ setRegisterStepPop }) => {
   return (
     <React.Fragment>
       <div
@@ -586,7 +586,7 @@ const Step4 = ({ setRegisterStep }) => {
             <div
               className={`${styles.backStep} d-inline-flex align-items-center gap-2`}
               role="button"
-              onClick={() => setRegisterStep('3')}
+              onClick={() => setRegisterStepPop(3)}
             >
               <Image src={backArrow} alt="Back" />
               <span className={styles.backLinkText}>Back</span>
@@ -761,14 +761,14 @@ const Step4 = ({ setRegisterStep }) => {
               <span
                 className={`${styles.skipBtn} d-inline-flex align-items-center`}
                 role="button"
-                onClick={() => setRegisterStep('0')}
+                onClick={() => setRegisterStepPop(0)}
               >
                 Skip
               </span>
               <span
                 className={`${styles.nextBtn} d-inline-flex align-items-center gap-2 justify-content-center`}
                 role="button"
-                onClick={() => setRegisterStep('5')}
+                onClick={() => setRegisterStepPop(5)}
               >
                 Next <Image src={nextArrow} alt="nextArrow" />
               </span>
@@ -781,7 +781,7 @@ const Step4 = ({ setRegisterStep }) => {
 };
 
 const Step5 = ({
-  setRegisterStep,
+  setRegisterStepPop,
   changeProfile,
   highlightProfile,
   postRegisterDetail
@@ -799,7 +799,7 @@ const Step5 = ({
             <div
               className={`${styles.backStep} d-inline-flex align-items-center gap-2`}
               role="button"
-              onClick={() => setRegisterStep('4')}
+              onClick={() => setRegisterStepPop(4)}
             >
               <Image src={backArrow} alt="Back" />
               <span className={styles.backLinkText}>Back</span>
@@ -907,7 +907,7 @@ const Step5 = ({
               <span
                 className={`${styles.skipBtn} d-inline-flex align-items-center`}
                 role="button"
-                onClick={() => setRegisterStep('0')}
+                onClick={() => setRegisterStepPop(0)}
               >
                 Skip
               </span>
@@ -927,7 +927,6 @@ const Step5 = ({
 };
 
 const SignupSteps = ({ registerStepPop, setRegisterStepPop }) => {
-  const [registerStep, setRegisterStep] = useState('0');
   const [highlightProfile, setHighlightProfile] = useState(true);
 
   const changeProfile = () => {
@@ -939,28 +938,29 @@ const SignupSteps = ({ registerStepPop, setRegisterStepPop }) => {
   };
 
   const postRegisterDetail = () => {
-    setRegisterStep('0');
-    setRegisterStepPop(false);
+    setRegisterStepPopPop(0);
   };
-
-  useEffect(() => {
-    if (registerStepPop === true) {
-      setRegisterStep('1');
-    }
-  }, [registerStepPop]);
 
   return (
     <React.Fragment>
-      {registerStep > '0' && (
+      {registerStepPop > 0 && (
         <div className={`${styles.registerLayer} modal-backdrop`}></div>
       )}
-      {registerStep === '1' && <Step1 setRegisterStep={setRegisterStep} />}
-      {registerStep === '2' && <Step2 setRegisterStep={setRegisterStep} />}
-      {registerStep === '3' && <Step3 setRegisterStep={setRegisterStep} />}
-      {registerStep === '4' && <Step4 setRegisterStep={setRegisterStep} />}
-      {registerStep === '5' && (
+      {registerStepPop === 1 && (
+        <Step1 setRegisterStepPop={setRegisterStepPop} />
+      )}
+      {registerStepPop === 2 && (
+        <Step2 setRegisterStepPop={setRegisterStepPop} />
+      )}
+      {registerStepPop === 3 && (
+        <Step3 setRegisterStepPop={setRegisterStepPop} />
+      )}
+      {registerStepPop === 4 && (
+        <Step4 setRegisterStepPop={setRegisterStepPop} />
+      )}
+      {registerStepPop === 5 && (
         <Step5
-          setRegisterStep={setRegisterStep}
+          setRegisterStepPop={setRegisterStepPop}
           changeProfile={changeProfile}
           highlightProfile={highlightProfile}
           postRegisterDetail={postRegisterDetail}
