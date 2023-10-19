@@ -102,6 +102,9 @@
   --contactdesc-color: #696969;
   --review-border: #b6910e;
   --review-bg: #fcf1cb;
+  --light-blue-bg: #d6eef9;
+
+  --clr-blue: #2193c4;
 }
 
 * {
