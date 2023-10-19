@@ -14,6 +14,10 @@ import Resume from '../Resume/Resume';
 import CoverLetter from '../CoverLetter/CoverLetter';
 import Basicdetails from '../BasicDetails/BasicDetails';
 import EditBasicdetails from '../BasicDetails/EditBasicDetails';
+import Dropdown from 'react-bootstrap/Dropdown';
+import Link from 'next/link';
+import linkIcon from '../../../../public/assets/images/link.svg';
+import toogleIcon from '../../../../public/assets/images/toggel.svg';
 
 const Account = () => {
   const [editMode, setEditMode] = useState(false);
@@ -56,14 +60,41 @@ const Account = () => {
                 ></Image>
               </button>
             )}
-            <p role="button">
+            <Dropdown>
+              <Dropdown.Toggle id="dropdown-basic" className={styles.abc}>
+                Visibility
+              </Dropdown.Toggle>
+              <Dropdown.Menu className={styles.popUp}>
+                <Dropdown.Item className={styles.popUpOptions}>
+                  <Link href="/profile">
+                    <div className={styles.popUpOptionsInternal}>
+                      <div className="d-block">view Public Profile</div>
+
+                      <div className="d-block">
+                        <Image src={linkIcon} />
+                      </div>
+                    </div>
+                  </Link>
+                </Dropdown.Item>
+                <Dropdown.Item>
+                  <div className={styles.popUpOptionsInternalSecond}>
+                    <div className="d-block"> visible to employers</div>
+
+                    <div className="d-block">
+                      <Image src={toogleIcon} />
+                    </div>
+                  </div>
+                </Dropdown.Item>
+              </Dropdown.Menu>
+            </Dropdown>
+            {/* <p role="button">
               Visibility{' '}
               <Image
                 src={VisibleEye}
                 className={`object-fit-cover`}
                 alt="VisibleEye"
               ></Image>
-            </p>
+            </p> */}
           </div>
         </div>
         <div

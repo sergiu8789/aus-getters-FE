@@ -69,3 +69,74 @@
 .account_sett_container img {
   display: inline;
 }
+
+.all_profile_edit .abc {
+  width: 124px;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid var(--default-color) !important;
+  background: var(--fuschia-tints-tint-7) !important;
+  color: var(--secondary-black) !important;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: -0.32px;
+}
+.popUp {
+  width: 213px;
+  background-color: var(--white-color);
+  border-color: var(--pink-border);
+  transform: translate(-117px, 70px) !important;
+  /* padding: 15px 20px; */
+}
+
+.popUpOptions {
+  border-bottom: 1px solid var(--greys-c-4-c-4-c-4, #c4c4c4);
+  width: 100%;
+  padding: 12px;
+}
+
+.popUp::before {
+  content: '';
+  display: inline-block;
+  border-left: 1px solid var(--pink-border);
+  border-top: 1px solid var(--pink-border);
+  height: 16px;
+  width: 16px;
+  background: var(--white-color);
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  position: absolute;
+  right: 10px;
+  top: -9px;
+}
+
+.popUpOptionsInternal {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--iris-100, #5d5fef);
+  text-align: center;
+  font-family: Work Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px; /* 185.714% */
+  letter-spacing: -0.28px;
+}
+
+.popUpOptionsInternalSecond {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--iris-100, #5d5fef);
+  text-align: center;
+  font-family: Work Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px; /* 185.714% */
+  letter-spacing: -0.28px;
+}

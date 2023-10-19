@@ -44,7 +44,7 @@ export const ProfileImage = () => {
             <div className="row align-items-end gap-3 gap-xl-0">
               <div className="col-xl-6">
                 {currentProfilePic ? (
-                  <Image
+                  <img
                     src={currentProfilePic}
                     className={`${styles.dp_img} pe-2 object-fit-cover`}
                     alt="Profile"
